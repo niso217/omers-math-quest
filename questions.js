@@ -1,124 +1,259 @@
-// Array of 100 questions mapped to 10 levels (10 questions per level)
+// Dynamic Question Generator for Omer's Epic Math Game
 // Curriculum: 3rd Grade Math - Israeli "Hashbacha"
 
-const GAME_QUESTIONS = [
-    // --- LEVEL 1: מבנה העשרוני (Decimal Structure - Composing/Decomposing) ---
-    { question: "כמה עשרות יש במספר 340?", options: [3, 4, 34, 40], correct: 34, hint: "זכרי, כל 10 יחידות הן עשרת אחת. הסתירי את ספרת היחידות." },
-    { question: "איזה מספר שווה ל-5 מאות, 2 עשרות ו-8 יחידות?", options: [582, 528, 258, 852], correct: 528, hint: "בני את המספר לפי המקומות: מאות, עשרות, יחידות." },
-    { question: "מהי הספרה במקום המאות במספר 8,901?", options: [8, 9, 0, 1], correct: 9, hint: "ספרי מימין לשמאל: יחידות, עשרות, מאות..." },
-    { question: "כמה יחידות יש בסך הכל ב-4 עשרות ו-7 יחידות?", options: [11, 40, 47, 74], correct: 47, hint: "4 עשרות הן 40, הוסיפי את היחידות." },
-    { question: "השלימי: 600 + ___ + 3 = 653", options: [50, 5, 0, 30], correct: 50, hint: "חסר לנו החלק של העשרות. איזו ספרה נמצאת במקום העשרות?" },
-    { question: "איזה מספר גדול יותר: 4,050 או 4,005?", options: ["4,050", "4,005", "הם שווים", "אי אפשר לדעת"], correct: "4,050", hint: "בדקי את ספרת העשרות בשני המספרים." },
-    { question: "מה ערך הספרה 7 במספר 2,741?", options: [7, 70, 700, 7000], correct: 700, hint: "באיזה מקום נמצאת הספרה 7? יחידות, עשרות או מאות?" },
-    { question: "כמה עשרות שלמות יש במספר 1,000?", options: [10, 100, 1000, 1], correct: 100, hint: "בכל מאה יש 10 עשרות. כמה יש ב-10 מאות?" },
-    { question: "אם נוסיף 100 למספר 452, מה נקבל?", options: [462, 552, 453, 1452], correct: 552, hint: "הוסיפי 1 רק לספרת המאות." },
-    { question: "איזה מספר בא לפני 1,000?", options: [990, 999, 1001, 900], correct: 999, hint: "חשבי מה קורה כשמחסרים 1 מהמספר 1000." },
+// Helper to get random integer between min and max (inclusive)
+function rand(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-    // --- LEVEL 2: חיבור וחיסור בעשרות ומאות שלמות ---
-    { question: "300 + 400 = ?", options: [70, 700, 7000, 100], correct: 700, hint: "חשבי כאילו מדובר ב-3 + 4, ואז הוסיפי את המאות." },
-    { question: "850 - 50 = ?", options: [800, 900, 805, 350], correct: 800, hint: "אנו מורידים רק את היחידות והעשרות, המאות נשארות." },
-    { question: "השלימי: 420 + ___ = 500", options: [80, 20, 100, 60], correct: 80, hint: "כמה חסר ל-20 כדי להגיע למאה שלמה?" },
-    { question: "900 - 300 = ?", options: [500, 600, 700, 1200], correct: 600, hint: "9 מאות פחות 3 מאות." },
-    { question: "השלימי: ___ - 150 = 300", options: [450, 150, 500, 350], correct: 450, hint: "השתמשי בפעולה ההפוכה! 300 + 150." },
-    { question: "1,000 - 200 = ?", options: [900, 800, 700, 1200], correct: 800, hint: "10 מאות פחות 2 מאות." },
-    { question: "240 + 360 = ?", options: [500, 600, 580, 610], correct: 600, hint: "חברי את המאות בנפרד (200+300) ואת העשרות בנפרד (40+60)." },
-    { question: "חצי מ-800 הוא:", options: [200, 400, 600, 80], correct: 400, hint: "מהו חצי מ-8?" },
-    { question: "השלימי: 750 + 250 = ?", options: [900, 950, 1000, 1100], correct: 1000, hint: "50 ועוד 50 משלימים למאה אחת שלמה." },
-    { question: "600 פחות 10 שווה ל:", options: [590, 500, 610, 599], correct: 590, hint: "כשמחסרים 10 ממאות שלמות, יורדים למאה הקודמת והעשרות הן 90." },
+// Generate options: 1 correct, 3 wrong but close
+function generateOptions(correct, variation = 10) {
+    let opts = new Set([correct]);
+    
+    // Sometimes we want tricky distractors (e.g., switched digits)
+    if (correct > 10) {
+        const str = String(correct);
+        if (str.length === 2 && str[0] !== str[1]) {
+            opts.add(parseInt(str[1] + str[0])); // Reverse digits
+        }
+    }
 
-    // --- LEVEL 3: ציר המספרים ואומדן (Number line & Estimation) ---
-    { question: "איזה מספר נמצא בדיוק באמצע בין 200 ל-300?", options: [210, 250, 290, 205], correct: 250, hint: "מה נמצא בדיוק באמצע בין 0 ל-100?" },
-    { question: "המספר 489 קרוב יותר ל-:", options: [400, 500, 480, 490], correct: 500, hint: "הסתכלי על ספרת העשרות (8). האם מעגלים למעלה או למטה?" },
-    { question: "איזה מספר יופיע על ציר המספרים מיד אחרי 799?", options: [700, 800, 790, 801], correct: 800, hint: "כמו להוסיף 1 ל-799." },
-    { question: "לעגל את המספר 123 לעשרת הקרובה:", options: [120, 130, 100, 200], correct: 120, hint: "הספרה 3 קטנה מ-5, לכן מעגלים למטה." },
-    { question: "מהו המספר החסר בסדרה: 150, 200, 250, ___?", options: [260, 300, 350, 400], correct: 300, hint: "בדקי בכמה הקפיצה בין מספר למספר." },
-    { question: "המספר 8,450 נמצא בין אלו אלפים שלמים?", options: ["8000 ו-9000", "8400 ו-8500", "7000 ו-8000", "845 ו-846"], correct: "8000 ו-9000", hint: "התעלמי מהמאות והעשרות, הסתכלי על האלפים." },
-    { question: "העריכי: 39 + 52 בערך שווה ל-:", options: [80, 90, 100, 70], correct: 90, hint: "עגלי כל מספר לעשרת הקרובה (40 + 50)." },
-    { question: "מהו המספר החסר בסדרה: 900, 850, ___, 750?", options: [800, 820, 700, 840], correct: 800, hint: "הסדרה יורדת. בכמה יורדים בכל פעם?" },
-    { question: "איזה מן המספרים הבאים הוא אי-זוגי?", options: [342, 500, 871, 908], correct: 871, hint: "מספר אי-זוגי מסתיים ב-1, 3, 5, 7, או 9." },
-    { question: "איזה מספר מיוצג על ידי האות X אם הציר קופץ ב-10? 40, 50, X, 70", options: [55, 60, 65, 80], correct: 60, hint: "מה בא אחרי 50 בקפיצה של 10?" },
+    while(opts.size < 4) {
+        let wrong = correct + rand(-variation, variation);
+        if (wrong !== correct && wrong >= 0) {
+            opts.add(wrong);
+        }
+    }
+    
+    return Array.from(opts);
+}
 
-    // --- LEVEL 4: נעלמים בחיבור וחיסור (Unknowns in addition/subtraction) ---
-    { question: "השלימי: ___ + 15 = 40", options: [20, 25, 30, 55], correct: 25, hint: "השתמשי בחיסור: 40 פחות 15." },
-    { question: "השלימי: 100 - ___ = 45", options: [45, 50, 55, 65], correct: 55, hint: "מה צריך להוסיף ל-45 כדי להגיע ל-100?" },
-    { question: "השלימי: 24 + ___ = 50", options: [16, 26, 36, 14], correct: 26, hint: "השלימי את ה-4 לעשרת הבאה (30), כמה נשאר עד 50?" },
-    { question: "השלימי: ___ - 30 = 80", options: [50, 100, 110, 120], correct: 110, hint: "איזה מספר פחות 30 יתן 80? נסי לחבר: 80 ועוד 30." },
-    { question: "3 x 4 = ___ + 2", options: [10, 12, 14, 8], correct: 10, hint: "קודם חשבי כמה זה 3 כפול 4, ואז מצאי את הנעלם." },
-    { question: "___ + 120 = 200", options: [70, 80, 90, 100], correct: 80, hint: "כמה צריך כדי להשלים מ-120 ל-200?" },
-    { question: "65 - ___ = 25", options: [30, 35, 40, 45], correct: 40, hint: "הורידי את היחידות קודם: 65 ל-25 זה ירידה של כמה עשרות?" },
-    { question: "___ = 50 + 50 - 20", options: [80, 100, 120, 70], correct: 80, hint: "פתרי לפי הסדר משמאל לימין." },
-    { question: "15 + 15 = 10 + ___", options: [15, 20, 25, 30], correct: 20, hint: "הצד השמאלי שווה 30. איך נשלים את הצד הימני ל-30?" },
-    { question: "___ - 19 = 21", options: [30, 40, 50, 2], correct: 40, hint: "העבירי את ה-19 לצד השני בחיבור." },
+// Generate an array of N random questions for a specific level
+function getRandomQuestions(level, count = 10) {
+    let questions = [];
+    
+    for(let i=0; i<count; i++) {
+        let q = {};
+        
+        switch(level) {
+            case 1: // Decimal Structure
+                let type1 = rand(1, 3);
+                if (type1 === 1) {
+                    let tens = rand(10, 99);
+                    let val = tens * 10;
+                    q = {
+                        question: `כמה עשרות יש במספר ${val}?`,
+                        correct: tens,
+                        options: generateOptions(tens, 10),
+                        hint: `זכרי, כל 10 יחידות הן עשרת אחת. הסתירי את ספרת היחידות.`
+                    };
+                } else if (type1 === 2) {
+                    let h = rand(1, 9);
+                    let t = rand(1, 9);
+                    let u = rand(1, 9);
+                    let val = h*100 + t*10 + u;
+                    q = {
+                        question: `איזה מספר שווה ל-${h} מאות, ${t} עשרות ו-${u} יחידות?`,
+                        correct: val,
+                        options: [val, h*100+u*10+t, t*100+h*10+u, u*100+t*10+h],
+                        hint: `בני את המספר לפי המקומות: מאות, עשרות, יחידות.`
+                    };
+                } else {
+                    let base = rand(10, 90) * 10;
+                    let extra = rand(1, 9);
+                    let total = base + extra;
+                    q = {
+                        question: `השלימי: ${base} + ___ = ${total}`,
+                        correct: extra,
+                        options: generateOptions(extra, 5),
+                        hint: `הסתכלי על היחידות החסרות.`
+                    };
+                }
+                break;
+                
+            case 2: // Addition/Subtraction hundreds/tens
+                let isAdd = rand(0, 1);
+                if (isAdd) {
+                    let a = rand(1, 8) * 100;
+                    let b = rand(1, 9 - a/100) * 100;
+                    q = {
+                        question: `${a} + ${b} = ?`,
+                        correct: a + b,
+                        options: generateOptions(a+b, 200),
+                        hint: `חברי את המאות.`
+                    };
+                } else {
+                    let a = rand(2, 9) * 100;
+                    let b = rand(1, a/100 - 1) * 100;
+                    q = {
+                        question: `${a} - ${b} = ?`,
+                        correct: a - b,
+                        options: generateOptions(a-b, 200),
+                        hint: `חסרי את המאות.`
+                    };
+                }
+                break;
 
-    // --- LEVEL 5: חיבור במאונך (Vertical Addition) ---
-    { question: "345 + 123 = ?", options: [468, 458, 478, 568], correct: 468, hint: "חברי יחידות ליחידות, עשרות לעשרות, מאות למאות." },
-    { question: "258 + 134 = ?", options: [392, 382, 394, 384], correct: 392, hint: "שימי לב: 8+4 זה 12, צריך לזכור 1 לעשרות!" },
-    { question: "480 + 390 = ?", options: [770, 870, 860, 790], correct: 870, hint: "80+90 שווה 170. המאות הן 400+300=700. ביחד?" },
-    { question: "127 + 85 = ?", options: [202, 212, 112, 222], correct: 212, hint: "חברי: 7+5=12. זכרי 1. 2+8+1=11. זכרי 1..." },
-    { question: "909 + 101 = ?", options: [1000, 1010, 1110, 1001], correct: 1010, hint: "9+1=10, 0+0=0, 9+1=10. זכרי לכתוב נכון." },
-    { question: "555 + 444 = ?", options: [999, 1000, 888, 909], correct: 999, hint: "זה חיבור קל! 5 ועוד 4 בכל המקומות." },
-    { question: "263 + 137 = ?", options: [400, 390, 410, 300], correct: 400, hint: "שימי לב: 63 + 37 משלים בדיוק למאה שלמה!" },
-    { question: "608 + 294 = ?", options: [802, 902, 892, 912], correct: 902, hint: "8+4=12. 9+1 (מהזכרון) = 10. 6+2+1=9." },
-    { question: "715 + 186 = ?", options: [901, 891, 801, 911], correct: 901, hint: "5+6=11. 1+8+1=10..." },
-    { question: "95 + 95 = ?", options: [180, 190, 200, 100], correct: 190, hint: "קחי 5 מאחד ותני לשני (100+90)." },
+            case 3: // Number line & estimation
+                let type3 = rand(1, 2);
+                if (type3 === 1) {
+                    let base3 = rand(1, 8) * 100;
+                    let num3 = base3 + rand(80, 99);
+                    let rounded = base3 + 100;
+                    q = {
+                        question: `לאיזו מאה שלמה המספר ${num3} קרוב יותר?`,
+                        correct: rounded,
+                        options: [rounded, base3, rounded+100, base3-100].filter(n => n >= 0),
+                        hint: `הסתכלי על ספרת העשרות. האם מעגלים למעלה או למטה?`
+                    };
+                } else {
+                    let start = rand(1, 8) * 100;
+                    let step = rand(1, 5) * 10;
+                    let ans = start + (step * 3);
+                    q = {
+                        question: `מה המספר החסר: ${start}, ${start+step}, ${start+step*2}, ___ ?`,
+                        correct: ans,
+                        options: generateOptions(ans, 20),
+                        hint: `בדקי בכמה הקפיצה בין מספר למספר.`
+                    };
+                }
+                break;
 
-    // --- LEVEL 6: חיסור במאונך עם פריטה (Vertical Subtraction with borrowing) ---
-    { question: "586 - 234 = ?", options: [352, 252, 342, 362], correct: 352, hint: "חיסור ללא פריטה: 6-4, 8-3, 5-2." },
-    { question: "420 - 130 = ?", options: [290, 310, 280, 300], correct: 290, hint: "אי אפשר 2 פחות 3 בעשרות. פרטי 1 מהמאות!" },
-    { question: "800 - 250 = ?", options: [650, 550, 600, 500], correct: 550, hint: "חשבי 80 פחות 25, ואז הוסיפי אפס בסוף." },
-    { question: "512 - 128 = ?", options: [384, 394, 484, 404], correct: 384, hint: "2 פחות 8 אי אפשר, מלווים מהעשרות (12 פחות 8)." },
-    { question: "905 - 417 = ?", options: [488, 498, 518, 588], correct: 488, hint: "כשיש 0 בעשרות, צריך להלוות מהמאות עד ליחידות." },
-    { question: "740 - 265 = ?", options: [475, 485, 575, 465], correct: 475, hint: "הלווי מהעשרות (10 פחות 5), ואז מהמאות לעשרות." },
-    { question: "1000 - 345 = ?", options: [655, 755, 665, 555], correct: 655, hint: "סוד לפריטה מאלף: הפכי את כל האפסים ל-9 ואת האחרון ל-10." },
-    { question: "632 - 199 = ?", options: [433, 533, 423, 443], correct: 433, hint: "טריק: חסרי 200, ואז הוסיפי 1! 632 - 200 + 1." },
-    { question: "854 - 67 = ?", options: [787, 797, 887, 897], correct: 787, hint: "אל תשכחי לפרוט מ-5 ל-4 כדי לעשות 14 פחות 7." },
-    { question: "300 - 15 = ?", options: [285, 295, 185, 195], correct: 285, hint: "חסרי 10 (290) ואז עוד 5." },
+            case 4: // Unknowns in addition/subtraction
+                let t1 = rand(20, 80);
+                let t2 = rand(10, 99 - t1);
+                let sum = t1 + t2;
+                if (rand(0, 1)) {
+                    q = {
+                        question: `___ + ${t2} = ${sum}`,
+                        correct: t1,
+                        options: generateOptions(t1, 15),
+                        hint: `השתמשי בחיסור: ${sum} פחות ${t2}.`
+                    };
+                } else {
+                    q = {
+                        question: `${sum} - ___ = ${t2}`,
+                        correct: t1,
+                        options: generateOptions(t1, 15),
+                        hint: `כמה צריך להוריד מ-${sum} כדי להגיע ל-${t2}?`
+                    };
+                }
+                break;
 
-    // --- LEVEL 7: כפל ולוח הכפל (Multiplication) ---
-    { question: "6 x 7 = ?", options: [42, 36, 48, 49], correct: 42, hint: "שש שביעיות זה כמו 5 פעמים 7, ועוד 7." },
-    { question: "8 x 8 = ?", options: [64, 56, 72, 88], correct: 64, hint: "חרוז: שמונה כפול שמונה, המספר הוא בן ששים וארבעה." },
-    { question: "9 x 6 = ?", options: [54, 45, 63, 72], correct: 54, hint: "טריק כפולות של 9: 10 כפול 6 פחות 6." },
-    { question: "איזה תרגיל שווה ל-5x4?", options: ["4+4+4+4+4", "5+4", "5+5+5", "20+5"], correct: "4+4+4+4+4", hint: "כפל הוא חיבור חוזר. 5 פעמים הספרה 4." },
-    { question: "0 x 150 = ?", options: [0, 150, 15, 1], correct: 0, hint: "כל מספר שכופלים באפס, התוצאה היא..." },
-    { question: "1 x 99 = ?", options: [99, 1, 100, 9], correct: 99, hint: "כל מספר שכופלים באחת, נשאר אותו דבר." },
-    { question: "7 x 4 = ?", options: [28, 24, 32, 21], correct: 28, hint: "פעמיים 7 זה 14, פעמיים 14 זה..." },
-    { question: "אם יש 5 קופסאות, ובכל קופסה 8 צבעים, כמה צבעים סה״כ?", options: [40, 45, 35, 30], correct: 40, hint: "תרגיל כפל: 5 כפול 8." },
-    { question: "10 x 42 = ?", options: [420, 402, 42, 142], correct: 420, hint: "כשכופלים ב-10, פשוט מוסיפים 0 מימין למספר." },
-    { question: "3 x 30 = ?", options: [90, 60, 33, 93], correct: 90, hint: "חשבי 3 כפול 3, ואז הוסיפי את האפס של העשרת." },
+            case 5: // Vertical Addition
+                let v1 = rand(100, 500);
+                let v2 = rand(100, 499);
+                q = {
+                    question: `${v1} + ${v2} = ?`,
+                    correct: v1 + v2,
+                    options: generateOptions(v1+v2, 20),
+                    hint: `חברי יחידות, עשרות ואז מאות.`
+                };
+                break;
 
-    // --- LEVEL 8: חילוק וקשר לכפל (Division & Inverse) ---
-    { question: "40 / 8 = ?", options: [5, 4, 6, 8], correct: 5, hint: "איזה מספר נכפול ב-8 כדי לקבל 40?" },
-    { question: "24 / 6 = ?", options: [4, 3, 5, 6], correct: 4, hint: "כמה פעמים 6 נכנס ב-24?" },
-    { question: "36 / ___ = 9", options: [4, 3, 6, 9], correct: 4, hint: "תחשבי על הכפל: 9 כפול מה נותן 36?" },
-    { question: "81 / 9 = ?", options: [9, 8, 7, 10], correct: 9, hint: "לוח הכפל! מה כפול מה נותן 81?" },
-    { question: "אם 7x6=42, אז 42/7=?", options: [6, 7, 42, 1], correct: 6, hint: "חילוק היא הפעולה ההפוכה לכפל." },
-    { question: "100 / 10 = ?", options: [10, 100, 1, 0], correct: 10, hint: "כמה עשרות יש במאה?" },
-    { question: "חצי מ-50 הוא:", options: [25, 20, 30, 15], correct: 25, hint: "כמו לחלק 50 ל-2." },
-    { question: "יש 30 עוגיות, נחלק אותן ל-5 חברים שווה בשווה. כמה כל אחד יקבל?", options: [6, 5, 7, 10], correct: 6, hint: "30 לחלק ל-5." },
-    { question: "0 / 12 = ?", options: [0, 12, 1, "אי אפשר"], correct: 0, hint: "אם אין לך כלום לחלק, אף אחד לא מקבל כלום." },
-    { question: "7 / 7 = ?", options: [1, 7, 0, 14], correct: 1, hint: "כשמחלקים מספר בעצמו, התוצאה תמיד 1." },
+            case 6: // Vertical Subtraction
+                let s1 = rand(500, 999);
+                let s2 = rand(100, s1 - 100);
+                q = {
+                    question: `${s1} - ${s2} = ?`,
+                    correct: s1 - s2,
+                    options: generateOptions(s1-s2, 20),
+                    hint: `אם חסר, זכרי להלוות מהספרה הבאה!`
+                };
+                break;
 
-    // --- LEVEL 9: בעיות מילוליות (Word Problems) ---
-    { question: "לעומר היו 120 מדבקות. היא נתנה לחברה 35. כמה נשארו לה?", options: [85, 95, 155, 75], correct: 85, hint: "תרגיל חיסור: 120 פחות 35." },
-    { question: "בגינה יש 4 שורות של עצים, בכל שורה 9 עצים. כמה עצים יש בגינה?", options: [36, 13, 40, 32], correct: 36, hint: "תרגיל כפל: 4 כפול 9." },
-    { question: "ספר עולה 45 שקלים. עומר נתנה למוכר שטר של 100 שקלים. כמה עודף תקבל?", options: [55, 65, 45, 145], correct: 55, hint: "חיסור: 100 פחות 45." },
-    { question: "אמא קנתה 3 חבילות עפרונות. בכל חבילה 12 עפרונות. כמה עפרונות יש?", options: [36, 15, 30, 24], correct: 36, hint: "12 פעמים 3. (10x3) + (2x3)." },
-    { question: "ישנם 24 תלמידים בכיתה. המורה חילקה אותם ל-4 קבוצות שוות. כמה ילדים בקבוצה?", options: [6, 8, 4, 5], correct: 6, hint: "תרגיל חילוק: 24 לחלק ל-4." },
-    { question: "לאבא היו 200 שקלים, הוא קנה צעצוע ב-80 שקלים ופיצה ב-50. כמה נשאר לו?", options: [70, 80, 60, 130], correct: 70, hint: "קודם חברי כמה הוציא (80+50=130), ואז חסרי מ-200." },
-    { question: "עומר קראה 42 עמודים בספר. ביום השני קראה עוד 28 עמודים. כמה קראה סך הכל?", options: [70, 60, 80, 68], correct: 70, hint: "חיבור: 42 ועוד 28. התחילי מהיחידות (2+8)." },
-    { question: "לדנה פי 3 יותר בובות מליעל. ליעל יש 7 בובות. כמה לדנה?", options: [21, 10, 4, 14], correct: 21, hint: "פי 3 אומר כפל. 3 כפול 7." },
-    { question: "מכונית נסעה 150 קילומטרים ועצרה. נשארו לה עוד 50 ק״מ. מה אורך המסלול?", options: [200, 100, 155, 250], correct: 200, hint: "חיבור: 150 ועוד 50." },
-    { question: "בכיתה ג׳ יש 32 בנים ובנות. חצי מהם בנים. כמה בנים בכיתה?", options: [16, 30, 15, 12], correct: 16, hint: "חלקי 32 ל-2. מה חצי של 30? ומה חצי של 2?" },
+            case 7: // Multiplication
+                let m1 = rand(2, 10);
+                let m2 = rand(2, 10);
+                q = {
+                    question: `${m1} x ${m2} = ?`,
+                    correct: m1 * m2,
+                    options: generateOptions(m1*m2, 10),
+                    hint: `חשבי על חיבור חוזר או השתמשי בלוח הכפל.`
+                };
+                break;
 
-    // --- LEVEL 10: אתגר המלך (Boss Fight - Mixed Harder Questions) ---
-    { question: "מלך החשבון שואל: (3 x 4) + 15 = ?", options: [27, 25, 30, 19], correct: 27, hint: "סדר פעולות חשבון: כפל קודם! מה זה 3 כפול 4?" },
-    { question: "איזה מספר יש להכפיל ב-6 כדי לקבל 54?", options: [9, 8, 7, 10], correct: 9, hint: "חשבי: 6x10=60, מה פחות מזה יתן 54?" },
-    { question: "75 + ___ = 120", options: [45, 35, 55, 25], correct: 45, hint: "הוסיפי מ-75 ל-100 (זה 25), ואז הוסיפי עוד 20." },
-    { question: "כמה זה חצי מ-150?", options: [75, 80, 50, 70], correct: 75, hint: "חצי מ-100 זה 50. חצי מ-50 זה 25. חברי אותם." },
-    { question: "900 - 345 = ?", options: [555, 655, 545, 665], correct: 555, hint: "חסרי מאות (600), עשרות (560) ואז יחידות (555)." },
-    { question: "8 x 7 = ___ + 6", options: [50, 56, 62, 48], correct: 50, hint: "קודם חשבי כמה זה 8 כפול 7. זה 56. איזה מספר ועוד 6 שווה 56?" },
-    { question: "500 - 1 = ?", options: [499, 490, 501, 399], correct: 499, hint: "זה המספר שבא בדיוק לפני חמש מאות!" },
-    { question: "לי ולמלך יש יחד 100 מטבעות. למלך יש 20 יותר ממני. כמה לי יש?", options: [40, 50, 60, 30], correct: 40, hint: "נסי לבדוק אפשרויות: אם לך יש 40 ולמלך 60 (שזה 20 יותר), כמה זה יחד?" },
-    { question: "20 / 4 = 10 - ___", options: [5, 4, 6, 2], correct: 5, hint: "צד שמאל שווה 5. עכשיו, עשר פחות מה שווה ל-5?" },
-    { question: "מהי הספרה במקום העשרות במספר שנוצר מ- 15 עשרות?", options: [5, 1, 0, 15], correct: 5, hint: "15 עשרות הן המספר 150. מהי ספרת העשרות ב-150?" }
-];
+            case 8: // Division
+                let d2 = rand(2, 10);
+                let d1 = rand(2, 10);
+                let prod = d1 * d2;
+                q = {
+                    question: `${prod} / ${d2} = ?`,
+                    correct: d1,
+                    options: generateOptions(d1, 4),
+                    hint: `איזה מספר נכפול ב-${d2} כדי לקבל ${prod}?`
+                };
+                break;
+
+            case 9: // Word Problems
+                let wType = rand(1, 2);
+                if (wType === 1) {
+                    let w1 = rand(20, 100);
+                    let w2 = rand(5, w1 - 5);
+                    q = {
+                        question: `לעומר היו ${w1} מדבקות. היא נתנה לחברה ${w2}. כמה נשארו לה?`,
+                        correct: w1 - w2,
+                        options: generateOptions(w1-w2, 10),
+                        hint: `תרגיל חיסור: ${w1} פחות ${w2}.`
+                    };
+                } else {
+                    let rows = rand(3, 9);
+                    let trees = rand(3, 9);
+                    q = {
+                        question: `בגינה יש ${rows} שורות של עצים, בכל שורה ${trees} עצים. כמה עצים יש בגינה?`,
+                        correct: rows * trees,
+                        options: generateOptions(rows*trees, 8),
+                        hint: `תרגיל כפל: ${rows} כפול ${trees}.`
+                    };
+                }
+                break;
+
+            case 10: // Boss Fight
+                let bType = rand(1, 3);
+                if (bType === 1) {
+                    let m1 = rand(2, 6);
+                    let m2 = rand(2, 6);
+                    let add = rand(10, 50);
+                    q = {
+                        question: `מלך החשבון שואל: (${m1} x ${m2}) + ${add} = ?`,
+                        correct: (m1*m2) + add,
+                        options: generateOptions((m1*m2)+add, 15),
+                        hint: `סדר פעולות חשבון: כפל קודם!`
+                    };
+                } else if (bType === 2) {
+                    let sub = rand(100, 900);
+                    let from = 1000;
+                    q = {
+                        question: `מלך החשבון תוקף: ${from} - ${sub} = ?`,
+                        correct: from - sub,
+                        options: generateOptions(from-sub, 50),
+                        hint: `סוד לפריטה מאלף: הפכי את האפסים ל-9 ואת האחרון ל-10.`
+                    };
+                } else {
+                    let target = rand(3, 9) * 10;
+                    let missing = rand(1, (target/10) - 1) * 10;
+                    let start = target - missing;
+                    q = {
+                        question: `איזה מספר חסר למלך? ${start} + ___ = ${target}`,
+                        correct: missing,
+                        options: generateOptions(missing, 20),
+                        hint: `כמה חסר לעשרת הבאה?`
+                    };
+                }
+                break;
+        }
+        
+        // Final sanity check for unique options
+        q.options = Array.from(new Set(q.options));
+        while(q.options.length < 4) {
+            let nextVal = q.correct + rand(1, 15);
+            if(!q.options.includes(nextVal)) {
+                q.options.push(nextVal);
+            }
+        }
+        
+        questions.push(q);
+    }
+    
+    return questions;
+}

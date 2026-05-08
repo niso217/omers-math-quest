@@ -9,7 +9,8 @@ let gameState = {
     lifelines: {
         fiftyFifty: 1,
         hintFairy: 1
-    }
+    },
+    activeSession: null
 };
 
 // Current Level Session
@@ -26,6 +27,10 @@ function init() {
     applyTheme(gameState.theme);
     updateGlobalUI();
     renderMap();
+    
+    if (gameState.activeSession) {
+        resumeLevel();
+    }
     
     // Event Listeners
     document.getElementById('back-to-map-btn').addEventListener('click', showMap);
@@ -91,10 +96,10 @@ function renderMap() {
         if (level < gameState.maxUnlockedLevel) {
             node.classList.add('completed');
             if (level !== 10) node.textContent = '✔️';
-            node.onclick = () => startLevel(level);
+            node.onclick = () => handleLevelClick(level);
         } else if (level === gameState.maxUnlockedLevel) {
             node.classList.add('unlocked');
-            node.onclick = () => startLevel(level);
+            node.onclick = () => handleLevelClick(level);
         }
 
         container.appendChild(node);
@@ -132,6 +137,56 @@ function showMap() {
 }
 
 // Level Logic
+function handleLevelClick(level) {
+    if (gameState.activeSession && gameState.activeSession.level === level) {
+        resumeLevel();
+    } else {
+        startLevel(level);
+    }
+}
+
+function resumeLevel() {
+    const session = gameState.activeSession;
+    currentLevel = session.level;
+    isBossLevel = session.isBossLevel;
+    currentQuestionIndex = session.currentIndex;
+    levelQuestions = session.questions;
+    bossHp = session.bossHp;
+    omerHp = session.omerHp;
+    gameState.lifelines = session.lifelines;
+    
+    updateLifelineUI();
+    
+    if (isBossLevel) {
+        updateBossHp();
+        switchView('boss-view');
+        loadBossQuestion();
+    } else {
+        document.getElementById('level-title').textContent = `שלב ${currentLevel}`;
+        document.getElementById('progress-bar').style.width = `${(currentQuestionIndex / 10) * 100}%`;
+        switchView('level-view');
+        loadQuestion();
+    }
+}
+
+function saveSession() {
+    gameState.activeSession = {
+        level: currentLevel,
+        isBossLevel: isBossLevel,
+        currentIndex: currentQuestionIndex,
+        questions: levelQuestions,
+        bossHp: bossHp,
+        omerHp: omerHp,
+        lifelines: { ...gameState.lifelines }
+    };
+    saveState();
+}
+
+function clearSession() {
+    gameState.activeSession = null;
+    saveState();
+}
+
 function startLevel(level) {
     currentLevel = level;
     isBossLevel = (level === 10);
@@ -141,19 +196,20 @@ function startLevel(level) {
     gameState.lifelines = { fiftyFifty: 1, hintFairy: 1 };
     updateLifelineUI();
 
-    // Fetch questions from GAME_QUESTIONS (from questions.js)
-    const startIndex = (level - 1) * 10;
-    levelQuestions = GAME_QUESTIONS.slice(startIndex, startIndex + 10);
+    // Fetch questions dynamically from questions.js
+    levelQuestions = getRandomQuestions(level, 10);
     
     if (isBossLevel) {
         bossHp = 100;
         omerHp = gameState.hearts * 33.3; // Convert hearts to HP percentage
         updateBossHp();
+        saveSession();
         switchView('boss-view');
         loadBossQuestion();
     } else {
         document.getElementById('level-title').textContent = `שלב ${level}`;
         document.getElementById('progress-bar').style.width = '0%';
+        saveSession();
         switchView('level-view');
         loadQuestion();
     }
@@ -204,7 +260,6 @@ function handleAnswer(selected, correct, btnElement) {
         // Earn coin
         gameState.coins += 10;
         createFloatingText('+10 🪙', btnElement);
-        saveState();
         
         if (isBossLevel) {
             bossHp -= 10;
@@ -216,7 +271,6 @@ function handleAnswer(selected, correct, btnElement) {
         btnElement.classList.add('wrong');
         if (!isBossLevel) {
             gameState.hearts--;
-            saveState();
         } else {
             omerHp -= 33.3;
             gameState.hearts--;
@@ -227,9 +281,12 @@ function handleAnswer(selected, correct, btnElement) {
         }
     }
 
+    saveSession();
+
     // Check Win/Loss conditions
     setTimeout(() => {
         if (gameState.hearts <= 0) {
+            clearSession();
             showModal('אוי לא!', 'נגמרו לך החיים. נסי שוב מחר!', 0, 'חזור למפה');
             gameState.hearts = 3; // Reset hearts for next time
             saveState();
@@ -238,8 +295,10 @@ function handleAnswer(selected, correct, btnElement) {
 
         currentQuestionIndex++;
         if (currentQuestionIndex >= 10 || bossHp <= 0) {
+            clearSession();
             levelComplete();
         } else {
+            saveSession();
             if (isBossLevel) loadBossQuestion();
             else loadQuestion();
         }
@@ -299,6 +358,7 @@ function useFiftyFifty() {
             wrongBtns.splice(idx, 1);
         }
     }
+    saveSession();
 }
 
 function useHint() {
@@ -310,6 +370,7 @@ function useHint() {
     const hintBox = document.getElementById('hint-box');
     hintBox.textContent = `💡 רמז מעומר: ${q.hint}`;
     hintBox.classList.remove('hidden');
+    saveSession();
 }
 
 // Visual Effects

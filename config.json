@@ -1,0 +1,10 @@
+{
+  "gameTitle": "המסע האפי של עומר",
+  "playerName": "עומר",
+  "difficulty": "medium",
+  "totalLevels": 9,
+  "shop": {
+    "themeCost": 500,
+    "heartCost": 100
+  }
+}

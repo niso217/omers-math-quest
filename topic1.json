@@ -1,122 +1,936 @@
 [
   {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 9x10 + 8</bdi>?",
-    "correct": 798,
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 50 + 8 = ?</bdi>",
+    "correct": 458,
     "options": [
-      897,
-      789,
-      978,
-      798
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">200 + 70 + 9 = ?</bdi>",
-    "correct": 279,
-    "options": [
-      259,
-      276,
-      279,
-      268
+      468,
+      466,
+      458,
+      464
     ],
     "hint": "חברי את המאות, העשרות והיחידות ביחד."
   },
   {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 5x10 + 4</bdi>?",
-    "correct": 454,
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 6x10 + 8</bdi>?",
+    "correct": 968,
     "options": [
-      457,
-      445,
-      544,
-      454
+      986,
+      698,
+      968,
+      869
     ],
     "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
   },
   {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 4x10 + 6</bdi>?",
-    "correct": 546,
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 10 + 7 = ?</bdi>",
+    "correct": 317,
     "options": [
-      546,
-      564,
+      317,
+      297,
+      308,
+      328
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 5x10 + 9</bdi>?",
+    "correct": 459,
+    "options": [
+      495,
+      459,
+      549,
+      954
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 8x10 + 7</bdi>?",
+    "correct": 287,
+    "options": [
+      278,
+      827,
+      287,
+      782
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 4x10 + 9</bdi>?",
+    "correct": 349,
+    "options": [
+      943,
+      394,
+      349,
+      439
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 2x10 + 6</bdi>?",
+    "correct": 726,
+    "options": [
+      627,
+      726,
+      762,
+      276
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 40 + 7 = ?</bdi>",
+    "correct": 447,
+    "options": [
+      440,
+      459,
+      458,
+      447
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 2x10 + 5</bdi>?",
+    "correct": 525,
+    "options": [
+      525,
+      255,
+      552,
+      535
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 7x10 + 7</bdi>?",
+    "correct": 377,
+    "options": [
+      737,
+      377,
+      773,
+      388
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">800 + 60 + 2 = ?</bdi>",
+    "correct": 862,
+    "options": [
+      852,
+      862,
+      858,
+      853
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 8x10 + 3</bdi>?",
+    "correct": 283,
+    "options": [
+      283,
+      238,
+      382,
+      823
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 30 + 1 = ?</bdi>",
+    "correct": 131,
+    "options": [
+      131,
+      125,
+      123,
+      137
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 5x10 + 4</bdi>?",
+    "correct": 954,
+    "options": [
+      945,
+      954,
+      594,
+      459
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">200 + 70 + 1 = ?</bdi>",
+    "correct": 271,
+    "options": [
+      265,
+      252,
+      284,
+      271
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 10 + 2 = ?</bdi>",
+    "correct": 312,
+    "options": [
+      317,
+      313,
+      312,
+      319
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">600 + 80 + 5 = ?</bdi>",
+    "correct": 685,
+    "options": [
+      669,
+      685,
+      687,
+      672
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 5x10 + 8</bdi>?",
+    "correct": 358,
+    "options": [
+      538,
+      385,
+      853,
+      358
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">200 + 40 + 8 = ?</bdi>",
+    "correct": 248,
+    "options": [
+      241,
+      248,
+      261,
+      232
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 1x10 + 9</bdi>?",
+    "correct": 619,
+    "options": [
+      691,
+      619,
+      169,
+      916
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 20 + 3 = ?</bdi>",
+    "correct": 723,
+    "options": [
+      741,
+      734,
+      738,
+      723
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 7x10 + 7</bdi>?",
+    "correct": 277,
+    "options": [
+      289,
+      772,
+      727,
+      277
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">800 + 70 + 2 = ?</bdi>",
+    "correct": 872,
+    "options": [
+      872,
+      892,
+      855,
+      880
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 80 + 8 = ?</bdi>",
+    "correct": 188,
+    "options": [
+      173,
+      188,
+      208,
+      178
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 8x10 + 8</bdi>?",
+    "correct": 288,
+    "options": [
+      828,
+      288,
+      882,
+      289
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 1x10 + 3</bdi>?",
+    "correct": 913,
+    "options": [
+      193,
+      319,
+      913,
+      931
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 5x10 + 4</bdi>?",
+    "correct": 654,
+    "options": [
+      645,
       456,
-      645
+      654,
+      564
     ],
     "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
   },
   {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 3x10 + 4</bdi>?",
-    "correct": 634,
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">200 + 40 + 9 = ?</bdi>",
+    "correct": 249,
     "options": [
-      436,
-      643,
+      258,
+      229,
+      259,
+      249
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 3x10 + 4</bdi>?",
+    "correct": 134,
+    "options": [
+      143,
+      134,
+      431,
+      314
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 5x10 + 7</bdi>?",
+    "correct": 357,
+    "options": [
+      753,
+      357,
+      537,
+      375
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 90 + 8 = ?</bdi>",
+    "correct": 398,
+    "options": [
+      411,
+      404,
+      407,
+      398
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 60 + 8 = ?</bdi>",
+    "correct": 568,
+    "options": [
+      585,
+      559,
+      568,
+      557
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 5x10 + 2</bdi>?",
+    "correct": 752,
+    "options": [
+      257,
+      752,
+      725,
+      572
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">800 + 20 + 7 = ?</bdi>",
+    "correct": 827,
+    "options": [
+      827,
+      836,
+      842,
+      821
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 2x10 + 3</bdi>?",
+    "correct": 423,
+    "options": [
+      243,
+      432,
+      423,
+      324
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 3x10 + 4</bdi>?",
+    "correct": 934,
+    "options": [
+      934,
+      394,
+      943,
+      439
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 60 + 4 = ?</bdi>",
+    "correct": 364,
+    "options": [
+      382,
       364,
+      361,
+      376
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 8x10 + 5</bdi>?",
+    "correct": 385,
+    "options": [
+      358,
+      385,
+      583,
+      835
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 50 + 7 = ?</bdi>",
+    "correct": 457,
+    "options": [
+      475,
+      457,
+      437,
+      470
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 90 + 4 = ?</bdi>",
+    "correct": 494,
+    "options": [
+      494,
+      502,
+      495,
+      474
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 40 + 4 = ?</bdi>",
+    "correct": 444,
+    "options": [
+      438,
+      427,
+      439,
+      444
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 5x10 + 3</bdi>?",
+    "correct": 753,
+    "options": [
+      735,
+      357,
+      753,
+      573
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 20 + 6 = ?</bdi>",
+    "correct": 526,
+    "options": [
+      524,
+      531,
+      526,
+      522
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">600 + 90 + 5 = ?</bdi>",
+    "correct": 695,
+    "options": [
+      695,
+      676,
+      678,
+      705
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 2x10 + 3</bdi>?",
+    "correct": 423,
+    "options": [
+      243,
+      432,
+      324,
+      423
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 90 + 8 = ?</bdi>",
+    "correct": 398,
+    "options": [
+      407,
+      384,
+      379,
+      398
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 90 + 7 = ?</bdi>",
+    "correct": 597,
+    "options": [
+      592,
+      614,
+      616,
+      597
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 1x10 + 9</bdi>?",
+    "correct": 119,
+    "options": [
+      119,
+      191,
+      911,
+      131
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 6x10 + 4</bdi>?",
+    "correct": 364,
+    "options": [
+      346,
+      364,
+      463,
       634
     ],
     "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
   },
   {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 60 + 4 = ?</bdi>",
-    "correct": 164,
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 8x10 + 6</bdi>?",
+    "correct": 486,
     "options": [
-      164,
-      156,
+      468,
+      684,
+      846,
+      486
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 8x10 + 5</bdi>?",
+    "correct": 385,
+    "options": [
+      835,
+      583,
+      385,
+      358
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 9x10 + 1</bdi>?",
+    "correct": 791,
+    "options": [
+      197,
+      719,
+      971,
+      791
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 10 + 7 = ?</bdi>",
+    "correct": 717,
+    "options": [
+      705,
+      717,
+      722,
+      731
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 50 + 3 = ?</bdi>",
+    "correct": 153,
+    "options": [
+      153,
+      155,
+      160,
+      163
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 1x10 + 1</bdi>?",
+    "correct": 611,
+    "options": [
+      613,
+      611,
+      161,
+      116
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 2x10 + 6</bdi>?",
+    "correct": 926,
+    "options": [
+      629,
+      296,
+      962,
+      926
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 70 + 4 = ?</bdi>",
+    "correct": 774,
+    "options": [
+      774,
+      793,
+      770,
+      791
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 50 + 1 = ?</bdi>",
+    "correct": 151,
+    "options": [
+      157,
+      142,
+      143,
+      151
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">600 + 50 + 2 = ?</bdi>",
+    "correct": 652,
+    "options": [
+      652,
+      642,
+      639,
+      632
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 30 + 5 = ?</bdi>",
+    "correct": 535,
+    "options": [
+      554,
+      536,
+      530,
+      535
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 9x10 + 5</bdi>?",
+    "correct": 295,
+    "options": [
+      259,
+      295,
+      592,
+      925
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 5x10 + 6</bdi>?",
+    "correct": 756,
+    "options": [
+      765,
+      576,
+      657,
+      756
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 40 + 6 = ?</bdi>",
+    "correct": 146,
+    "options": [
+      163,
+      128,
+      146,
+      133
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 4x10 + 1</bdi>?",
+    "correct": 841,
+    "options": [
+      148,
+      841,
+      814,
+      481
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 2x10 + 2</bdi>?",
+    "correct": 622,
+    "options": [
+      631,
+      262,
+      622,
+      226
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 1x10 + 4</bdi>?",
+    "correct": 514,
+    "options": [
       154,
-      176
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 10 + 1 = ?</bdi>",
-    "correct": 311,
-    "options": [
-      311,
-      319,
-      308,
-      309
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 90 + 9 = ?</bdi>",
-    "correct": 199,
-    "options": [
-      210,
-      199,
-      194,
-      190
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 3x10 + 8</bdi>?",
-    "correct": 138,
-    "options": [
-      831,
-      183,
-      138,
-      318
+      541,
+      415,
+      514
     ],
     "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
   },
   {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 4x10 + 3</bdi>?",
-    "correct": 343,
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 7x10 + 7</bdi>?",
+    "correct": 877,
     "options": [
-      343,
-      334,
-      348,
-      433
+      877,
+      887,
+      778,
+      787
     ],
     "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
   },
   {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 8x10 + 9</bdi>?",
-    "correct": 489,
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 6x10 + 4</bdi>?",
+    "correct": 464,
     "options": [
-      498,
-      489,
-      984,
-      849
+      446,
+      471,
+      644,
+      464
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">600 + 60 + 2 = ?</bdi>",
+    "correct": 662,
+    "options": [
+      654,
+      659,
+      662,
+      646
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 40 + 2 = ?</bdi>",
+    "correct": 142,
+    "options": [
+      142,
+      128,
+      151,
+      136
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">800 + 80 + 4 = ?</bdi>",
+    "correct": 884,
+    "options": [
+      900,
+      884,
+      880,
+      889
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 9x10 + 3</bdi>?",
+    "correct": 293,
+    "options": [
+      392,
+      293,
+      923,
+      239
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 1x10 + 4</bdi>?",
+    "correct": 214,
+    "options": [
+      214,
+      412,
+      241,
+      124
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 40 + 4 = ?</bdi>",
+    "correct": 444,
+    "options": [
+      444,
+      443,
+      427,
+      431
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 60 + 7 = ?</bdi>",
+    "correct": 167,
+    "options": [
+      167,
+      155,
+      177,
+      175
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 3x10 + 3</bdi>?",
+    "correct": 133,
+    "options": [
+      313,
+      331,
+      134,
+      133
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 50 + 9 = ?</bdi>",
+    "correct": 359,
+    "options": [
+      359,
+      356,
+      352,
+      375
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">600 + 60 + 9 = ?</bdi>",
+    "correct": 669,
+    "options": [
+      667,
+      669,
+      650,
+      659
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 9x10 + 2</bdi>?",
+    "correct": 992,
+    "options": [
+      995,
+      992,
+      299,
+      929
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 30 + 5 = ?</bdi>",
+    "correct": 435,
+    "options": [
+      448,
+      453,
+      435,
+      416
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 2x10 + 8</bdi>?",
+    "correct": 928,
+    "options": [
+      829,
+      928,
+      298,
+      982
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 90 + 8 = ?</bdi>",
+    "correct": 598,
+    "options": [
+      598,
+      592,
+      585,
+      588
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">900 + 70 + 1 = ?</bdi>",
+    "correct": 971,
+    "options": [
+      971,
+      978,
+      981,
+      951
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 80 + 2 = ?</bdi>",
+    "correct": 182,
+    "options": [
+      167,
+      163,
+      170,
+      182
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 9x10 + 1</bdi>?",
+    "correct": 991,
+    "options": [
+      998,
+      991,
+      919,
+      199
     ],
     "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
   },
@@ -127,976 +941,162 @@
       771,
       774,
       778,
-      779
+      776
     ],
     "hint": "חברי את המאות, העשרות והיחידות ביחד."
   },
   {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">200 + 90 + 3 = ?</bdi>",
-    "correct": 293,
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">200 + 90 + 1 = ?</bdi>",
+    "correct": 291,
     "options": [
-      300,
-      309,
-      302,
-      293
+      291,
+      281,
+      307,
+      304
     ],
     "hint": "חברי את המאות, העשרות והיחידות ביחד."
   },
   {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">900 + 10 + 9 = ?</bdi>",
-    "correct": 919,
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 4x10 + 3</bdi>?",
+    "correct": 743,
     "options": [
-      919,
-      938,
-      910,
-      908
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 70 + 3 = ?</bdi>",
-    "correct": 773,
-    "options": [
-      755,
-      780,
-      773,
-      782
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 2x10 + 6</bdi>?",
-    "correct": 226,
-    "options": [
-      262,
-      226,
-      232,
-      622
+      743,
+      734,
+      347,
+      473
     ],
     "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
   },
   {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 3x10 + 4</bdi>?",
-    "correct": 334,
-    "options": [
-      343,
-      345,
-      433,
-      334
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 60 + 4 = ?</bdi>",
-    "correct": 364,
-    "options": [
-      368,
-      357,
-      364,
-      376
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">600 + 60 + 3 = ?</bdi>",
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 6x10 + 3</bdi>?",
     "correct": 663,
     "options": [
-      646,
       663,
-      674,
-      669
+      666,
+      636,
+      366
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">800 + 20 + 9 = ?</bdi>",
+    "correct": 829,
+    "options": [
+      837,
+      829,
+      835,
+      849
     ],
     "hint": "חברי את המאות, העשרות והיחידות ביחד."
   },
   {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 7x10 + 1</bdi>?",
-    "correct": 471,
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 60 + 3 = ?</bdi>",
+    "correct": 763,
     "options": [
-      174,
+      746,
+      779,
+      763,
+      768
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 6x10 + 8</bdi>?",
+    "correct": 268,
+    "options": [
+      268,
+      286,
+      628,
+      862
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">600 + 40 + 1 = ?</bdi>",
+    "correct": 641,
+    "options": [
+      628,
+      650,
+      641,
+      632
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 1x10 + 6</bdi>?",
+    "correct": 916,
+    "options": [
+      916,
+      196,
+      961,
+      619
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 20 + 7 = ?</bdi>",
+    "correct": 427,
+    "options": [
+      409,
+      416,
+      427,
+      439
+    ],
+    "hint": "חברי את המאות, העשרות והיחידות ביחד."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 2x10 + 4</bdi>?",
+    "correct": 424,
+    "options": [
+      244,
+      442,
+      424,
+      436
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 8x10 + 7</bdi>?",
+    "correct": 387,
+    "options": [
+      387,
+      378,
+      783,
+      837
+    ],
+    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
+  },
+  {
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 50 + 2 = ?</bdi>",
+    "correct": 752,
+    "options": [
       741,
-      417,
-      471
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 20 + 9 = ?</bdi>",
-    "correct": 329,
-    "options": [
-      329,
-      322,
-      345,
-      319
+      770,
+      739,
+      752
     ],
     "hint": "חברי את המאות, העשרות והיחידות ביחד."
   },
   {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 20 + 4 = ?</bdi>",
-    "correct": 324,
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 30 + 3 = ?</bdi>",
+    "correct": 333,
     "options": [
-      324,
-      326,
-      331,
-      330
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">200 + 90 + 6 = ?</bdi>",
-    "correct": 296,
-    "options": [
-      312,
-      280,
-      296,
-      288
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">800 + 10 + 1 = ?</bdi>",
-    "correct": 811,
-    "options": [
-      811,
-      823,
-      800,
-      826
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 9x10 + 8</bdi>?",
-    "correct": 798,
-    "options": [
-      798,
-      978,
-      897,
-      789
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 7x10 + 5</bdi>?",
-    "correct": 375,
-    "options": [
-      357,
-      573,
-      735,
-      375
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 60 + 3 = ?</bdi>",
-    "correct": 563,
-    "options": [
-      576,
-      570,
-      578,
-      563
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 8x10 + 1</bdi>?",
-    "correct": 381,
-    "options": [
-      831,
-      183,
-      381,
+      333,
+      343,
+      347,
       318
     ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 50 + 9 = ?</bdi>",
-    "correct": 359,
-    "options": [
-      356,
-      359,
-      371,
-      355
-    ],
     "hint": "חברי את המאות, העשרות והיחידות ביחד."
   },
   {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 1x10 + 7</bdi>?",
-    "correct": 217,
+    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 90 + 1 = ?</bdi>",
+    "correct": 491,
     "options": [
-      271,
-      217,
-      712,
-      127
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 4x10 + 9</bdi>?",
-    "correct": 449,
-    "options": [
-      944,
-      449,
-      460,
-      494
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 20 + 7 = ?</bdi>",
-    "correct": 727,
-    "options": [
-      716,
-      727,
-      723,
-      725
+      475,
+      473,
+      491,
+      501
     ],
     "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 2x10 + 9</bdi>?",
-    "correct": 729,
-    "options": [
-      792,
-      927,
-      729,
-      279
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 3x10 + 6</bdi>?",
-    "correct": 436,
-    "options": [
-      346,
-      436,
-      634,
-      463
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 20 + 7 = ?</bdi>",
-    "correct": 727,
-    "options": [
-      712,
-      727,
-      733,
-      744
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">900 + 90 + 7 = ?</bdi>",
-    "correct": 997,
-    "options": [
-      1011,
-      990,
-      977,
-      997
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 50 + 1 = ?</bdi>",
-    "correct": 351,
-    "options": [
-      346,
-      352,
-      351,
-      369
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 5x10 + 3</bdi>?",
-    "correct": 953,
-    "options": [
-      593,
-      935,
-      953,
-      359
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 7x10 + 2</bdi>?",
-    "correct": 672,
-    "options": [
-      762,
-      672,
-      627,
-      276
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 10 + 1 = ?</bdi>",
-    "correct": 711,
-    "options": [
-      711,
-      714,
-      722,
-      712
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 90 + 8 = ?</bdi>",
-    "correct": 198,
-    "options": [
-      190,
-      206,
-      198,
-      215
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 9x10 + 2</bdi>?",
-    "correct": 692,
-    "options": [
-      629,
-      296,
-      962,
-      692
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 4x10 + 2</bdi>?",
-    "correct": 742,
-    "options": [
-      724,
-      742,
-      472,
-      247
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 9x10 + 6</bdi>?",
-    "correct": 496,
-    "options": [
-      496,
-      946,
-      694,
-      469
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 6x10 + 1</bdi>?",
-    "correct": 161,
-    "options": [
-      611,
-      116,
-      161,
-      174
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 1x10 + 4</bdi>?",
-    "correct": 814,
-    "options": [
-      184,
-      418,
-      814,
-      841
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">600 + 10 + 7 = ?</bdi>",
-    "correct": 617,
-    "options": [
-      621,
-      617,
-      607,
-      598
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 4x10 + 3</bdi>?",
-    "correct": 243,
-    "options": [
-      423,
-      243,
-      342,
-      234
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 2x10 + 1</bdi>?",
-    "correct": 821,
-    "options": [
-      281,
-      821,
-      812,
-      128
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">900 + 70 + 2 = ?</bdi>",
-    "correct": 972,
-    "options": [
-      960,
-      972,
-      980,
-      973
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">200 + 50 + 6 = ?</bdi>",
-    "correct": 256,
-    "options": [
-      241,
-      245,
-      256,
-      276
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 5x10 + 4</bdi>?",
-    "correct": 954,
-    "options": [
-      954,
-      945,
-      594,
-      459
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 5x10 + 4</bdi>?",
-    "correct": 454,
-    "options": [
-      454,
-      466,
-      544,
-      445
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 8x10 + 1</bdi>?",
-    "correct": 781,
-    "options": [
-      871,
-      187,
-      781,
-      718
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 6x10 + 8</bdi>?",
-    "correct": 968,
-    "options": [
-      869,
-      986,
-      968,
-      698
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 3x10 + 7</bdi>?",
-    "correct": 137,
-    "options": [
-      137,
-      731,
-      173,
-      317
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 3x10 + 1</bdi>?",
-    "correct": 731,
-    "options": [
-      137,
-      713,
-      371,
-      731
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">700 + 40 + 6 = ?</bdi>",
-    "correct": 746,
-    "options": [
-      746,
-      739,
-      748,
-      765
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 6x10 + 7</bdi>?",
-    "correct": 267,
-    "options": [
-      762,
-      276,
-      267,
-      627
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">900 + 90 + 8 = ?</bdi>",
-    "correct": 998,
-    "options": [
-      992,
-      1009,
-      998,
-      1003
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 5x10 + 2</bdi>?",
-    "correct": 252,
-    "options": [
-      522,
-      252,
-      264,
-      225
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 5x10 + 9</bdi>?",
-    "correct": 259,
-    "options": [
-      295,
-      529,
-      952,
-      259
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 1x10 + 6</bdi>?",
-    "correct": 216,
-    "options": [
-      126,
-      261,
-      612,
-      216
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">900 + 10 + 1 = ?</bdi>",
-    "correct": 911,
-    "options": [
-      925,
-      914,
-      911,
-      926
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 8x10 + 8</bdi>?",
-    "correct": 188,
-    "options": [
-      881,
-      818,
-      188,
-      189
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 70 + 3 = ?</bdi>",
-    "correct": 573,
-    "options": [
-      565,
-      576,
-      573,
-      561
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 2x10 + 3</bdi>?",
-    "correct": 723,
-    "options": [
-      327,
-      723,
-      732,
-      273
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 9x10 + 7</bdi>?",
-    "correct": 597,
-    "options": [
-      957,
-      795,
-      579,
-      597
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 1x10 + 3</bdi>?",
-    "correct": 313,
-    "options": [
-      331,
-      325,
-      313,
-      133
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 1x10 + 6</bdi>?",
-    "correct": 616,
-    "options": [
-      616,
-      622,
-      166,
-      661
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 2x10 + 7</bdi>?",
-    "correct": 627,
-    "options": [
-      627,
-      726,
-      267,
-      672
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">800 + 40 + 7 = ?</bdi>",
-    "correct": 847,
-    "options": [
-      849,
-      837,
-      852,
-      847
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 5x10 + 9</bdi>?",
-    "correct": 459,
-    "options": [
-      459,
-      549,
-      495,
-      954
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 2x10 + 4</bdi>?",
-    "correct": 824,
-    "options": [
-      284,
-      428,
-      842,
-      824
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 2x10 + 1</bdi>?",
-    "correct": 721,
-    "options": [
-      721,
-      127,
-      271,
-      712
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 60 + 2 = ?</bdi>",
-    "correct": 562,
-    "options": [
-      561,
-      546,
-      562,
-      554
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 2x10 + 1</bdi>?",
-    "correct": 221,
-    "options": [
-      221,
-      122,
-      212,
-      226
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 1x10 + 2</bdi>?",
-    "correct": 812,
-    "options": [
-      218,
-      821,
-      812,
-      182
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 6x10 + 3</bdi>?",
-    "correct": 263,
-    "options": [
-      623,
-      236,
-      362,
-      263
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 2x10 + 5</bdi>?",
-    "correct": 525,
-    "options": [
-      255,
-      552,
-      525,
-      534
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 30 + 4 = ?</bdi>",
-    "correct": 334,
-    "options": [
-      325,
-      334,
-      353,
-      329
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 2x10 + 6</bdi>?",
-    "correct": 126,
-    "options": [
-      126,
-      162,
-      621,
-      216
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 90 + 7 = ?</bdi>",
-    "correct": 497,
-    "options": [
-      497,
-      479,
-      507,
-      496
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">200 + 10 + 2 = ?</bdi>",
-    "correct": 212,
-    "options": [
-      206,
-      199,
-      223,
-      212
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">900 + 30 + 4 = ?</bdi>",
-    "correct": 934,
-    "options": [
-      953,
-      952,
-      934,
-      943
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 4x10 + 8</bdi>?",
-    "correct": 748,
-    "options": [
-      847,
-      748,
-      478,
-      784
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">800 + 10 + 6 = ?</bdi>",
-    "correct": 816,
-    "options": [
-      832,
-      811,
-      816,
-      823
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 8x10 + 5</bdi>?",
-    "correct": 385,
-    "options": [
-      835,
-      385,
-      583,
-      358
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">300 + 10 + 6 = ?</bdi>",
-    "correct": 316,
-    "options": [
-      316,
-      323,
-      296,
-      317
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 8x10 + 3</bdi>?",
-    "correct": 483,
-    "options": [
-      843,
-      384,
-      438,
-      483
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">400 + 20 + 8 = ?</bdi>",
-    "correct": 428,
-    "options": [
-      419,
-      446,
-      441,
-      428
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 1x10 + 9</bdi>?",
-    "correct": 119,
-    "options": [
-      911,
-      123,
-      191,
-      119
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 60 + 2 = ?</bdi>",
-    "correct": 562,
-    "options": [
-      561,
-      565,
-      569,
-      562
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">600 + 60 + 7 = ?</bdi>",
-    "correct": 667,
-    "options": [
-      666,
-      655,
-      680,
-      667
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 1x10 + 4</bdi>?",
-    "correct": 714,
-    "options": [
-      174,
-      714,
-      417,
-      741
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">100 + 40 + 8 = ?</bdi>",
-    "correct": 148,
-    "options": [
-      151,
-      148,
-      150,
-      154
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 4x10 + 7</bdi>?",
-    "correct": 647,
-    "options": [
-      746,
-      467,
-      674,
-      647
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 30 + 6 = ?</bdi>",
-    "correct": 536,
-    "options": [
-      546,
-      539,
-      522,
-      536
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "השלימי את הרכב המספר בחיבור: <bdi dir=\"ltr\" style=\"display:inline-block;\">500 + 80 + 8 = ?</bdi>",
-    "correct": 588,
-    "options": [
-      582,
-      581,
-      585,
-      588
-    ],
-    "hint": "חברי את המאות, העשרות והיחידות ביחד."
-  },
-  {
-    "question": "איזה מספר מתקבל מהתרגיל: <bdi dir=\"ltr\" style=\"display:inline-block;\">1x100 + 5x10 + 1</bdi>?",
-    "correct": 151,
-    "options": [
-      163,
-      151,
-      115,
-      511
-    ],
-    "hint": "זהו הרכב המספר בכפל. חשבי מאות, עשרות ויחידות."
   }
 ]

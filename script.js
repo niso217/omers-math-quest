@@ -187,7 +187,7 @@ function clearSession() {
     saveState();
 }
 
-function startLevel(level) {
+async function startLevel(level) {
     currentLevel = level;
     isBossLevel = (level === 10);
     currentQuestionIndex = 0;
@@ -196,8 +196,16 @@ function startLevel(level) {
     gameState.lifelines = { fiftyFifty: 1, hintFairy: 1 };
     updateLifelineUI();
 
-    // Fetch questions dynamically from questions.js
-    levelQuestions = getRandomQuestions(level, 10);
+    try {
+        // Fetch questions dynamically from the JSON topic files
+        const response = await fetch(`topic${level}.json`);
+        const allQuestions = await response.json();
+        // Shuffle the 100 questions and pick exactly 10
+        levelQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 10);
+    } catch (e) {
+        alert('שגיאה בטעינת השאלות! וודאי שהמשחק רץ על שרת אינטרנט כמו GitHub Pages.');
+        return;
+    }
     
     if (isBossLevel) {
         bossHp = 100;

@@ -1,1102 +1,1102 @@
 [
   {
-    "question": "27 : 9 = ?",
-    "correct": 3,
-    "options": [
-      5,
-      7,
-      4,
-      3
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 27?"
-  },
-  {
-    "question": "36 : 6 = ?",
-    "correct": 6,
-    "options": [
-      2,
-      8,
-      6,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 36?"
-  },
-  {
-    "question": "90 : 9 = ?",
-    "correct": 10,
-    "options": [
-      7,
-      14,
-      12,
-      10
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 90?"
-  },
-  {
-    "question": "40 : 4 = ?",
-    "correct": 10,
-    "options": [
-      13,
-      10,
-      14,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 40?"
-  },
-  {
-    "question": "24 : 6 = ?",
-    "correct": 4,
-    "options": [
-      0,
-      8,
-      4,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 24?"
-  },
-  {
-    "question": "45 : 5 = ?",
-    "correct": 9,
-    "options": [
-      7,
-      9,
-      8,
-      5
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 45?"
-  },
-  {
-    "question": "27 : 9 = ?",
-    "correct": 3,
-    "options": [
-      3,
-      2,
-      0,
-      5
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 27?"
-  },
-  {
-    "question": "70 : 10 = ?",
-    "correct": 7,
-    "options": [
-      9,
-      11,
-      8,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 70?"
-  },
-  {
-    "question": "25 : 5 = ?",
-    "correct": 5,
-    "options": [
-      4,
-      5,
-      1,
-      2
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 25?"
-  },
-  {
-    "question": "36 : 9 = ?",
-    "correct": 4,
-    "options": [
-      0,
-      7,
-      3,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 36?"
-  },
-  {
-    "question": "28 : 7 = ?",
-    "correct": 4,
-    "options": [
-      2,
-      6,
-      4,
-      8
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 7 נותן 28?"
-  },
-  {
-    "question": "100 : 10 = ?",
-    "correct": 10,
-    "options": [
-      13,
-      14,
-      6,
-      10
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 100?"
-  },
-  {
-    "question": "24 : 3 = ?",
-    "correct": 8,
-    "options": [
-      12,
-      9,
-      6,
-      8
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 24?"
-  },
-  {
-    "question": "60 : 6 = ?",
-    "correct": 10,
-    "options": [
-      10,
-      6,
-      12,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 60?"
-  },
-  {
-    "question": "30 : 10 = ?",
-    "correct": 3,
-    "options": [
-      2,
-      6,
-      4,
-      3
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 30?"
-  },
-  {
-    "question": "50 : 5 = ?",
-    "correct": 10,
-    "options": [
-      7,
-      8,
-      13,
-      10
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 50?"
-  },
-  {
-    "question": "36 : 4 = ?",
-    "correct": 9,
-    "options": [
-      13,
-      9,
-      6,
-      11
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 36?"
-  },
-  {
-    "question": "72 : 9 = ?",
-    "correct": 8,
-    "options": [
-      12,
-      11,
-      8,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 72?"
-  },
-  {
-    "question": "24 : 8 = ?",
-    "correct": 3,
-    "options": [
-      5,
-      3,
-      7,
-      2
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 24?"
-  },
-  {
-    "question": "15 : 3 = ?",
-    "correct": 5,
-    "options": [
-      4,
-      8,
-      7,
-      5
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 15?"
-  },
-  {
-    "question": "70 : 10 = ?",
-    "correct": 7,
-    "options": [
-      7,
-      3,
-      9,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 70?"
-  },
-  {
-    "question": "40 : 8 = ?",
-    "correct": 5,
-    "options": [
-      8,
-      6,
-      9,
-      5
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 40?"
-  },
-  {
-    "question": "18 : 3 = ?",
-    "correct": 6,
-    "options": [
-      4,
-      2,
-      6,
-      9
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 18?"
-  },
-  {
-    "question": "81 : 9 = ?",
-    "correct": 9,
-    "options": [
-      8,
-      12,
-      10,
-      9
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 81?"
-  },
-  {
-    "question": "24 : 8 = ?",
-    "correct": 3,
-    "options": [
-      1,
-      3,
-      7,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 24?"
-  },
-  {
-    "question": "18 : 3 = ?",
-    "correct": 6,
-    "options": [
-      6,
-      5,
-      9,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 18?"
-  },
-  {
-    "question": "54 : 6 = ?",
-    "correct": 9,
-    "options": [
-      10,
-      8,
-      12,
-      9
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 54?"
-  },
-  {
-    "question": "48 : 8 = ?",
-    "correct": 6,
-    "options": [
-      2,
-      8,
-      7,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 48?"
-  },
-  {
-    "question": "63 : 9 = ?",
-    "correct": 7,
-    "options": [
-      5,
-      10,
-      7,
-      9
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 63?"
-  },
-  {
-    "question": "40 : 8 = ?",
-    "correct": 5,
-    "options": [
-      1,
-      6,
-      5,
-      9
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 40?"
-  },
-  {
-    "question": "25 : 5 = ?",
-    "correct": 5,
-    "options": [
-      3,
-      5,
-      2,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 25?"
-  },
-  {
-    "question": "36 : 6 = ?",
-    "correct": 6,
-    "options": [
-      10,
-      8,
-      6,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 36?"
-  },
-  {
-    "question": "40 : 4 = ?",
-    "correct": 10,
-    "options": [
-      14,
-      13,
-      8,
-      10
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 40?"
-  },
-  {
-    "question": "60 : 10 = ?",
-    "correct": 6,
-    "options": [
-      2,
-      3,
-      9,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 60?"
-  },
-  {
-    "question": "40 : 10 = ?",
-    "correct": 4,
-    "options": [
-      7,
-      4,
-      2,
-      5
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 40?"
-  },
-  {
-    "question": "27 : 3 = ?",
-    "correct": 9,
-    "options": [
-      5,
-      12,
-      9,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 27?"
-  },
-  {
-    "question": "24 : 8 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">24 : ___ = 8</bdi>",
     "correct": 3,
     "options": [
       0,
       2,
-      5,
-      3
+      3,
+      6
     ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 24?"
+    "hint": "השתמשי בחילוק ההפוך: 24 לחלק ל-8."
   },
   {
-    "question": "50 : 5 = ?",
-    "correct": 10,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x ___ = 24</bdi>",
+    "correct": 8,
     "options": [
-      9,
+      5,
+      8,
       11,
-      10,
-      12
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 50?"
-  },
-  {
-    "question": "72 : 9 = ?",
-    "correct": 8,
-    "options": [
-      5,
-      10,
-      8,
-      11
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 72?"
-  },
-  {
-    "question": "36 : 6 = ?",
-    "correct": 6,
-    "options": [
-      10,
-      4,
-      6,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 36?"
-  },
-  {
-    "question": "12 : 3 = ?",
-    "correct": 4,
-    "options": [
-      4,
-      2,
-      6,
-      0
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 12?"
-  },
-  {
-    "question": "64 : 8 = ?",
-    "correct": 8,
-    "options": [
-      5,
-      8,
-      9,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 64?"
-  },
-  {
-    "question": "40 : 8 = ?",
-    "correct": 5,
-    "options": [
-      9,
-      3,
-      5,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 40?"
-  },
-  {
-    "question": "35 : 5 = ?",
-    "correct": 7,
-    "options": [
-      3,
-      6,
-      7,
-      10
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 35?"
-  },
-  {
-    "question": "56 : 7 = ?",
-    "correct": 8,
-    "options": [
-      6,
-      4,
-      12,
-      8
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 7 נותן 56?"
-  },
-  {
-    "question": "30 : 5 = ?",
-    "correct": 6,
-    "options": [
-      9,
-      3,
-      6,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 30?"
-  },
-  {
-    "question": "30 : 6 = ?",
-    "correct": 5,
-    "options": [
-      5,
-      2,
-      9,
-      3
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 30?"
-  },
-  {
-    "question": "24 : 6 = ?",
-    "correct": 4,
-    "options": [
-      2,
-      3,
-      7,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 24?"
-  },
-  {
-    "question": "27 : 9 = ?",
-    "correct": 3,
-    "options": [
-      3,
-      2,
-      7,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 27?"
-  },
-  {
-    "question": "90 : 10 = ?",
-    "correct": 9,
-    "options": [
-      9,
-      12,
-      7,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 90?"
-  },
-  {
-    "question": "30 : 5 = ?",
-    "correct": 6,
-    "options": [
-      10,
-      7,
-      6,
-      2
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 30?"
-  },
-  {
-    "question": "24 : 4 = ?",
-    "correct": 6,
-    "options": [
-      6,
-      2,
-      10,
-      8
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 24?"
-  },
-  {
-    "question": "12 : 3 = ?",
-    "correct": 4,
-    "options": [
-      7,
-      2,
-      4,
-      0
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 12?"
-  },
-  {
-    "question": "48 : 8 = ?",
-    "correct": 6,
-    "options": [
-      2,
-      10,
-      9,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 48?"
-  },
-  {
-    "question": "18 : 3 = ?",
-    "correct": 6,
-    "options": [
-      9,
-      2,
-      6,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 18?"
-  },
-  {
-    "question": "80 : 8 = ?",
-    "correct": 10,
-    "options": [
-      8,
-      10,
-      13,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 80?"
-  },
-  {
-    "question": "40 : 4 = ?",
-    "correct": 10,
-    "options": [
-      8,
-      14,
-      10,
       9
     ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 40?"
+    "hint": "חשבי: מה כפול 3 שווה 24?"
   },
   {
-    "question": "45 : 5 = ?",
-    "correct": 9,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 7 = 70</bdi>",
+    "correct": 10,
     "options": [
-      9,
-      7,
       8,
-      13
+      12,
+      11,
+      10
     ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 45?"
+    "hint": "השתמשי בחילוק: 70 לחלק ל-7."
   },
   {
-    "question": "15 : 5 = ?",
-    "correct": 3,
-    "options": [
-      7,
-      4,
-      3,
-      5
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 15?"
-  },
-  {
-    "question": "80 : 8 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : ___ = 4</bdi>",
     "correct": 10,
     "options": [
       10,
-      11,
-      13,
+      9,
+      7,
       14
     ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 80?"
+    "hint": "השתמשי בחילוק ההפוך: 40 לחלק ל-4."
   },
   {
-    "question": "36 : 4 = ?",
-    "correct": 9,
-    "options": [
-      9,
-      10,
-      12,
-      13
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 36?"
-  },
-  {
-    "question": "54 : 9 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 6 = 36</bdi>",
     "correct": 6,
     "options": [
-      7,
-      2,
-      6,
-      10
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 54?"
-  },
-  {
-    "question": "48 : 6 = ?",
-    "correct": 8,
-    "options": [
+      5,
       10,
-      11,
-      12,
-      8
+      6,
+      2
     ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 48?"
+    "hint": "השתמשי בחילוק: 36 לחלק ל-6."
   },
   {
-    "question": "28 : 7 = ?",
-    "correct": 4,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">63 : ___ = 9</bdi>",
+    "correct": 7,
     "options": [
       4,
-      8,
-      1,
-      3
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 7 נותן 28?"
-  },
-  {
-    "question": "64 : 8 = ?",
-    "correct": 8,
-    "options": [
+      9,
       10,
-      8,
-      12,
       7
     ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 64?"
+    "hint": "השתמשי בחילוק ההפוך: 63 לחלק ל-9."
   },
   {
-    "question": "24 : 6 = ?",
-    "correct": 4,
-    "options": [
-      5,
-      4,
-      2,
-      8
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 24?"
-  },
-  {
-    "question": "54 : 6 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x ___ = 45</bdi>",
     "correct": 9,
     "options": [
-      6,
-      9,
-      7,
-      10
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 6 נותן 54?"
-  },
-  {
-    "question": "30 : 5 = ?",
-    "correct": 6,
-    "options": [
-      6,
       9,
       10,
-      4
+      5,
+      6
     ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 30?"
+    "hint": "חשבי: מה כפול 5 שווה 45?"
   },
   {
-    "question": "40 : 8 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : ___ = 8</bdi>",
     "correct": 5,
     "options": [
+      8,
+      7,
       5,
+      2
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 40 לחלק ל-8."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x ___ = 25</bdi>",
+    "correct": 5,
+    "options": [
+      8,
+      2,
+      5,
+      1
+    ],
+    "hint": "חשבי: מה כפול 5 שווה 25?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 9 = 63</bdi>",
+    "correct": 7,
+    "options": [
+      7,
+      9,
+      11,
+      8
+    ],
+    "hint": "השתמשי בחילוק: 63 לחלק ל-9."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">80 : ___ = 10</bdi>",
+    "correct": 8,
+    "options": [
+      11,
+      5,
+      8,
+      9
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 80 לחלק ל-10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 10 = 80</bdi>",
+    "correct": 8,
+    "options": [
+      4,
+      8,
+      9,
+      5
+    ],
+    "hint": "השתמשי בחילוק: 80 לחלק ל-10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 7 = 21</bdi>",
+    "correct": 3,
+    "options": [
+      4,
+      3,
+      0,
+      2
+    ],
+    "hint": "השתמשי בחילוק: 21 לחלק ל-7."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 10 = 50</bdi>",
+    "correct": 5,
+    "options": [
+      3,
+      7,
+      5,
+      1
+    ],
+    "hint": "השתמשי בחילוק: 50 לחלק ל-10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 7 = 70</bdi>",
+    "correct": 10,
+    "options": [
+      7,
+      10,
+      14,
+      13
+    ],
+    "hint": "השתמשי בחילוק: 70 לחלק ל-7."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 5 = 50</bdi>",
+    "correct": 10,
+    "options": [
+      11,
+      13,
+      10,
+      7
+    ],
+    "hint": "השתמשי בחילוק: 50 לחלק ל-5."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x ___ = 36</bdi>",
+    "correct": 6,
+    "options": [
+      10,
+      8,
+      3,
+      6
+    ],
+    "hint": "חשבי: מה כפול 6 שווה 36?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x ___ = 15</bdi>",
+    "correct": 5,
+    "options": [
+      7,
+      4,
+      6,
+      5
+    ],
+    "hint": "חשבי: מה כפול 3 שווה 15?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x ___ = 30</bdi>",
+    "correct": 5,
+    "options": [
+      1,
+      6,
+      5,
+      8
+    ],
+    "hint": "חשבי: מה כפול 6 שווה 30?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x ___ = 70</bdi>",
+    "correct": 10,
+    "options": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "hint": "חשבי: מה כפול 7 שווה 70?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x ___ = 72</bdi>",
+    "correct": 8,
+    "options": [
+      12,
+      7,
+      8,
+      11
+    ],
+    "hint": "חשבי: מה כפול 9 שווה 72?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">35 : ___ = 7</bdi>",
+    "correct": 5,
+    "options": [
+      8,
+      2,
+      5,
+      7
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 35 לחלק ל-7."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 10 = 90</bdi>",
+    "correct": 9,
+    "options": [
+      9,
       7,
       8,
       6
     ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 40?"
+    "hint": "השתמשי בחילוק: 90 לחלק ל-10."
   },
   {
-    "question": "70 : 10 = ?",
-    "correct": 7,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">36 : ___ = 9</bdi>",
+    "correct": 4,
     "options": [
-      10,
-      8,
-      5,
-      7
+      0,
+      2,
+      1,
+      4
     ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 70?"
+    "hint": "השתמשי בחילוק ההפוך: 36 לחלק ל-9."
   },
   {
-    "question": "48 : 8 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x ___ = 36</bdi>",
     "correct": 6,
     "options": [
-      6,
       9,
       10,
-      3
+      2,
+      6
     ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 48?"
+    "hint": "חשבי: מה כפול 6 שווה 36?"
   },
   {
-    "question": "18 : 3 = ?",
-    "correct": 6,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x ___ = 21</bdi>",
+    "correct": 3,
     "options": [
-      8,
-      10,
+      7,
       6,
+      5,
       3
     ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 18?"
+    "hint": "חשבי: מה כפול 7 שווה 21?"
   },
   {
-    "question": "21 : 3 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 9 = 63</bdi>",
     "correct": 7,
     "options": [
+      5,
+      7,
+      8,
+      10
+    ],
+    "hint": "השתמשי בחילוק: 63 לחלק ל-9."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x ___ = 63</bdi>",
+    "correct": 9,
+    "options": [
+      9,
       10,
+      11,
+      12
+    ],
+    "hint": "חשבי: מה כפול 7 שווה 63?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">20 : ___ = 5</bdi>",
+    "correct": 4,
+    "options": [
+      6,
+      1,
+      4,
+      2
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 20 לחלק ל-5."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x ___ = 40</bdi>",
+    "correct": 5,
+    "options": [
+      5,
       6,
       7,
       8
     ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 21?"
+    "hint": "חשבי: מה כפול 8 שווה 40?"
   },
   {
-    "question": "30 : 10 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">21 : ___ = 7</bdi>",
+    "correct": 3,
+    "options": [
+      3,
+      5,
+      1,
+      2
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 21 לחלק ל-7."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 9 = 63</bdi>",
+    "correct": 7,
+    "options": [
+      7,
+      9,
+      6,
+      11
+    ],
+    "hint": "השתמשי בחילוק: 63 לחלק ל-9."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x ___ = 15</bdi>",
+    "correct": 3,
+    "options": [
+      0,
+      7,
+      3,
+      1
+    ],
+    "hint": "חשבי: מה כפול 5 שווה 15?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">30 : ___ = 10</bdi>",
     "correct": 3,
     "options": [
       5,
       2,
       3,
-      7
+      1
     ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 30?"
+    "hint": "השתמשי בחילוק ההפוך: 30 לחלק ל-10."
   },
   {
-    "question": "45 : 9 = ?",
-    "correct": 5,
-    "options": [
-      4,
-      8,
-      5,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 45?"
-  },
-  {
-    "question": "80 : 10 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x ___ = 56</bdi>",
     "correct": 8,
     "options": [
-      8,
       4,
       5,
-      12
+      12,
+      8
     ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 80?"
+    "hint": "חשבי: מה כפול 7 שווה 56?"
   },
   {
-    "question": "28 : 4 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x ___ = 21</bdi>",
     "correct": 7,
     "options": [
-      6,
+      7,
       8,
-      11,
-      7
+      10,
+      9
     ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 28?"
+    "hint": "חשבי: מה כפול 3 שווה 21?"
   },
   {
-    "question": "50 : 5 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 5 = 25</bdi>",
+    "correct": 5,
+    "options": [
+      5,
+      7,
+      4,
+      2
+    ],
+    "hint": "השתמשי בחילוק: 25 לחלק ל-5."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 6 = 48</bdi>",
+    "correct": 8,
+    "options": [
+      9,
+      8,
+      5,
+      10
+    ],
+    "hint": "השתמשי בחילוק: 48 לחלק ל-6."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x ___ = 24</bdi>",
+    "correct": 4,
+    "options": [
+      4,
+      5,
+      1,
+      3
+    ],
+    "hint": "חשבי: מה כפול 6 שווה 24?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x ___ = 20</bdi>",
+    "correct": 4,
+    "options": [
+      4,
+      6,
+      2,
+      5
+    ],
+    "hint": "חשבי: מה כפול 5 שווה 20?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 4 = 32</bdi>",
+    "correct": 8,
+    "options": [
+      12,
+      8,
+      10,
+      11
+    ],
+    "hint": "השתמשי בחילוק: 32 לחלק ל-4."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : ___ = 4</bdi>",
     "correct": 10,
+    "options": [
+      7,
+      11,
+      9,
+      10
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 40 לחלק ל-4."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x ___ = 50</bdi>",
+    "correct": 10,
+    "options": [
+      13,
+      14,
+      10,
+      9
+    ],
+    "hint": "חשבי: מה כפול 5 שווה 50?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">48 : ___ = 8</bdi>",
+    "correct": 6,
+    "options": [
+      2,
+      4,
+      7,
+      6
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 48 לחלק ל-8."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 8 = 32</bdi>",
+    "correct": 4,
+    "options": [
+      5,
+      6,
+      4,
+      3
+    ],
+    "hint": "השתמשי בחילוק: 32 לחלק ל-8."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x ___ = 35</bdi>",
+    "correct": 7,
+    "options": [
+      10,
+      11,
+      7,
+      5
+    ],
+    "hint": "חשבי: מה כפול 5 שווה 35?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 7 = 70</bdi>",
+    "correct": 10,
+    "options": [
+      8,
+      12,
+      10,
+      9
+    ],
+    "hint": "השתמשי בחילוק: 70 לחלק ל-7."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 7 = 49</bdi>",
+    "correct": 7,
     "options": [
       10,
       7,
       6,
-      12
+      9
     ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 50?"
+    "hint": "השתמשי בחילוק: 49 לחלק ל-7."
   },
   {
-    "question": "72 : 9 = ?",
-    "correct": 8,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 3 = 9</bdi>",
+    "correct": 3,
+    "options": [
+      0,
+      3,
+      2,
+      5
+    ],
+    "hint": "השתמשי בחילוק: 9 לחלק ל-3."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x ___ = 45</bdi>",
+    "correct": 5,
+    "options": [
+      6,
+      1,
+      3,
+      5
+    ],
+    "hint": "חשבי: מה כפול 9 שווה 45?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">30 : ___ = 5</bdi>",
+    "correct": 6,
     "options": [
       8,
-      5,
       6,
-      12
+      5,
+      3
     ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 72?"
+    "hint": "השתמשי בחילוק ההפוך: 30 לחלק ל-5."
   },
   {
-    "question": "16 : 4 = ?",
-    "correct": 4,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x ___ = 40</bdi>",
+    "correct": 5,
     "options": [
       2,
-      4,
-      8,
-      6
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 16?"
-  },
-  {
-    "question": "20 : 5 = ?",
-    "correct": 4,
-    "options": [
-      4,
       5,
       7,
       8
     ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 20?"
+    "hint": "חשבי: מה כפול 8 שווה 40?"
   },
   {
-    "question": "27 : 3 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x ___ = 35</bdi>",
+    "correct": 7,
+    "options": [
+      6,
+      4,
+      7,
+      10
+    ],
+    "hint": "חשבי: מה כפול 5 שווה 35?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x ___ = 45</bdi>",
+    "correct": 9,
+    "options": [
+      11,
+      12,
+      6,
+      9
+    ],
+    "hint": "חשבי: מה כפול 5 שווה 45?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">72 : ___ = 9</bdi>",
+    "correct": 8,
+    "options": [
+      4,
+      11,
+      8,
+      10
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 72 לחלק ל-9."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">56 : ___ = 8</bdi>",
+    "correct": 7,
+    "options": [
+      7,
+      6,
+      11,
+      9
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 56 לחלק ל-8."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x ___ = 20</bdi>",
+    "correct": 5,
+    "options": [
+      8,
+      6,
+      1,
+      5
+    ],
+    "hint": "חשבי: מה כפול 4 שווה 20?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x ___ = 100</bdi>",
+    "correct": 10,
+    "options": [
+      10,
+      8,
+      11,
+      7
+    ],
+    "hint": "חשבי: מה כפול 10 שווה 100?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 4 = 28</bdi>",
+    "correct": 7,
+    "options": [
+      8,
+      7,
+      11,
+      4
+    ],
+    "hint": "השתמשי בחילוק: 28 לחלק ל-4."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x ___ = 90</bdi>",
+    "correct": 9,
+    "options": [
+      13,
+      6,
+      5,
+      9
+    ],
+    "hint": "חשבי: מה כפול 10 שווה 90?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">32 : ___ = 8</bdi>",
+    "correct": 4,
+    "options": [
+      4,
+      7,
+      6,
+      1
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 32 לחלק ל-8."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 6 = 18</bdi>",
+    "correct": 3,
+    "options": [
+      1,
+      7,
+      5,
+      3
+    ],
+    "hint": "השתמשי בחילוק: 18 לחלק ל-6."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">63 : ___ = 7</bdi>",
+    "correct": 9,
+    "options": [
+      5,
+      9,
+      13,
+      6
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 63 לחלק ל-7."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">30 : ___ = 10</bdi>",
+    "correct": 3,
+    "options": [
+      3,
+      2,
+      5,
+      1
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 30 לחלק ל-10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 8 = 80</bdi>",
+    "correct": 10,
+    "options": [
+      10,
+      14,
+      9,
+      12
+    ],
+    "hint": "השתמשי בחילוק: 80 לחלק ל-8."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 4 = 16</bdi>",
+    "correct": 4,
+    "options": [
+      6,
+      7,
+      5,
+      4
+    ],
+    "hint": "השתמשי בחילוק: 16 לחלק ל-4."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 9 = 36</bdi>",
+    "correct": 4,
+    "options": [
+      1,
+      7,
+      5,
+      4
+    ],
+    "hint": "השתמשי בחילוק: 36 לחלק ל-9."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x ___ = 90</bdi>",
+    "correct": 10,
+    "options": [
+      10,
+      11,
+      7,
+      13
+    ],
+    "hint": "חשבי: מה כפול 9 שווה 90?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 : ___ = 3</bdi>",
+    "correct": 3,
+    "options": [
+      5,
+      3,
+      6,
+      2
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 9 לחלק ל-3."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 4 = 16</bdi>",
+    "correct": 4,
+    "options": [
+      2,
+      4,
+      3,
+      0
+    ],
+    "hint": "השתמשי בחילוק: 16 לחלק ל-4."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">27 : ___ = 9</bdi>",
+    "correct": 3,
+    "options": [
+      1,
+      7,
+      3,
+      4
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 27 לחלק ל-9."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x ___ = 36</bdi>",
+    "correct": 9,
+    "options": [
+      9,
+      7,
+      5,
+      10
+    ],
+    "hint": "חשבי: מה כפול 4 שווה 36?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 3 = 12</bdi>",
+    "correct": 4,
+    "options": [
+      1,
+      3,
+      6,
+      4
+    ],
+    "hint": "השתמשי בחילוק: 12 לחלק ל-3."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 10 = 30</bdi>",
+    "correct": 3,
+    "options": [
+      2,
+      1,
+      3,
+      7
+    ],
+    "hint": "השתמשי בחילוק: 30 לחלק ל-10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x ___ = 81</bdi>",
+    "correct": 9,
+    "options": [
+      9,
+      8,
+      13,
+      10
+    ],
+    "hint": "חשבי: מה כפול 9 שווה 81?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">36 : ___ = 4</bdi>",
+    "correct": 9,
+    "options": [
+      13,
+      9,
+      8,
+      12
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 36 לחלק ל-4."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x ___ = 16</bdi>",
+    "correct": 4,
+    "options": [
+      6,
+      8,
+      4,
+      7
+    ],
+    "hint": "חשבי: מה כפול 4 שווה 16?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 9 = 63</bdi>",
+    "correct": 7,
+    "options": [
+      7,
+      11,
+      8,
+      4
+    ],
+    "hint": "השתמשי בחילוק: 63 לחלק ל-9."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 3 = 27</bdi>",
     "correct": 9,
     "options": [
       10,
+      8,
+      6,
+      9
+    ],
+    "hint": "השתמשי בחילוק: 27 לחלק ל-3."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 7 = 42</bdi>",
+    "correct": 6,
+    "options": [
+      3,
+      2,
+      6,
+      7
+    ],
+    "hint": "השתמשי בחילוק: 42 לחלק ל-7."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 10 = 60</bdi>",
+    "correct": 6,
+    "options": [
+      8,
+      2,
+      3,
+      6
+    ],
+    "hint": "השתמשי בחילוק: 60 לחלק ל-10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 7 = 56</bdi>",
+    "correct": 8,
+    "options": [
+      8,
+      5,
+      7,
+      12
+    ],
+    "hint": "השתמשי בחילוק: 56 לחלק ל-7."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">100 : ___ = 10</bdi>",
+    "correct": 10,
+    "options": [
+      13,
+      6,
+      10,
+      14
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 100 לחלק ל-10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 8 = 24</bdi>",
+    "correct": 3,
+    "options": [
+      1,
+      6,
+      4,
+      3
+    ],
+    "hint": "השתמשי בחילוק: 24 לחלק ל-8."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 5 = 35</bdi>",
+    "correct": 7,
+    "options": [
+      7,
+      6,
+      3,
+      11
+    ],
+    "hint": "השתמשי בחילוק: 35 לחלק ל-5."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">12 : ___ = 4</bdi>",
+    "correct": 3,
+    "options": [
+      6,
+      0,
+      2,
+      3
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 12 לחלק ל-4."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">72 : ___ = 8</bdi>",
+    "correct": 9,
+    "options": [
+      9,
+      6,
+      7,
+      11
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 72 לחלק ל-8."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x ___ = 24</bdi>",
+    "correct": 4,
+    "options": [
+      4,
+      5,
+      7,
+      6
+    ],
+    "hint": "חשבי: מה כפול 6 שווה 24?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">50 : ___ = 10</bdi>",
+    "correct": 5,
+    "options": [
+      5,
+      8,
+      7,
+      6
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 50 לחלק ל-10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x ___ = 72</bdi>",
+    "correct": 9,
+    "options": [
+      7,
+      13,
+      9,
+      8
+    ],
+    "hint": "חשבי: מה כפול 8 שווה 72?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x ___ = 27</bdi>",
+    "correct": 9,
+    "options": [
+      12,
       13,
       7,
       9
     ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 27?"
+    "hint": "חשבי: מה כפול 3 שווה 27?"
   },
   {
-    "question": "60 : 10 = ?",
-    "correct": 6,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x ___ = 80</bdi>",
+    "correct": 8,
     "options": [
       6,
-      5,
-      8,
-      2
+      10,
+      12,
+      8
     ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 60?"
+    "hint": "חשבי: מה כפול 10 שווה 80?"
   },
   {
-    "question": "12 : 3 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">24 : ___ = 6</bdi>",
     "correct": 4,
     "options": [
-      4,
-      1,
-      8,
-      2
+      3,
+      7,
+      6,
+      4
     ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 12?"
+    "hint": "השתמשי בחילוק ההפוך: 24 לחלק ל-6."
   },
   {
-    "question": "49 : 7 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 7 = 49</bdi>",
     "correct": 7,
     "options": [
+      9,
+      11,
       7,
-      5,
-      8,
       4
     ],
-    "hint": "תחשבי על הכפל: מה כפול 7 נותן 49?"
+    "hint": "השתמשי בחילוק: 49 לחלק ל-7."
   },
   {
-    "question": "100 : 10 = ?",
-    "correct": 10,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 4 = 32</bdi>",
+    "correct": 8,
     "options": [
+      7,
       12,
-      6,
-      10,
-      11
+      9,
+      8
     ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 100?"
+    "hint": "השתמשי בחילוק: 32 לחלק ל-4."
   },
   {
-    "question": "18 : 3 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x ___ = 48</bdi>",
     "correct": 6,
     "options": [
-      8,
       4,
       6,
-      9
+      7,
+      3
     ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 18?"
+    "hint": "חשבי: מה כפול 8 שווה 48?"
   },
   {
-    "question": "20 : 4 = ?",
-    "correct": 5,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : ___ = 10</bdi>",
+    "correct": 4,
+    "options": [
+      6,
+      4,
+      3,
+      0
+    ],
+    "hint": "השתמשי בחילוק ההפוך: 40 לחלק ל-10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ x 6 = 24</bdi>",
+    "correct": 4,
     "options": [
       1,
-      7,
-      5,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 20?"
-  },
-  {
-    "question": "70 : 7 = ?",
-    "correct": 10,
-    "options": [
-      8,
-      10,
-      12,
-      9
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 7 נותן 70?"
-  },
-  {
-    "question": "15 : 5 = ?",
-    "correct": 3,
-    "options": [
-      3,
+      2,
       4,
-      7,
-      1
+      7
     ],
-    "hint": "תחשבי על הכפל: מה כפול 5 נותן 15?"
+    "hint": "השתמשי בחילוק: 24 לחלק ל-6."
   },
   {
-    "question": "54 : 9 = ?",
-    "correct": 6,
-    "options": [
-      6,
-      4,
-      9,
-      5
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 9 נותן 54?"
-  },
-  {
-    "question": "64 : 8 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">80 : ___ = 10</bdi>",
     "correct": 8,
     "options": [
       8,
-      12,
-      11,
+      4,
+      7,
       10
     ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 64?"
+    "hint": "השתמשי בחילוק ההפוך: 80 לחלק ל-10."
   },
   {
-    "question": "24 : 8 = ?",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">15 : ___ = 5</bdi>",
     "correct": 3,
     "options": [
       0,
-      2,
-      4,
-      3
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 8 נותן 24?"
-  },
-  {
-    "question": "16 : 4 = ?",
-    "correct": 4,
-    "options": [
-      8,
-      2,
-      3,
-      4
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 4 נותן 16?"
-  },
-  {
-    "question": "21 : 3 = ?",
-    "correct": 7,
-    "options": [
-      7,
-      5,
-      6,
-      9
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 21?"
-  },
-  {
-    "question": "21 : 7 = ?",
-    "correct": 3,
-    "options": [
       3,
       2,
-      4,
-      7
+      5
     ],
-    "hint": "תחשבי על הכפל: מה כפול 7 נותן 21?"
-  },
-  {
-    "question": "60 : 10 = ?",
-    "correct": 6,
-    "options": [
-      10,
-      6,
-      2,
-      9
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 60?"
-  },
-  {
-    "question": "80 : 10 = ?",
-    "correct": 8,
-    "options": [
-      8,
-      5,
-      10,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 80?"
-  },
-  {
-    "question": "40 : 10 = ?",
-    "correct": 4,
-    "options": [
-      5,
-      4,
-      2,
-      8
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 10 נותן 40?"
-  },
-  {
-    "question": "12 : 3 = ?",
-    "correct": 4,
-    "options": [
-      2,
-      5,
-      4,
-      7
-    ],
-    "hint": "תחשבי על הכפל: מה כפול 3 נותן 12?"
+    "hint": "השתמשי בחילוק ההפוך: 15 לחלק ל-5."
   }
 ]

@@ -1,1102 +1,1102 @@
 [
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 82 = 113</bdi>",
-    "correct": 195,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">359 - ___ = 276</bdi>",
+    "correct": 83,
     "options": [
-      191,
-      189,
-      200,
-      195
+      38,
+      86,
+      83,
+      76
     ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 113 ועוד 82."
+    "hint": "השתמשי בחיסור: 359 פחות 276."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">440 - 264 = ___</bdi>",
-    "correct": 176,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">494 - ___ = 104</bdi>",
+    "correct": 390,
     "options": [
-      163,
-      184,
-      171,
-      176
+      396,
+      384,
+      380,
+      390
+    ],
+    "hint": "השתמשי בחיסור: 494 פחות 104."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">225 - ___ = 215</bdi>",
+    "correct": 10,
+    "options": [
+      10,
+      11,
+      18,
+      13
+    ],
+    "hint": "השתמשי בחיסור: 225 פחות 215."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 123 = 404</bdi>",
+    "correct": 527,
+    "options": [
+      535,
+      527,
+      517,
+      539
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 404 ועוד 123."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">174 - ___ = 156</bdi>",
+    "correct": 18,
+    "options": [
+      13,
+      18,
+      20,
+      81
+    ],
+    "hint": "השתמשי בחיסור: 174 פחות 156."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">376 - 28 = ___</bdi>",
+    "correct": 348,
+    "options": [
+      348,
+      358,
+      359,
+      341
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">197 - 65 = ___</bdi>",
-    "correct": 132,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 32 = 443</bdi>",
+    "correct": 475,
     "options": [
-      118,
-      130,
-      132,
-      145
+      461,
+      489,
+      485,
+      475
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 443 ועוד 32."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">220 - 70 = ___</bdi>",
+    "correct": 150,
+    "options": [
+      155,
+      139,
+      162,
+      150
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">268 - 191 = ___</bdi>",
-    "correct": 77,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">234 - 97 = ___</bdi>",
+    "correct": 137,
     "options": [
-      66,
-      72,
-      77,
-      63
+      152,
+      139,
+      137,
+      129
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">339 - 217 = ___</bdi>",
-    "correct": 122,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 105 = 179</bdi>",
+    "correct": 284,
     "options": [
-      112,
-      117,
-      120,
-      122
+      284,
+      271,
+      277,
+      274
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 179 ועוד 105."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">277 - 108 = ___</bdi>",
+    "correct": 169,
+    "options": [
+      170,
+      169,
+      174,
+      154
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">415 - ___ = 30</bdi>",
-    "correct": 385,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">462 - 418 = ___</bdi>",
+    "correct": 44,
     "options": [
-      381,
-      385,
-      377,
+      57,
+      48,
+      44,
+      54
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">110 - ___ = 93</bdi>",
+    "correct": 17,
+    "options": [
+      71,
+      26,
+      8,
+      17
+    ],
+    "hint": "השתמשי בחיסור: 110 פחות 93."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">185 - ___ = 78</bdi>",
+    "correct": 107,
+    "options": [
+      107,
+      103,
+      114,
+      120
+    ],
+    "hint": "השתמשי בחיסור: 185 פחות 78."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 19 = 227</bdi>",
+    "correct": 246,
+    "options": [
+      255,
+      259,
+      246,
+      234
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 227 ועוד 19."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">263 - ___ = 126</bdi>",
+    "correct": 137,
+    "options": [
+      125,
+      127,
+      150,
+      137
+    ],
+    "hint": "השתמשי בחיסור: 263 פחות 126."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 116 = 266</bdi>",
+    "correct": 382,
+    "options": [
+      370,
+      382,
+      388,
       395
     ],
-    "hint": "השתמשי בחיסור: 415 פחות 30."
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 266 ועוד 116."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">387 - 328 = ___</bdi>",
-    "correct": 59,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">419 - ___ = 405</bdi>",
+    "correct": 14,
     "options": [
-      59,
-      62,
-      65,
-      95
+      41,
+      19,
+      8,
+      14
+    ],
+    "hint": "השתמשי בחיסור: 419 פחות 405."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 54 = 122</bdi>",
+    "correct": 176,
+    "options": [
+      176,
+      163,
+      180,
+      182
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 122 ועוד 54."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 105 = 351</bdi>",
+    "correct": 456,
+    "options": [
+      447,
+      464,
+      456,
+      461
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 351 ועוד 105."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">201 - 52 = ___</bdi>",
+    "correct": 149,
+    "options": [
+      163,
+      153,
+      149,
+      160
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">479 - 470 = ___</bdi>",
-    "correct": 9,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">155 - 91 = ___</bdi>",
+    "correct": 64,
     "options": [
-      21,
-      9,
-      0,
+      46,
+      52,
+      61,
+      64
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">473 - ___ = 413</bdi>",
+    "correct": 60,
+    "options": [
+      49,
+      53,
+      60,
       6
     ],
-    "hint": "חסרי את המספר הקטן מהגדול."
+    "hint": "השתמשי בחיסור: 473 פחות 413."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">205 - 154 = ___</bdi>",
-    "correct": 51,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">396 - 346 = ___</bdi>",
+    "correct": 50,
     "options": [
-      42,
-      65,
-      15,
-      51
+      62,
+      50,
+      47,
+      5
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">80 - ___ = 14</bdi>",
-    "correct": 66,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">488 - ___ = 275</bdi>",
+    "correct": 213,
     "options": [
-      59,
-      52,
-      70,
-      66
+      226,
+      227,
+      215,
+      213
     ],
-    "hint": "השתמשי בחיסור: 80 פחות 14."
+    "hint": "השתמשי בחיסור: 488 פחות 275."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">52 - ___ = 18</bdi>",
-    "correct": 34,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">338 - 119 = ___</bdi>",
+    "correct": 219,
     "options": [
-      34,
-      43,
+      219,
+      234,
+      231,
+      210
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">265 - ___ = 129</bdi>",
+    "correct": 136,
+    "options": [
+      128,
+      136,
+      123,
+      135
+    ],
+    "hint": "השתמשי בחיסור: 265 פחות 129."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 176 = 249</bdi>",
+    "correct": 425,
+    "options": [
+      434,
+      437,
+      425,
+      433
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 249 ועוד 176."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 238 = 418</bdi>",
+    "correct": 656,
+    "options": [
+      669,
+      656,
+      671,
+      670
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 418 ועוד 238."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">354 - ___ = 325</bdi>",
+    "correct": 29,
+    "options": [
       44,
-      37
+      92,
+      29,
+      23
     ],
-    "hint": "השתמשי בחיסור: 52 פחות 18."
+    "hint": "השתמשי בחיסור: 354 פחות 325."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">183 - 53 = ___</bdi>",
-    "correct": 130,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 175 = 261</bdi>",
+    "correct": 436,
     "options": [
-      122,
-      141,
-      116,
-      130
+      442,
+      450,
+      447,
+      436
     ],
-    "hint": "חסרי את המספר הקטן מהגדול."
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 261 ועוד 175."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">150 - ___ = 71</bdi>",
-    "correct": 79,
-    "options": [
-      79,
-      97,
-      91,
-      85
-    ],
-    "hint": "השתמשי בחיסור: 150 פחות 71."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">188 - 24 = ___</bdi>",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 12 = 152</bdi>",
     "correct": 164,
     "options": [
       158,
+      154,
       164,
-      170,
-      163
+      161
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 152 ועוד 12."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 117 = 308</bdi>",
+    "correct": 425,
+    "options": [
+      425,
+      417,
+      431,
+      420
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 308 ועוד 117."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">438 - 416 = ___</bdi>",
+    "correct": 22,
+    "options": [
+      8,
+      22,
+      24,
+      29
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 39 = 373</bdi>",
-    "correct": 412,
-    "options": [
-      412,
-      414,
-      426,
-      415
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 373 ועוד 39."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">137 - 63 = ___</bdi>",
-    "correct": 74,
-    "options": [
-      74,
-      75,
-      85,
-      47
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 16 = 69</bdi>",
-    "correct": 85,
-    "options": [
-      77,
-      94,
-      58,
-      85
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 69 ועוד 16."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">391 - 178 = ___</bdi>",
-    "correct": 213,
-    "options": [
-      223,
-      212,
-      221,
-      213
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 194 = 316</bdi>",
-    "correct": 510,
-    "options": [
-      519,
-      510,
-      511,
-      499
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 316 ועוד 194."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">304 - ___ = 125</bdi>",
-    "correct": 179,
-    "options": [
-      174,
-      179,
-      165,
-      192
-    ],
-    "hint": "השתמשי בחיסור: 304 פחות 125."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">321 - ___ = 280</bdi>",
-    "correct": 41,
-    "options": [
-      55,
-      14,
-      41,
-      39
-    ],
-    "hint": "השתמשי בחיסור: 321 פחות 280."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 247 = 320</bdi>",
-    "correct": 567,
-    "options": [
-      567,
-      565,
-      571,
-      554
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 320 ועוד 247."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">184 - ___ = 110</bdi>",
-    "correct": 74,
-    "options": [
-      81,
-      70,
-      74,
-      47
-    ],
-    "hint": "השתמשי בחיסור: 184 פחות 110."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">122 - ___ = 113</bdi>",
-    "correct": 9,
-    "options": [
-      5,
-      1,
-      14,
-      9
-    ],
-    "hint": "השתמשי בחיסור: 122 פחות 113."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 150 = 280</bdi>",
-    "correct": 430,
-    "options": [
-      433,
-      434,
-      430,
-      427
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 280 ועוד 150."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">422 - 236 = ___</bdi>",
-    "correct": 186,
-    "options": [
-      174,
-      175,
-      186,
-      191
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 16 = 65</bdi>",
-    "correct": 81,
-    "options": [
-      69,
-      18,
-      75,
-      81
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 65 ועוד 16."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">194 - 108 = ___</bdi>",
-    "correct": 86,
-    "options": [
-      94,
-      86,
-      77,
-      68
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 154 = 262</bdi>",
-    "correct": 416,
-    "options": [
-      415,
-      416,
-      421,
-      422
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 262 ועוד 154."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">66 - 51 = ___</bdi>",
-    "correct": 15,
-    "options": [
-      29,
-      15,
-      51,
-      19
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 118 = 129</bdi>",
-    "correct": 247,
-    "options": [
-      250,
-      257,
-      247,
-      252
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 129 ועוד 118."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">269 - ___ = 33</bdi>",
-    "correct": 236,
-    "options": [
-      236,
-      232,
-      231,
-      237
-    ],
-    "hint": "השתמשי בחיסור: 269 פחות 33."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">318 - ___ = 171</bdi>",
-    "correct": 147,
-    "options": [
-      147,
-      146,
-      137,
-      140
-    ],
-    "hint": "השתמשי בחיסור: 318 פחות 171."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">281 - 27 = ___</bdi>",
-    "correct": 254,
-    "options": [
-      256,
-      254,
-      253,
-      240
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">387 - ___ = 225</bdi>",
-    "correct": 162,
-    "options": [
-      162,
-      161,
-      159,
-      157
-    ],
-    "hint": "השתמשי בחיסור: 387 פחות 225."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">333 - 40 = ___</bdi>",
-    "correct": 293,
-    "options": [
-      293,
-      294,
-      301,
-      285
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 114 = 323</bdi>",
-    "correct": 437,
-    "options": [
-      442,
-      439,
-      437,
-      449
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 323 ועוד 114."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">448 - ___ = 262</bdi>",
-    "correct": 186,
-    "options": [
-      186,
-      201,
-      175,
-      195
-    ],
-    "hint": "השתמשי בחיסור: 448 פחות 262."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">467 - ___ = 92</bdi>",
-    "correct": 375,
-    "options": [
-      366,
-      384,
-      370,
-      375
-    ],
-    "hint": "השתמשי בחיסור: 467 פחות 92."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">480 - ___ = 465</bdi>",
-    "correct": 15,
-    "options": [
-      1,
-      6,
-      15,
-      51
-    ],
-    "hint": "השתמשי בחיסור: 480 פחות 465."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 84 = 385</bdi>",
-    "correct": 469,
-    "options": [
-      481,
-      469,
-      472,
-      466
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 385 ועוד 84."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">346 - ___ = 164</bdi>",
-    "correct": 182,
-    "options": [
-      182,
-      196,
-      176,
-      187
-    ],
-    "hint": "השתמשי בחיסור: 346 פחות 164."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 21 = 101</bdi>",
-    "correct": 122,
-    "options": [
-      108,
-      114,
-      118,
-      122
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 101 ועוד 21."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">80 - 11 = ___</bdi>",
-    "correct": 69,
-    "options": [
-      56,
-      96,
-      62,
-      69
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">89 - 76 = ___</bdi>",
-    "correct": 13,
-    "options": [
-      13,
-      3,
-      26,
-      31
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 236 = 277</bdi>",
-    "correct": 513,
-    "options": [
-      526,
-      513,
-      521,
-      515
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 277 ועוד 236."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">141 - 131 = ___</bdi>",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">493 - 483 = ___</bdi>",
     "correct": 10,
     "options": [
-      17,
-      13,
-      10,
-      16
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">337 - ___ = 169</bdi>",
-    "correct": 168,
-    "options": [
-      168,
-      160,
-      182,
-      180
-    ],
-    "hint": "השתמשי בחיסור: 337 פחות 169."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">69 - ___ = 20</bdi>",
-    "correct": 49,
-    "options": [
-      41,
-      94,
-      49,
-      51
-    ],
-    "hint": "השתמשי בחיסור: 69 פחות 20."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">351 - ___ = 107</bdi>",
-    "correct": 244,
-    "options": [
-      229,
-      253,
-      257,
-      244
-    ],
-    "hint": "השתמשי בחיסור: 351 פחות 107."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">490 - ___ = 419</bdi>",
-    "correct": 71,
-    "options": [
-      65,
-      17,
-      71,
-      76
-    ],
-    "hint": "השתמשי בחיסור: 490 פחות 419."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 146 = 280</bdi>",
-    "correct": 426,
-    "options": [
-      419,
-      416,
-      426,
-      433
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 280 ועוד 146."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">380 - 59 = ___</bdi>",
-    "correct": 321,
-    "options": [
-      323,
-      329,
-      321,
-      309
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 167 = 399</bdi>",
-    "correct": 566,
-    "options": [
-      565,
-      566,
-      567,
-      558
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 399 ועוד 167."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">352 - ___ = 56</bdi>",
-    "correct": 296,
-    "options": [
-      298,
-      296,
-      311,
-      306
-    ],
-    "hint": "השתמשי בחיסור: 352 פחות 56."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">82 - 21 = ___</bdi>",
-    "correct": 61,
-    "options": [
-      16,
-      61,
-      65,
-      46
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 40 = 76</bdi>",
-    "correct": 116,
-    "options": [
-      116,
-      124,
-      103,
-      112
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 76 ועוד 40."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 316 = 331</bdi>",
-    "correct": 647,
-    "options": [
-      647,
-      662,
-      646,
-      640
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 331 ועוד 316."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 127 = 341</bdi>",
-    "correct": 468,
-    "options": [
-      468,
-      463,
-      475,
-      480
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 341 ועוד 127."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">342 - ___ = 51</bdi>",
-    "correct": 291,
-    "options": [
-      298,
-      279,
-      278,
-      291
-    ],
-    "hint": "השתמשי בחיסור: 342 פחות 51."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">318 - ___ = 16</bdi>",
-    "correct": 302,
-    "options": [
-      302,
-      298,
-      301,
-      312
-    ],
-    "hint": "השתמשי בחיסור: 318 פחות 16."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">283 - 241 = ___</bdi>",
-    "correct": 42,
-    "options": [
-      34,
-      47,
-      24,
-      42
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 373 = 464</bdi>",
-    "correct": 837,
-    "options": [
-      837,
-      830,
-      833,
-      841
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 464 ועוד 373."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 259 = 343</bdi>",
-    "correct": 602,
-    "options": [
-      617,
-      598,
-      602,
-      592
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 343 ועוד 259."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">369 - ___ = 342</bdi>",
-    "correct": 27,
-    "options": [
-      13,
-      27,
-      72,
-      37
-    ],
-    "hint": "השתמשי בחיסור: 369 פחות 342."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 304 = 339</bdi>",
-    "correct": 643,
-    "options": [
-      643,
-      636,
-      632,
-      653
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 339 ועוד 304."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">133 - 74 = ___</bdi>",
-    "correct": 59,
-    "options": [
-      59,
-      95,
-      63,
-      56
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">304 - 260 = ___</bdi>",
-    "correct": 44,
-    "options": [
-      44,
-      53,
-      37,
-      31
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">367 - ___ = 29</bdi>",
-    "correct": 338,
-    "options": [
-      338,
-      339,
-      333,
-      337
-    ],
-    "hint": "השתמשי בחיסור: 367 פחות 29."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">422 - ___ = 325</bdi>",
-    "correct": 97,
-    "options": [
-      92,
-      97,
-      79,
-      101
-    ],
-    "hint": "השתמשי בחיסור: 422 פחות 325."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">383 - 113 = ___</bdi>",
-    "correct": 270,
-    "options": [
-      277,
-      264,
-      269,
-      270
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">293 - ___ = 143</bdi>",
-    "correct": 150,
-    "options": [
-      164,
-      150,
-      144,
-      156
-    ],
-    "hint": "השתמשי בחיסור: 293 פחות 143."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">176 - 147 = ___</bdi>",
-    "correct": 29,
-    "options": [
-      92,
-      27,
-      29,
-      33
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">186 - 11 = ___</bdi>",
-    "correct": 175,
-    "options": [
-      174,
-      175,
-      176,
-      178
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">161 - ___ = 43</bdi>",
-    "correct": 118,
-    "options": [
-      118,
-      109,
-      119,
-      105
-    ],
-    "hint": "השתמשי בחיסור: 161 פחות 43."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 112 = 229</bdi>",
-    "correct": 341,
-    "options": [
-      327,
-      341,
-      338,
-      352
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 229 ועוד 112."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 81 = 113</bdi>",
-    "correct": 194,
-    "options": [
-      194,
-      188,
-      204,
-      205
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 113 ועוד 81."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">141 - ___ = 126</bdi>",
-    "correct": 15,
-    "options": [
-      13,
-      15,
-      51,
-      5
-    ],
-    "hint": "השתמשי בחיסור: 141 פחות 126."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">282 - 47 = ___</bdi>",
-    "correct": 235,
-    "options": [
-      235,
-      247,
-      220,
-      233
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">273 - 119 = ___</bdi>",
-    "correct": 154,
-    "options": [
-      154,
-      169,
-      139,
-      141
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">71 - 62 = ___</bdi>",
-    "correct": 9,
-    "options": [
-      16,
-      5,
-      9,
+      4,
+      22,
+      8,
       10
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 37 = 143</bdi>",
-    "correct": 180,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">297 - ___ = 115</bdi>",
+    "correct": 182,
     "options": [
-      192,
-      171,
-      183,
-      180
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 143 ועוד 37."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">486 - 40 = ___</bdi>",
-    "correct": 446,
-    "options": [
-      446,
-      432,
-      460,
-      461
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">445 - 362 = ___</bdi>",
-    "correct": 83,
-    "options": [
-      38,
-      83,
-      71,
-      95
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">321 - ___ = 252</bdi>",
-    "correct": 69,
-    "options": [
-      73,
-      80,
-      69,
-      96
-    ],
-    "hint": "השתמשי בחיסור: 321 פחות 252."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">215 - 103 = ___</bdi>",
-    "correct": 112,
-    "options": [
-      119,
-      127,
-      122,
-      112
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 50 = 259</bdi>",
-    "correct": 309,
-    "options": [
-      294,
-      297,
-      314,
-      309
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 259 ועוד 50."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 92 = 116</bdi>",
-    "correct": 208,
-    "options": [
-      205,
-      208,
-      204,
-      219
-    ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 116 ועוד 92."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">400 - 292 = ___</bdi>",
-    "correct": 108,
-    "options": [
-      110,
-      119,
-      115,
-      108
-    ],
-    "hint": "חסרי את המספר הקטן מהגדול."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">345 - ___ = 177</bdi>",
-    "correct": 168,
-    "options": [
-      175,
+      180,
+      181,
       182,
-      155,
       168
     ],
-    "hint": "השתמשי בחיסור: 345 פחות 177."
+    "hint": "השתמשי בחיסור: 297 פחות 115."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">170 - 90 = ___</bdi>",
-    "correct": 80,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">232 - ___ = 72</bdi>",
+    "correct": 160,
     "options": [
-      80,
-      74,
-      8,
+      174,
+      173,
+      169,
+      160
+    ],
+    "hint": "השתמשי בחיסור: 232 פחות 72."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">485 - ___ = 401</bdi>",
+    "correct": 84,
+    "options": [
+      84,
+      48,
+      88,
+      77
+    ],
+    "hint": "השתמשי בחיסור: 485 פחות 401."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 19 = 182</bdi>",
+    "correct": 201,
+    "options": [
+      201,
+      186,
+      188,
+      209
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 182 ועוד 19."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">500 - 363 = ___</bdi>",
+    "correct": 137,
+    "options": [
+      127,
+      131,
+      141,
+      137
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">184 - 118 = ___</bdi>",
+    "correct": 66,
+    "options": [
+      76,
+      52,
+      81,
+      66
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">278 - 260 = ___</bdi>",
+    "correct": 18,
+    "options": [
+      14,
+      18,
+      3,
       81
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">408 - 180 = ___</bdi>",
-    "correct": 228,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">427 - ___ = 329</bdi>",
+    "correct": 98,
     "options": [
-      234,
-      227,
-      230,
-      228
+      106,
+      98,
+      100,
+      89
+    ],
+    "hint": "השתמשי בחיסור: 427 פחות 329."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 136 = 209</bdi>",
+    "correct": 345,
+    "options": [
+      349,
+      345,
+      356,
+      358
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 209 ועוד 136."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">137 - 44 = ___</bdi>",
+    "correct": 93,
+    "options": [
+      98,
+      39,
+      93,
+      97
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">403 - 87 = ___</bdi>",
-    "correct": 316,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 48 = 95</bdi>",
+    "correct": 143,
     "options": [
-      325,
-      316,
-      318,
-      305
+      130,
+      150,
+      152,
+      143
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 95 ועוד 48."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">267 - ___ = 250</bdi>",
+    "correct": 17,
+    "options": [
+      17,
+      27,
+      71,
+      13
+    ],
+    "hint": "השתמשי בחיסור: 267 פחות 250."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">299 - 148 = ___</bdi>",
+    "correct": 151,
+    "options": [
+      145,
+      151,
+      139,
+      137
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">387 - 281 = ___</bdi>",
-    "correct": 106,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">322 - 66 = ___</bdi>",
+    "correct": 256,
     "options": [
-      119,
-      102,
-      111,
-      106
+      256,
+      259,
+      254,
+      270
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 238 = 353</bdi>",
-    "correct": 591,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">92 - ___ = 81</bdi>",
+    "correct": 11,
     "options": [
-      578,
-      601,
-      591,
-      586
+      11,
+      1,
+      19,
+      4
     ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 353 ועוד 238."
+    "hint": "השתמשי בחיסור: 92 פחות 81."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 121 = 313</bdi>",
-    "correct": 434,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">469 - 138 = ___</bdi>",
+    "correct": 331,
     "options": [
-      434,
-      444,
-      430,
-      433
+      337,
+      331,
+      317,
+      335
     ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 313 ועוד 121."
+    "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">80 - 20 = ___</bdi>",
-    "correct": 60,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">441 - ___ = 224</bdi>",
+    "correct": 217,
+    "options": [
+      222,
+      218,
+      217,
+      214
+    ],
+    "hint": "השתמשי בחיסור: 441 פחות 224."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">74 - 29 = ___</bdi>",
+    "correct": 45,
+    "options": [
+      49,
+      41,
+      54,
+      45
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 207 = 389</bdi>",
+    "correct": 596,
+    "options": [
+      603,
+      596,
+      587,
+      606
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 389 ועוד 207."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">270 - 63 = ___</bdi>",
+    "correct": 207,
+    "options": [
+      214,
+      212,
+      207,
+      197
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 130 = 154</bdi>",
+    "correct": 284,
+    "options": [
+      284,
+      291,
+      297,
+      271
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 154 ועוד 130."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 20 = 263</bdi>",
+    "correct": 283,
+    "options": [
+      283,
+      286,
+      298,
+      275
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 263 ועוד 20."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">460 - ___ = 150</bdi>",
+    "correct": 310,
+    "options": [
+      310,
+      306,
+      311,
+      323
+    ],
+    "hint": "השתמשי בחיסור: 460 פחות 150."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">446 - ___ = 103</bdi>",
+    "correct": 343,
+    "options": [
+      336,
+      331,
+      343,
+      348
+    ],
+    "hint": "השתמשי בחיסור: 446 פחות 103."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">97 - 88 = ___</bdi>",
+    "correct": 9,
+    "options": [
+      9,
+      17,
+      16,
+      2
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">258 - 70 = ___</bdi>",
+    "correct": 188,
+    "options": [
+      203,
+      177,
+      194,
+      188
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">219 - ___ = 25</bdi>",
+    "correct": 194,
+    "options": [
+      183,
+      193,
+      203,
+      194
+    ],
+    "hint": "השתמשי בחיסור: 219 פחות 25."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 155 = 325</bdi>",
+    "correct": 480,
+    "options": [
+      466,
+      480,
+      479,
+      487
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 325 ועוד 155."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 88 = 389</bdi>",
+    "correct": 477,
+    "options": [
+      488,
+      462,
+      477,
+      475
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 389 ועוד 88."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">266 - 19 = ___</bdi>",
+    "correct": 247,
+    "options": [
+      238,
+      240,
+      248,
+      247
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 10 = 166</bdi>",
+    "correct": 176,
+    "options": [
+      182,
+      166,
+      188,
+      176
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 166 ועוד 10."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">299 - 222 = ___</bdi>",
+    "correct": 77,
     "options": [
       67,
-      64,
-      6,
-      60
+      77,
+      75,
+      88
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">461 - 66 = ___</bdi>",
-    "correct": 395,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">64 - ___ = 11</bdi>",
+    "correct": 53,
     "options": [
-      407,
-      408,
-      386,
-      395
+      67,
+      35,
+      53,
+      55
+    ],
+    "hint": "השתמשי בחיסור: 64 פחות 11."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">208 - 172 = ___</bdi>",
+    "correct": 36,
+    "options": [
+      46,
+      63,
+      31,
+      36
     ],
     "hint": "חסרי את המספר הקטן מהגדול."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">280 - ___ = 233</bdi>",
-    "correct": 47,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 132 = 201</bdi>",
+    "correct": 333,
     "options": [
-      47,
-      42,
-      34,
-      74
+      324,
+      325,
+      333,
+      340
     ],
-    "hint": "השתמשי בחיסור: 280 פחות 233."
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 201 ועוד 132."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 75 = 86</bdi>",
-    "correct": 161,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">358 - ___ = 310</bdi>",
+    "correct": 48,
     "options": [
-      161,
-      157,
+      37,
+      48,
+      49,
+      84
+    ],
+    "hint": "השתמשי בחיסור: 358 פחות 310."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 147 = 436</bdi>",
+    "correct": 583,
+    "options": [
+      597,
+      583,
+      571,
+      580
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 436 ועוד 147."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">68 - ___ = 57</bdi>",
+    "correct": 11,
+    "options": [
+      11,
+      19,
+      25,
+      2
+    ],
+    "hint": "השתמשי בחיסור: 68 פחות 57."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">389 - ___ = 59</bdi>",
+    "correct": 330,
+    "options": [
+      341,
+      339,
+      330,
+      345
+    ],
+    "hint": "השתמשי בחיסור: 389 פחות 59."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 68 = 307</bdi>",
+    "correct": 375,
+    "options": [
+      371,
+      360,
+      378,
+      375
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 307 ועוד 68."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 131 = 307</bdi>",
+    "correct": 438,
+    "options": [
+      444,
+      434,
+      438,
+      443
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 307 ועוד 131."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">172 - ___ = 87</bdi>",
+    "correct": 85,
+    "options": [
+      85,
+      79,
+      92,
+      58
+    ],
+    "hint": "השתמשי בחיסור: 172 פחות 87."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 171 = 420</bdi>",
+    "correct": 591,
+    "options": [
+      580,
+      579,
+      591,
+      577
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 420 ועוד 171."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 132 = 260</bdi>",
+    "correct": 392,
+    "options": [
+      406,
+      385,
+      382,
+      392
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 260 ועוד 132."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 371 = 491</bdi>",
+    "correct": 862,
+    "options": [
+      855,
+      850,
+      874,
+      862
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 491 ועוד 371."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 157 = 221</bdi>",
+    "correct": 378,
+    "options": [
+      377,
+      378,
+      376,
+      381
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 221 ועוד 157."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 35 = 144</bdi>",
+    "correct": 179,
+    "options": [
+      175,
+      177,
+      186,
+      179
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 144 ועוד 35."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">195 - ___ = 61</bdi>",
+    "correct": 134,
+    "options": [
+      134,
+      141,
+      147,
+      130
+    ],
+    "hint": "השתמשי בחיסור: 195 פחות 61."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">214 - ___ = 73</bdi>",
+    "correct": 141,
+    "options": [
+      140,
       152,
-      166
+      130,
+      141
     ],
-    "hint": "השתמשי בפעולה ההפוכה - חיבור: 86 ועוד 75."
+    "hint": "השתמשי בחיסור: 214 פחות 73."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">272 - 42 = ___</bdi>",
+    "correct": 230,
+    "options": [
+      242,
+      241,
+      230,
+      233
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 365 = 459</bdi>",
+    "correct": 824,
+    "options": [
+      830,
+      820,
+      836,
+      824
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 459 ועוד 365."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">260 - ___ = 55</bdi>",
+    "correct": 205,
+    "options": [
+      194,
+      205,
+      199,
+      193
+    ],
+    "hint": "השתמשי בחיסור: 260 פחות 55."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 421 = 496</bdi>",
+    "correct": 917,
+    "options": [
+      913,
+      917,
+      931,
+      932
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 496 ועוד 421."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">149 - 37 = ___</bdi>",
+    "correct": 112,
+    "options": [
+      112,
+      104,
+      126,
+      113
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">156 - 146 = ___</bdi>",
+    "correct": 10,
+    "options": [
+      9,
+      10,
+      16,
+      8
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">202 - 51 = ___</bdi>",
+    "correct": 151,
+    "options": [
+      148,
+      160,
+      138,
+      151
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">370 - 324 = ___</bdi>",
+    "correct": 46,
+    "options": [
+      46,
+      64,
+      31,
+      52
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 248 = 362</bdi>",
+    "correct": 610,
+    "options": [
+      599,
+      610,
+      613,
+      617
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 362 ועוד 248."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">481 - ___ = 285</bdi>",
+    "correct": 196,
+    "options": [
+      202,
+      196,
+      204,
+      190
+    ],
+    "hint": "השתמשי בחיסור: 481 פחות 285."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">379 - 108 = ___</bdi>",
+    "correct": 271,
+    "options": [
+      262,
+      279,
+      271,
+      263
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">184 - ___ = 123</bdi>",
+    "correct": 61,
+    "options": [
+      16,
+      56,
+      61,
+      54
+    ],
+    "hint": "השתמשי בחיסור: 184 פחות 123."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">___ - 27 = 58</bdi>",
+    "correct": 85,
+    "options": [
+      73,
+      58,
+      99,
+      85
+    ],
+    "hint": "השתמשי בפעולה ההפוכה - חיבור: 58 ועוד 27."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">195 - ___ = 118</bdi>",
+    "correct": 77,
+    "options": [
+      80,
+      72,
+      64,
+      77
+    ],
+    "hint": "השתמשי בחיסור: 195 פחות 118."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">230 - 33 = ___</bdi>",
+    "correct": 197,
+    "options": [
+      197,
+      194,
+      207,
+      182
+    ],
+    "hint": "חסרי את המספר הקטן מהגדול."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">285 - ___ = 186</bdi>",
+    "correct": 99,
+    "options": [
+      114,
+      91,
+      99,
+      89
+    ],
+    "hint": "השתמשי בחיסור: 285 פחות 186."
   }
 ]

@@ -1,119 +1,64 @@
 [
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">15 : 3 = ?</bdi>",
-    "correct": 5,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 4 = ?</bdi>",
+    "correct": 24,
     "options": [
-      1,
-      9,
-      3,
-      5
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 15?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">45 : 5 = ?</bdi>",
-    "correct": 9,
-    "options": [
-      5,
-      12,
-      6,
-      9
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 45?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 7 = ?</bdi>",
-    "correct": 35,
-    "options": [
-      33,
-      35,
-      53,
-      25
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 9 = ?</bdi>",
-    "correct": 81,
-    "options": [
-      72,
-      82,
-      81,
+      24,
+      42,
+      27,
       18
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">90 : 10 = ?</bdi>",
-    "correct": 9,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : 5 = ?</bdi>",
+    "correct": 8,
     "options": [
-      6,
-      9,
+      7,
       8,
+      4,
       12
     ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 90?"
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 40?"
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">32 : 8 = ?</bdi>",
-    "correct": 4,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 9 = ?</bdi>",
+    "correct": 45,
     "options": [
-      4,
-      8,
-      7,
-      5
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 8 נותן 32?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 7 = ?</bdi>",
-    "correct": 28,
-    "options": [
-      28,
-      82,
-      27,
-      24
+      45,
+      35,
+      44,
+      54
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 8 = ?</bdi>",
-    "correct": 56,
-    "options": [
-      65,
-      56,
-      57,
-      47
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">32 : 8 = ?</bdi>",
-    "correct": 4,
-    "options": [
-      1,
-      6,
-      8,
-      4
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 8 נותן 32?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">70 : 7 = ?</bdi>",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : 4 = ?</bdi>",
     "correct": 10,
     "options": [
-      8,
       10,
-      13,
-      12
+      9,
+      14,
+      11
     ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 70?"
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 40?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 6 = ?</bdi>",
+    "correct": 18,
+    "options": [
+      15,
+      81,
+      18,
+      13
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
     "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 3 = ?</bdi>",
     "correct": 30,
     "options": [
-      32,
+      22,
       3,
       30,
       29
@@ -121,133 +66,342 @@
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 8 = ?</bdi>",
-    "correct": 40,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 3 = ?</bdi>",
+    "correct": 30,
     "options": [
-      42,
-      40,
-      44,
-      4
+      3,
+      21,
+      30,
+      24
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">18 : 6 = ?</bdi>",
-    "correct": 3,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 5 = ?</bdi>",
+    "correct": 25,
     "options": [
-      4,
-      0,
-      3,
-      1
+      52,
+      25,
+      19,
+      23
     ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 18?"
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">90 : 10 = ?</bdi>",
-    "correct": 9,
-    "options": [
-      9,
-      11,
-      13,
-      5
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 90?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">12 : 3 = ?</bdi>",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">24 : 6 = ?</bdi>",
     "correct": 4,
     "options": [
+      0,
+      3,
       4,
-      6,
-      5,
-      3
+      6
     ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 12?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : 8 = ?</bdi>",
-    "correct": 5,
-    "options": [
-      8,
-      6,
-      5,
-      9
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 8 נותן 40?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 7 = ?</bdi>",
-    "correct": 28,
-    "options": [
-      20,
-      82,
-      28,
-      22
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">32 : 4 = ?</bdi>",
-    "correct": 8,
-    "options": [
-      12,
-      4,
-      5,
-      8
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 32?"
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 24?"
   },
   {
     "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 4 = ?</bdi>",
     "correct": 20,
     "options": [
-      2,
-      15,
-      30,
-      20
+      24,
+      13,
+      20,
+      2
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 10 = ?</bdi>",
-    "correct": 70,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 8 = ?</bdi>",
+    "correct": 56,
     "options": [
-      79,
-      60,
-      70,
+      59,
+      56,
+      65,
+      63
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 7 = ?</bdi>",
+    "correct": 49,
+    "options": [
+      94,
+      50,
+      49,
+      57
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">60 : 10 = ?</bdi>",
+    "correct": 6,
+    "options": [
+      10,
+      4,
+      6,
+      3
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 60?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">90 : 9 = ?</bdi>",
+    "correct": 10,
+    "options": [
+      9,
+      8,
+      10,
+      14
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 9 נותן 90?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 6 = ?</bdi>",
+    "correct": 30,
+    "options": [
+      26,
+      30,
+      24,
+      3
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">60 : 10 = ?</bdi>",
+    "correct": 6,
+    "options": [
+      6,
+      2,
+      9,
+      3
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 60?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">70 : 7 = ?</bdi>",
+    "correct": 10,
+    "options": [
+      11,
+      8,
+      10,
+      7
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 70?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 3 = ?</bdi>",
+    "correct": 9,
+    "options": [
+      18,
+      1,
+      15,
+      9
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">20 : 5 = ?</bdi>",
+    "correct": 4,
+    "options": [
+      8,
+      4,
+      0,
+      5
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 20?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">21 : 7 = ?</bdi>",
+    "correct": 3,
+    "options": [
+      6,
+      4,
+      2,
+      3
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 21?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 5 = ?</bdi>",
+    "correct": 20,
+    "options": [
+      20,
+      13,
+      2,
+      23
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 7 = ?</bdi>",
+    "correct": 49,
+    "options": [
+      57,
+      94,
+      54,
+      49
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">21 : 3 = ?</bdi>",
+    "correct": 7,
+    "options": [
+      11,
+      7,
+      5,
+      3
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 21?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 4 = ?</bdi>",
+    "correct": 12,
+    "options": [
+      22,
+      7,
+      21,
+      12
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 9 = ?</bdi>",
+    "correct": 45,
+    "options": [
+      40,
+      44,
+      45,
+      54
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 6 = ?</bdi>",
+    "correct": 54,
+    "options": [
+      48,
+      45,
+      54,
+      47
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 7 = ?</bdi>",
+    "correct": 35,
+    "options": [
+      35,
+      53,
+      36,
+      42
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x 7 = ?</bdi>",
+    "correct": 56,
+    "options": [
+      62,
+      65,
+      48,
+      56
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 7 = ?</bdi>",
+    "correct": 21,
+    "options": [
+      12,
+      24,
+      21,
+      31
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 10 = ?</bdi>",
+    "correct": 90,
+    "options": [
+      90,
+      93,
+      95,
+      9
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 5 = ?</bdi>",
+    "correct": 35,
+    "options": [
+      35,
+      32,
+      53,
+      36
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">21 : 7 = ?</bdi>",
+    "correct": 3,
+    "options": [
+      0,
+      7,
+      1,
+      3
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 21?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 4 = ?</bdi>",
+    "correct": 12,
+    "options": [
+      6,
+      21,
+      8,
+      12
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x 7 = ?</bdi>",
+    "correct": 56,
+    "options": [
+      56,
+      65,
+      46,
+      50
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 5 = ?</bdi>",
+    "correct": 15,
+    "options": [
+      51,
+      11,
+      15,
       7
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 9 = ?</bdi>",
-    "correct": 90,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 7 = ?</bdi>",
+    "correct": 49,
     "options": [
-      90,
-      81,
-      9,
-      96
+      55,
+      46,
+      94,
+      49
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 5 = ?</bdi>",
-    "correct": 45,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 6 = ?</bdi>",
+    "correct": 42,
     "options": [
-      54,
-      38,
-      53,
-      45
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x 5 = ?</bdi>",
-    "correct": 40,
-    "options": [
-      40,
       39,
-      4,
+      24,
+      32,
       42
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
@@ -257,262 +411,306 @@
     "correct": 8,
     "options": [
       8,
-      6,
       11,
-      10
+      6,
+      4
     ],
     "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 32?"
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">49 : 7 = ?</bdi>",
-    "correct": 7,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x 10 = ?</bdi>",
+    "correct": 80,
     "options": [
+      70,
+      74,
       8,
-      4,
+      80
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 9 = ?</bdi>",
+    "correct": 90,
+    "options": [
+      82,
       9,
-      7
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 49?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">35 : 7 = ?</bdi>",
-    "correct": 5,
-    "options": [
-      5,
-      4,
-      2,
-      3
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 35?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 7 = ?</bdi>",
-    "correct": 63,
-    "options": [
-      72,
-      63,
-      36,
-      55
+      90,
+      99
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : 4 = ?</bdi>",
-    "correct": 10,
-    "options": [
-      6,
-      9,
-      14,
-      10
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 40?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 10 = ?</bdi>",
-    "correct": 30,
-    "options": [
-      30,
-      36,
-      3,
-      32
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">18 : 6 = ?</bdi>",
-    "correct": 3,
-    "options": [
-      7,
-      5,
-      6,
-      3
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 18?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 8 = ?</bdi>",
-    "correct": 40,
-    "options": [
-      32,
-      30,
-      4,
-      40
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 4 = ?</bdi>",
-    "correct": 20,
-    "options": [
-      23,
-      2,
-      25,
-      20
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">36 : 9 = ?</bdi>",
-    "correct": 4,
-    "options": [
-      4,
-      8,
-      1,
-      3
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 9 נותן 36?"
   },
   {
     "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 10 = ?</bdi>",
     "correct": 100,
     "options": [
-      108,
-      92,
-      95,
-      100
+      90,
+      110,
+      100,
+      104
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">12 : 3 = ?</bdi>",
-    "correct": 4,
-    "options": [
-      4,
-      1,
-      8,
-      0
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 12?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 7 = ?</bdi>",
-    "correct": 28,
-    "options": [
-      82,
-      37,
-      20,
-      28
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">81 : 9 = ?</bdi>",
-    "correct": 9,
-    "options": [
-      8,
-      9,
-      11,
-      5
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 9 נותן 81?"
   },
   {
     "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 7 = ?</bdi>",
     "correct": 70,
     "options": [
-      73,
       7,
-      74,
-      70
+      70,
+      69,
+      74
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">90 : 9 = ?</bdi>",
-    "correct": 10,
-    "options": [
-      10,
-      9,
-      13,
-      7
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 9 נותן 90?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">27 : 9 = ?</bdi>",
-    "correct": 3,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">25 : 5 = ?</bdi>",
+    "correct": 5,
     "options": [
       4,
+      8,
       2,
-      3,
       5
     ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 9 נותן 27?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">36 : 4 = ?</bdi>",
-    "correct": 9,
-    "options": [
-      7,
-      9,
-      13,
-      5
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 36?"
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 25?"
   },
   {
     "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 9 = ?</bdi>",
     "correct": 54,
     "options": [
-      46,
+      62,
+      57,
       45,
-      54,
-      55
+      54
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 3 = ?</bdi>",
-    "correct": 27,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">64 : 8 = ?</bdi>",
+    "correct": 8,
     "options": [
-      72,
-      20,
-      27,
-      36
+      10,
+      8,
+      9,
+      5
     ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 8 נותן 64?"
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 5 = ?</bdi>",
-    "correct": 15,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">20 : 5 = ?</bdi>",
+    "correct": 4,
     "options": [
-      23,
-      16,
-      15,
-      51
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 10 = ?</bdi>",
-    "correct": 30,
-    "options": [
-      3,
-      21,
-      30,
-      29
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 10 = ?</bdi>",
-    "correct": 70,
-    "options": [
-      75,
-      77,
       7,
+      3,
+      2,
+      4
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 20?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">35 : 7 = ?</bdi>",
+    "correct": 5,
+    "options": [
+      6,
+      7,
+      2,
+      5
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 35?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 6 = ?</bdi>",
+    "correct": 18,
+    "options": [
+      18,
+      23,
+      22,
+      81
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">32 : 4 = ?</bdi>",
+    "correct": 8,
+    "options": [
+      10,
+      4,
+      11,
+      8
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 32?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 3 = ?</bdi>",
+    "correct": 18,
+    "options": [
+      22,
+      18,
+      21,
+      81
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x 9 = ?</bdi>",
+    "correct": 72,
+    "options": [
+      27,
+      72,
+      79,
+      73
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 : 3 = ?</bdi>",
+    "correct": 3,
+    "options": [
+      0,
+      1,
+      3,
+      7
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 9?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">24 : 6 = ?</bdi>",
+    "correct": 4,
+    "options": [
+      5,
+      6,
+      4,
+      2
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 24?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 8 = ?</bdi>",
+    "correct": 72,
+    "options": [
+      69,
+      72,
+      27,
       70
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 9 = ?</bdi>",
-    "correct": 27,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 6 = ?</bdi>",
+    "correct": 36,
     "options": [
-      72,
-      26,
-      27,
-      23
+      30,
+      37,
+      36,
+      63
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">27 : 3 = ?</bdi>",
+    "correct": 9,
+    "options": [
+      12,
+      10,
+      7,
+      9
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 27?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">15 : 3 = ?</bdi>",
+    "correct": 5,
+    "options": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 15?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : 8 = ?</bdi>",
+    "correct": 5,
+    "options": [
+      5,
+      4,
+      6,
+      9
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 8 נותן 40?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 5 = ?</bdi>",
+    "correct": 30,
+    "options": [
+      3,
+      20,
+      35,
+      30
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">24 : 8 = ?</bdi>",
+    "correct": 3,
+    "options": [
+      7,
+      5,
+      1,
+      3
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 8 נותן 24?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 10 = ?</bdi>",
+    "correct": 40,
+    "options": [
+      42,
+      4,
+      40,
+      34
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 5 = ?</bdi>",
+    "correct": 25,
+    "options": [
+      25,
+      52,
+      16,
+      27
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 3 = ?</bdi>",
+    "correct": 18,
+    "options": [
+      14,
+      18,
+      81,
+      24
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">21 : 3 = ?</bdi>",
+    "correct": 7,
+    "options": [
+      7,
+      5,
+      6,
+      9
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 21?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 3 = ?</bdi>",
+    "correct": 15,
+    "options": [
+      15,
+      11,
+      12,
+      51
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
@@ -520,21 +718,175 @@
     "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">81 : 9 = ?</bdi>",
     "correct": 9,
     "options": [
+      9,
       6,
-      10,
-      11,
-      9
+      7,
+      12
     ],
     "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 9 נותן 81?"
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 7 = ?</bdi>",
-    "correct": 63,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 7 = ?</bdi>",
+    "correct": 42,
     "options": [
-      36,
-      53,
+      42,
+      51,
+      24,
+      35
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">21 : 7 = ?</bdi>",
+    "correct": 3,
+    "options": [
+      1,
+      3,
+      7,
+      0
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 21?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 7 = ?</bdi>",
+    "correct": 70,
+    "options": [
+      65,
+      7,
+      70,
+      79
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">80 : 10 = ?</bdi>",
+    "correct": 8,
+    "options": [
+      5,
+      4,
+      8,
+      6
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 80?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">18 : 6 = ?</bdi>",
+    "correct": 3,
+    "options": [
+      0,
+      5,
+      3,
+      4
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 18?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">36 : 4 = ?</bdi>",
+    "correct": 9,
+    "options": [
+      9,
+      12,
+      13,
+      10
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 36?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 4 = ?</bdi>",
+    "correct": 36,
+    "options": [
+      31,
+      44,
       63,
-      58
+      36
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x 7 = ?</bdi>",
+    "correct": 56,
+    "options": [
+      58,
+      60,
+      56,
+      65
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">27 : 3 = ?</bdi>",
+    "correct": 9,
+    "options": [
+      7,
+      6,
+      9,
+      11
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 27?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 8 = ?</bdi>",
+    "correct": 48,
+    "options": [
+      44,
+      84,
+      48,
+      41
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">54 : 9 = ?</bdi>",
+    "correct": 6,
+    "options": [
+      7,
+      3,
+      6,
+      9
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 9 נותן 54?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 4 = ?</bdi>",
+    "correct": 36,
+    "options": [
+      63,
+      31,
+      36,
+      29
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">30 : 6 = ?</bdi>",
+    "correct": 5,
+    "options": [
+      3,
+      6,
+      7,
+      5
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 30?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 : 3 = ?</bdi>",
+    "correct": 3,
+    "options": [
+      2,
+      7,
+      3,
+      5
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 9?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 6 = ?</bdi>",
+    "correct": 18,
+    "options": [
+      18,
+      13,
+      81,
+      12
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
@@ -542,144 +894,12 @@
     "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">28 : 7 = ?</bdi>",
     "correct": 4,
     "options": [
-      6,
-      2,
+      5,
+      7,
       4,
-      0
+      8
     ],
     "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 28?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">30 : 10 = ?</bdi>",
-    "correct": 3,
-    "options": [
-      0,
-      1,
-      5,
-      3
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 30?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 3 = ?</bdi>",
-    "correct": 12,
-    "options": [
-      21,
-      18,
-      5,
-      12
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">21 : 3 = ?</bdi>",
-    "correct": 7,
-    "options": [
-      5,
-      3,
-      9,
-      7
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 21?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">15 : 3 = ?</bdi>",
-    "correct": 5,
-    "options": [
-      1,
-      5,
-      8,
-      7
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 15?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 4 = ?</bdi>",
-    "correct": 20,
-    "options": [
-      19,
-      2,
-      20,
-      29
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">48 : 6 = ?</bdi>",
-    "correct": 8,
-    "options": [
-      8,
-      7,
-      11,
-      10
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 48?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">16 : 4 = ?</bdi>",
-    "correct": 4,
-    "options": [
-      4,
-      1,
-      7,
-      2
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 16?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">21 : 3 = ?</bdi>",
-    "correct": 7,
-    "options": [
-      4,
-      3,
-      7,
-      10
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 21?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">35 : 5 = ?</bdi>",
-    "correct": 7,
-    "options": [
-      7,
-      11,
-      8,
-      10
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 35?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">30 : 6 = ?</bdi>",
-    "correct": 5,
-    "options": [
-      1,
-      3,
-      5,
-      6
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 30?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">80 : 10 = ?</bdi>",
-    "correct": 8,
-    "options": [
-      8,
-      5,
-      6,
-      12
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 80?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">50 : 10 = ?</bdi>",
-    "correct": 5,
-    "options": [
-      9,
-      5,
-      1,
-      3
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 50?"
   },
   {
     "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">63 : 7 = ?</bdi>",
@@ -687,19 +907,74 @@
     "options": [
       9,
       12,
-      10,
-      13
+      6,
+      8
     ],
     "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 63?"
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 5 = ?</bdi>",
-    "correct": 20,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">50 : 5 = ?</bdi>",
+    "correct": 10,
     "options": [
-      17,
-      2,
-      26,
-      20
+      11,
+      8,
+      10,
+      13
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 50?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 7 = ?</bdi>",
+    "correct": 42,
+    "options": [
+      35,
+      51,
+      42,
+      24
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">50 : 5 = ?</bdi>",
+    "correct": 10,
+    "options": [
+      10,
+      7,
+      8,
+      12
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 50?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">36 : 6 = ?</bdi>",
+    "correct": 6,
+    "options": [
+      6,
+      8,
+      5,
+      3
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 36?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 5 = ?</bdi>",
+    "correct": 50,
+    "options": [
+      51,
+      44,
+      50,
+      5
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 3 = ?</bdi>",
+    "correct": 12,
+    "options": [
+      18,
+      21,
+      10,
+      12
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
   },
@@ -709,394 +984,119 @@
     "options": [
       5,
       8,
-      6,
-      4
+      2,
+      3
     ],
     "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 8 נותן 40?"
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 10 = ?</bdi>",
-    "correct": 60,
-    "options": [
-      55,
-      60,
-      65,
-      6
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 4 = ?</bdi>",
-    "correct": 16,
-    "options": [
-      18,
-      21,
-      61,
-      16
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 9 = ?</bdi>",
-    "correct": 54,
-    "options": [
-      54,
-      49,
-      52,
-      45
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">30 : 10 = ?</bdi>",
-    "correct": 3,
-    "options": [
-      3,
-      4,
-      1,
-      7
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 30?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 6 = ?</bdi>",
-    "correct": 42,
-    "options": [
-      32,
-      24,
-      42,
-      50
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">30 : 5 = ?</bdi>",
-    "correct": 6,
-    "options": [
-      6,
-      5,
-      8,
-      4
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 30?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 10 = ?</bdi>",
-    "correct": 100,
-    "options": [
-      101,
-      100,
-      109,
-      96
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">90 : 9 = ?</bdi>",
-    "correct": 10,
-    "options": [
-      13,
-      10,
-      11,
-      9
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 9 נותן 90?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">24 : 6 = ?</bdi>",
-    "correct": 4,
-    "options": [
-      0,
-      1,
-      4,
-      6
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 24?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 3 = ?</bdi>",
-    "correct": 30,
-    "options": [
-      27,
-      34,
-      30,
-      3
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 8 = ?</bdi>",
-    "correct": 80,
-    "options": [
-      8,
-      80,
-      90,
-      77
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 8 = ?</bdi>",
-    "correct": 24,
-    "options": [
-      27,
-      24,
-      42,
-      33
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 6 = ?</bdi>",
-    "correct": 60,
-    "options": [
-      53,
-      56,
-      6,
-      60
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">60 : 6 = ?</bdi>",
-    "correct": 10,
-    "options": [
-      10,
-      14,
-      9,
-      6
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 60?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 9 = ?</bdi>",
-    "correct": 54,
-    "options": [
-      60,
-      64,
-      45,
-      54
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 3 = ?</bdi>",
-    "correct": 30,
-    "options": [
-      22,
-      27,
-      30,
-      3
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">56 : 7 = ?</bdi>",
-    "correct": 8,
-    "options": [
-      9,
-      8,
-      12,
-      4
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 56?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">60 : 10 = ?</bdi>",
-    "correct": 6,
-    "options": [
-      10,
-      4,
-      8,
-      6
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 60?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x 9 = ?</bdi>",
-    "correct": 72,
-    "options": [
-      27,
-      64,
-      67,
-      72
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 9 = ?</bdi>",
-    "correct": 81,
-    "options": [
-      77,
-      18,
-      80,
-      81
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">4 x 6 = ?</bdi>",
-    "correct": 24,
-    "options": [
-      16,
-      42,
-      24,
-      15
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">70 : 7 = ?</bdi>",
-    "correct": 10,
-    "options": [
-      8,
-      9,
-      10,
-      14
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 70?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 8 = ?</bdi>",
-    "correct": 48,
-    "options": [
-      58,
-      48,
-      47,
-      84
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 7 = ?</bdi>",
-    "correct": 63,
-    "options": [
-      63,
-      36,
-      61,
-      56
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">100 : 10 = ?</bdi>",
-    "correct": 10,
-    "options": [
-      8,
-      14,
-      10,
-      7
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 10 נותן 100?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">24 : 6 = ?</bdi>",
-    "correct": 4,
-    "options": [
-      6,
-      4,
-      5,
-      8
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 24?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">5 x 4 = ?</bdi>",
-    "correct": 20,
-    "options": [
-      18,
-      2,
-      12,
-      20
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">20 : 4 = ?</bdi>",
-    "correct": 5,
-    "options": [
-      8,
-      9,
-      5,
-      1
-    ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 20?"
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">8 x 7 = ?</bdi>",
-    "correct": 56,
-    "options": [
-      65,
-      50,
-      56,
-      58
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 3 = ?</bdi>",
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">54 : 6 = ?</bdi>",
     "correct": 9,
     "options": [
-      11,
-      19,
-      2,
-      9
+      10,
+      5,
+      9,
+      11
     ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 54?"
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">40 : 5 = ?</bdi>",
-    "correct": 8,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">35 : 7 = ?</bdi>",
+    "correct": 5,
     "options": [
-      11,
+      7,
       4,
       8,
       5
     ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 40?"
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 7 נותן 35?"
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">10 x 5 = ?</bdi>",
-    "correct": 50,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">30 : 6 = ?</bdi>",
+    "correct": 5,
     "options": [
-      5,
-      45,
-      50,
-      53
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 4 = ?</bdi>",
-    "correct": 24,
-    "options": [
-      17,
-      42,
-      31,
-      24
-    ],
-    "hint": "היעזרי בלוח הכפל שאת מכירה."
-  },
-  {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">24 : 3 = ?</bdi>",
-    "correct": 8,
-    "options": [
-      10,
+      2,
       5,
       6,
-      8
+      7
     ],
-    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 3 נותן 24?"
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 6 נותן 30?"
   },
   {
-    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">7 x 9 = ?</bdi>",
-    "correct": 63,
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">72 : 8 = ?</bdi>",
+    "correct": 9,
     "options": [
-      64,
-      63,
-      36,
-      59
+      12,
+      11,
+      7,
+      9
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 8 נותן 72?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">25 : 5 = ?</bdi>",
+    "correct": 5,
+    "options": [
+      4,
+      8,
+      1,
+      5
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 25?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">3 x 5 = ?</bdi>",
+    "correct": 15,
+    "options": [
+      15,
+      16,
+      5,
+      51
     ],
     "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">6 x 5 = ?</bdi>",
+    "correct": 30,
+    "options": [
+      3,
+      30,
+      39,
+      28
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">36 : 4 = ?</bdi>",
+    "correct": 9,
+    "options": [
+      9,
+      11,
+      6,
+      7
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 4 נותן 36?"
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">9 x 6 = ?</bdi>",
+    "correct": 54,
+    "options": [
+      54,
+      62,
+      45,
+      47
+    ],
+    "hint": "היעזרי בלוח הכפל שאת מכירה."
+  },
+  {
+    "question": "<bdi dir=\"ltr\" style=\"display:inline-block;\">50 : 5 = ?</bdi>",
+    "correct": 10,
+    "options": [
+      8,
+      12,
+      10,
+      7
+    ],
+    "hint": "חילוק הוא הפעולה ההפוכה לכפל: מה כפול 5 נותן 50?"
   }
 ]

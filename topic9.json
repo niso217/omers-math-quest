@@ -1,507 +1,133 @@
 [
   {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 9x10 + 2 = ?</bdi>",
-    "correct": 892,
+    "question": "מלך החשבון שואל: בארמון יש 3 חדרים, בכל חדר 9 חיילים. כמה חיילים בסך הכל?",
+    "correct": 27,
     "options": [
-      892,
-      882,
-      912,
-      898
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">81 : ___ = 9</bdi>",
-    "correct": 9,
-    "options": [
-      5,
-      9,
-      13,
-      11
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: בארמון יש 7 חדרים, בכל חדר 8 חיילים. כמה חיילים בסך הכל?",
-    "correct": 56,
-    "options": [
-      64,
-      56,
-      65,
-      59
-    ],
-    "hint": "תרגיל כפל: 7 כפול 8."
-  },
-  {
-    "question": "מלך החשבון שואל: בארמון יש 5 חדרים, בכל חדר 7 חיילים. כמה חיילים בסך הכל?",
-    "correct": 35,
-    "options": [
-      35,
-      39,
-      38,
-      53
-    ],
-    "hint": "תרגיל כפל: 5 כפול 7."
-  },
-  {
-    "question": "מלך החשבון שואל: בארמון יש 4 חדרים, בכל חדר 9 חיילים. כמה חיילים בסך הכל?",
-    "correct": 36,
-    "options": [
-      36,
-      32,
-      30,
-      63
-    ],
-    "hint": "תרגיל כפל: 4 כפול 9."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 691</bdi>",
-    "correct": 309,
-    "options": [
-      274,
-      262,
-      309,
-      312
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">14 x 4 = ?</bdi>",
-    "correct": 56,
-    "options": [
-      56,
-      57,
-      55,
-      65
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "מלך החשבון שואל: בארמון יש 7 חדרים, בכל חדר 5 חיילים. כמה חיילים בסך הכל?",
-    "correct": 35,
-    "options": [
-      40,
-      53,
+      19,
+      72,
       27,
-      35
+      22
     ],
-    "hint": "תרגיל כפל: 7 כפול 5."
+    "hint": "תרגיל כפל: 3 כפול 9."
   },
   {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 3x10 + 9 = ?</bdi>",
-    "correct": 639,
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 771</bdi>",
+    "correct": 229,
     "options": [
-      639,
-      624,
-      642,
-      631
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 626</bdi>",
-    "correct": 374,
-    "options": [
-      360,
-      336,
-      405,
-      374
+      235,
+      252,
+      229,
+      230
     ],
     "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
   },
   {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">15 x 2 = ?</bdi>",
-    "correct": 30,
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 2x10 + 5 = ?</bdi>",
+    "correct": 625,
     "options": [
-      30,
-      3,
-      38,
-      20
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">72 : ___ = 8</bdi>",
-    "correct": 9,
-    "options": [
-      14,
-      13,
-      9,
-      10
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 2x10 + 7 = ?</bdi>",
-    "correct": 627,
-    "options": [
-      627,
-      614,
-      624,
-      639
+      638,
+      640,
+      625,
+      608
     ],
     "hint": "זהו המבנה העשרוני בכפל."
   },
   {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">32 : ___ = 4</bdi>",
-    "correct": 8,
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 383</bdi>",
+    "correct": 617,
     "options": [
-      8,
-      13,
-      11,
-      4
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">36 : ___ = 4</bdi>",
-    "correct": 9,
-    "options": [
-      9,
-      11,
-      14,
-      10
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 605</bdi>",
-    "correct": 395,
-    "options": [
-      416,
-      349,
-      410,
-      395
+      644,
+      647,
+      651,
+      617
     ],
     "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
   },
   {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">12 x 3 = ?</bdi>",
-    "correct": 36,
-    "options": [
-      36,
-      63,
-      45,
-      48
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">36 : ___ = 6</bdi>",
-    "correct": 6,
-    "options": [
-      6,
-      11,
-      7,
-      10
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">19 x 5 = ?</bdi>",
-    "correct": 95,
-    "options": [
-      95,
-      81,
-      106,
-      59
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">23 x 3 = ?</bdi>",
-    "correct": 69,
-    "options": [
-      77,
-      57,
-      96,
-      69
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 741</bdi>",
-    "correct": 259,
-    "options": [
-      288,
-      264,
-      259,
-      217
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 6x10 + 3 = ?</bdi>",
-    "correct": 463,
-    "options": [
-      478,
-      463,
-      480,
-      467
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">36 : ___ = 9</bdi>",
-    "correct": 4,
-    "options": [
-      4,
-      0,
-      6,
-      2
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: בארמון יש 3 חדרים, בכל חדר 6 חיילים. כמה חיילים בסך הכל?",
-    "correct": 18,
-    "options": [
-      11,
-      81,
-      18,
-      15
-    ],
-    "hint": "תרגיל כפל: 3 כפול 6."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">56 : ___ = 8</bdi>",
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">63 : ___ = 9</bdi>",
     "correct": 7,
     "options": [
-      11,
+      8,
+      2,
       7,
-      4,
-      2
+      9
     ],
     "hint": "היעזרי בלוח הכפל."
   },
   {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">24 x 2 = ?</bdi>",
-    "correct": 48,
-    "options": [
-      49,
-      52,
-      84,
-      48
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 7x10 + 4 = ?</bdi>",
-    "correct": 874,
-    "options": [
-      874,
-      879,
-      869,
-      867
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">22 x 4 = ?</bdi>",
-    "correct": 88,
-    "options": [
-      88,
-      98,
-      94,
-      93
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "מלך החשבון שואל: בארמון יש 6 חדרים, בכל חדר 4 חיילים. כמה חיילים בסך הכל?",
-    "correct": 24,
-    "options": [
-      27,
-      26,
-      42,
-      24
-    ],
-    "hint": "תרגיל כפל: 6 כפול 4."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 794</bdi>",
-    "correct": 206,
-    "options": [
-      162,
-      206,
-      225,
-      196
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">26 x 3 = ?</bdi>",
-    "correct": 78,
-    "options": [
-      87,
-      75,
-      68,
-      78
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">54 : ___ = 9</bdi>",
-    "correct": 6,
-    "options": [
-      4,
-      6,
-      3,
-      11
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">12 x 5 = ?</bdi>",
-    "correct": 60,
-    "options": [
-      70,
-      49,
-      60,
-      6
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 8x10 + 8 = ?</bdi>",
-    "correct": 788,
-    "options": [
-      797,
-      788,
-      802,
-      803
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">40 : ___ = 8</bdi>",
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">30 : ___ = 6</bdi>",
     "correct": 5,
     "options": [
-      6,
-      5,
-      1,
-      2
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 9x10 + 3 = ?</bdi>",
-    "correct": 993,
-    "options": [
-      979,
-      993,
-      997,
-      1013
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">19 x 5 = ?</bdi>",
-    "correct": 95,
-    "options": [
-      110,
-      59,
-      95,
-      88
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 204</bdi>",
-    "correct": 796,
-    "options": [
-      748,
-      796,
-      775,
-      822
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 9x10 + 6 = ?</bdi>",
-    "correct": 496,
-    "options": [
-      496,
-      502,
-      514,
-      484
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 647</bdi>",
-    "correct": 353,
-    "options": [
-      378,
-      303,
-      396,
-      353
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 3x10 + 5 = ?</bdi>",
-    "correct": 235,
-    "options": [
-      242,
-      235,
-      230,
-      250
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">42 : ___ = 6</bdi>",
-    "correct": 7,
-    "options": [
-      11,
-      3,
-      6,
-      7
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">28 : ___ = 7</bdi>",
-    "correct": 4,
-    "options": [
-      8,
-      4,
       9,
+      5,
+      3,
       0
     ],
     "hint": "היעזרי בלוח הכפל."
   },
   {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 4x10 + 3 = ?</bdi>",
-    "correct": 443,
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 136</bdi>",
+    "correct": 864,
     "options": [
-      451,
-      441,
-      443,
-      444
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 783</bdi>",
-    "correct": 217,
-    "options": [
-      217,
-      178,
-      213,
-      220
+      845,
+      887,
+      855,
+      864
     ],
     "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
   },
   {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">14 x 5 = ?</bdi>",
-    "correct": 70,
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">64 : ___ = 8</bdi>",
+    "correct": 8,
     "options": [
-      70,
-      82,
+      12,
       7,
-      55
+      8,
+      11
+    ],
+    "hint": "היעזרי בלוח הכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 6x10 + 7 = ?</bdi>",
+    "correct": 367,
+    "options": [
+      384,
+      364,
+      367,
+      381
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">13 x 5 = ?</bdi>",
+    "correct": 65,
+    "options": [
+      77,
+      56,
+      59,
+      65
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 6x10 + 9 = ?</bdi>",
+    "correct": 869,
+    "options": [
+      855,
+      876,
+      875,
+      869
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">22 x 5 = ?</bdi>",
+    "correct": 110,
+    "options": [
+      98,
+      110,
+      100,
+      120
     ],
     "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
   },
@@ -509,32 +135,230 @@
     "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">24 x 3 = ?</bdi>",
     "correct": 72,
     "options": [
-      72,
+      69,
+      85,
       27,
-      61,
-      86
+      72
     ],
     "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
   },
   {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 843</bdi>",
-    "correct": 157,
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 2x10 + 6 = ?</bdi>",
+    "correct": 326,
     "options": [
-      114,
-      157,
-      158,
-      198
+      326,
+      319,
+      332,
+      328
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">32 : ___ = 8</bdi>",
+    "correct": 4,
+    "options": [
+      4,
+      3,
+      2,
+      7
+    ],
+    "hint": "היעזרי בלוח הכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 196</bdi>",
+    "correct": 804,
+    "options": [
+      783,
+      781,
+      847,
+      804
     ],
     "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
   },
   {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 7x10 + 9 = ?</bdi>",
-    "correct": 579,
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 2x10 + 8 = ?</bdi>",
+    "correct": 328,
     "options": [
-      589,
-      576,
-      579,
-      577
+      328,
+      314,
+      334,
+      338
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">25 x 5 = ?</bdi>",
+    "correct": 125,
+    "options": [
+      131,
+      125,
+      111,
+      129
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 9 חדרים, בכל חדר 4 חיילים. כמה חיילים בסך הכל?",
+    "correct": 36,
+    "options": [
+      32,
+      63,
+      36,
+      43
+    ],
+    "hint": "תרגיל כפל: 9 כפול 4."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 263</bdi>",
+    "correct": 737,
+    "options": [
+      783,
+      737,
+      745,
+      743
+    ],
+    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 641</bdi>",
+    "correct": 359,
+    "options": [
+      407,
+      309,
+      360,
+      359
+    ],
+    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+  },
+  {
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">24 : ___ = 4</bdi>",
+    "correct": 6,
+    "options": [
+      1,
+      10,
+      6,
+      7
+    ],
+    "hint": "היעזרי בלוח הכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">17 x 5 = ?</bdi>",
+    "correct": 85,
+    "options": [
+      95,
+      58,
+      85,
+      89
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 6x10 + 2 = ?</bdi>",
+    "correct": 562,
+    "options": [
+      548,
+      562,
+      553,
+      580
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 6x10 + 5 = ?</bdi>",
+    "correct": 565,
+    "options": [
+      578,
+      547,
+      565,
+      545
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">40 : ___ = 8</bdi>",
+    "correct": 5,
+    "options": [
+      4,
+      7,
+      8,
+      5
+    ],
+    "hint": "היעזרי בלוח הכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 9x10 + 3 = ?</bdi>",
+    "correct": 293,
+    "options": [
+      293,
+      312,
+      283,
+      274
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 8x10 + 4 = ?</bdi>",
+    "correct": 684,
+    "options": [
+      684,
+      689,
+      669,
+      664
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 595</bdi>",
+    "correct": 405,
+    "options": [
+      449,
+      405,
+      450,
+      375
+    ],
+    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 9 חדרים, בכל חדר 9 חיילים. כמה חיילים בסך הכל?",
+    "correct": 81,
+    "options": [
+      18,
+      75,
+      81,
+      86
+    ],
+    "hint": "תרגיל כפל: 9 כפול 9."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 3x10 + 5 = ?</bdi>",
+    "correct": 835,
+    "options": [
+      828,
+      852,
+      833,
+      835
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">12 x 5 = ?</bdi>",
+    "correct": 60,
+    "options": [
+      60,
+      48,
+      6,
+      47
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 6x10 + 6 = ?</bdi>",
+    "correct": 966,
+    "options": [
+      966,
+      985,
+      967,
+      972
     ],
     "hint": "זהו המבנה העשרוני בכפל."
   },
@@ -542,76 +366,131 @@
     "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">54 : ___ = 6</bdi>",
     "correct": 9,
     "options": [
-      4,
-      6,
+      12,
+      9,
       8,
-      9
+      4
     ],
     "hint": "היעזרי בלוח הכפל."
   },
   {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">17 x 2 = ?</bdi>",
-    "correct": 34,
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">40 : ___ = 5</bdi>",
+    "correct": 8,
     "options": [
-      25,
-      43,
-      23,
-      34
+      10,
+      11,
+      8,
+      3
     ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+    "hint": "היעזרי בלוח הכפל."
   },
   {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 217</bdi>",
-    "correct": 783,
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 5x10 + 8 = ?</bdi>",
+    "correct": 958,
     "options": [
-      783,
-      755,
-      785,
-      779
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 4x10 + 3 = ?</bdi>",
-    "correct": 943,
-    "options": [
-      927,
-      926,
-      943,
-      936
+      976,
+      970,
+      958,
+      963
     ],
     "hint": "זהו המבנה העשרוני בכפל."
   },
   {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">45 : ___ = 9</bdi>",
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 2x10 + 3 = ?</bdi>",
+    "correct": 923,
+    "options": [
+      921,
+      932,
+      908,
+      923
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 4x10 + 7 = ?</bdi>",
+    "correct": 547,
+    "options": [
+      547,
+      531,
+      541,
+      532
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 6x10 + 3 = ?</bdi>",
+    "correct": 663,
+    "options": [
+      648,
+      663,
+      645,
+      678
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 9x10 + 7 = ?</bdi>",
+    "correct": 497,
+    "options": [
+      516,
+      497,
+      483,
+      511
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">30 x 3 = ?</bdi>",
+    "correct": 90,
+    "options": [
+      90,
+      94,
+      9,
+      105
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">29 x 2 = ?</bdi>",
+    "correct": 58,
+    "options": [
+      44,
+      68,
+      85,
+      58
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">35 : ___ = 7</bdi>",
     "correct": 5,
     "options": [
+      2,
       5,
-      8,
-      7,
+      1,
       6
     ],
     "hint": "היעזרי בלוח הכפל."
   },
   {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 350</bdi>",
-    "correct": 650,
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">26 x 5 = ?</bdi>",
+    "correct": 130,
     "options": [
-      685,
-      629,
-      650,
-      627
+      122,
+      130,
+      139,
+      119
     ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
   },
   {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">56 : ___ = 8</bdi>",
-    "correct": 7,
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">24 : ___ = 4</bdi>",
+    "correct": 6,
     "options": [
-      7,
-      9,
       8,
-      3
+      6,
+      2,
+      10
     ],
     "hint": "היעזרי בלוח הכפל."
   },
@@ -620,250 +499,63 @@
     "correct": 45,
     "options": [
       54,
-      52,
-      44,
-      45
+      40,
+      45,
+      37
     ],
     "hint": "תרגיל כפל: 5 כפול 9."
   },
   {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 3x10 + 6 = ?</bdi>",
-    "correct": 636,
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">4x100 + 8x10 + 6 = ?</bdi>",
+    "correct": 486,
     "options": [
-      617,
-      636,
-      631,
-      639
+      476,
+      486,
+      475,
+      484
     ],
     "hint": "זהו המבנה העשרוני בכפל."
   },
   {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 736</bdi>",
-    "correct": 264,
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 2x10 + 4 = ?</bdi>",
+    "correct": 924,
     "options": [
-      264,
-      265,
-      239,
-      257
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">36 : ___ = 9</bdi>",
-    "correct": 4,
-    "options": [
-      4,
-      2,
-      8,
-      5
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 668</bdi>",
-    "correct": 332,
-    "options": [
-      305,
-      357,
-      379,
-      332
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">72 : ___ = 9</bdi>",
-    "correct": 8,
-    "options": [
-      8,
-      6,
-      11,
-      12
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 3x10 + 5 = ?</bdi>",
-    "correct": 635,
-    "options": [
-      635,
-      639,
-      655,
-      634
+      924,
+      912,
+      915,
+      943
     ],
     "hint": "זהו המבנה העשרוני בכפל."
   },
   {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">5x100 + 3x10 + 8 = ?</bdi>",
-    "correct": 538,
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 874</bdi>",
+    "correct": 126,
     "options": [
-      552,
-      529,
-      538,
-      523
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">56 : ___ = 7</bdi>",
-    "correct": 8,
-    "options": [
-      8,
-      11,
-      6,
-      5
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 234</bdi>",
-    "correct": 766,
-    "options": [
-      786,
-      779,
-      766,
-      777
+      126,
+      170,
+      146,
+      81
     ],
     "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
   },
   {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">18 x 2 = ?</bdi>",
-    "correct": 36,
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 623</bdi>",
+    "correct": 377,
     "options": [
-      36,
-      33,
-      63,
-      41
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">12 x 5 = ?</bdi>",
-    "correct": 60,
-    "options": [
-      72,
-      73,
-      60,
-      6
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 661</bdi>",
-    "correct": 339,
-    "options": [
-      339,
-      376,
-      307,
-      333
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 664</bdi>",
-    "correct": 336,
-    "options": [
-      336,
-      309,
-      367,
-      319
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 147</bdi>",
-    "correct": 853,
-    "options": [
-      849,
-      809,
-      836,
-      853
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 658</bdi>",
-    "correct": 342,
-    "options": [
+      420,
+      377,
       356,
-      342,
-      365,
-      372
+      343
     ],
     "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">28 : ___ = 7</bdi>",
-    "correct": 4,
-    "options": [
-      2,
-      9,
-      1,
-      4
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: בארמון יש 9 חדרים, בכל חדר 9 חיילים. כמה חיילים בסך הכל?",
-    "correct": 81,
-    "options": [
-      85,
-      81,
-      18,
-      89
-    ],
-    "hint": "תרגיל כפל: 9 כפול 9."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">22 x 4 = ?</bdi>",
-    "correct": 88,
-    "options": [
-      74,
-      88,
-      78,
-      91
-    ],
-    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">45 : ___ = 5</bdi>",
-    "correct": 9,
-    "options": [
-      13,
-      5,
-      9,
-      6
-    ],
-    "hint": "היעזרי בלוח הכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 9x10 + 6 = ?</bdi>",
-    "correct": 296,
-    "options": [
-      297,
-      291,
-      296,
-      287
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 4x10 + 4 = ?</bdi>",
-    "correct": 944,
-    "options": [
-      943,
-      944,
-      958,
-      957
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
   },
   {
     "question": "מלך החשבון שואל: בארמון יש 4 חדרים, בכל חדר 9 חיילים. כמה חיילים בסך הכל?",
     "correct": 36,
     "options": [
-      44,
+      34,
+      35,
       63,
-      39,
       36
     ],
     "hint": "תרגיל כפל: 4 כפול 9."
@@ -872,186 +564,274 @@
     "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">54 : ___ = 9</bdi>",
     "correct": 6,
     "options": [
-      5,
-      10,
       6,
-      8
+      1,
+      7,
+      5
     ],
     "hint": "היעזרי בלוח הכפל."
   },
   {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 726</bdi>",
-    "correct": 274,
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 6x10 + 2 = ?</bdi>",
+    "correct": 662,
     "options": [
-      300,
-      306,
-      249,
-      274
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 7x10 + 2 = ?</bdi>",
-    "correct": 372,
-    "options": [
-      388,
-      372,
-      390,
-      354
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 3x10 + 6 = ?</bdi>",
-    "correct": 836,
-    "options": [
-      836,
-      833,
-      849,
-      822
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 343</bdi>",
-    "correct": 657,
-    "options": [
-      700,
-      657,
+      662,
+      670,
       646,
-      655
-    ],
-    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
-  },
-  {
-    "question": "מלך החשבון שואל: בארמון יש 4 חדרים, בכל חדר 4 חיילים. כמה חיילים בסך הכל?",
-    "correct": 16,
-    "options": [
-      24,
-      61,
-      16,
-      14
-    ],
-    "hint": "תרגיל כפל: 4 כפול 4."
-  },
-  {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">3x100 + 8x10 + 2 = ?</bdi>",
-    "correct": 382,
-    "options": [
-      367,
-      382,
-      368,
-      399
+      667
     ],
     "hint": "זהו המבנה העשרוני בכפל."
   },
   {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">40 : ___ = 5</bdi>",
-    "correct": 8,
+    "question": "מלך החשבון שואל: בארמון יש 4 חדרים, בכל חדר 8 חיילים. כמה חיילים בסך הכל?",
+    "correct": 32,
+    "options": [
+      32,
+      37,
+      25,
+      23
+    ],
+    "hint": "תרגיל כפל: 4 כפול 8."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 3 חדרים, בכל חדר 4 חיילים. כמה חיילים בסך הכל?",
+    "correct": 12,
+    "options": [
+      16,
+      5,
+      21,
+      12
+    ],
+    "hint": "תרגיל כפל: 3 כפול 4."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 3 חדרים, בכל חדר 9 חיילים. כמה חיילים בסך הכל?",
+    "correct": 27,
+    "options": [
+      27,
+      25,
+      72,
+      20
+    ],
+    "hint": "תרגיל כפל: 3 כפול 9."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">12 x 3 = ?</bdi>",
+    "correct": 36,
+    "options": [
+      36,
+      48,
+      63,
+      39
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">48 : ___ = 8</bdi>",
+    "correct": 6,
     "options": [
       5,
-      7,
-      11,
-      8
+      1,
+      6,
+      3
     ],
     "hint": "היעזרי בלוח הכפל."
   },
   {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 9x10 + 4 = ?</bdi>",
-    "correct": 694,
-    "options": [
-      698,
-      694,
-      686,
-      674
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">35 : ___ = 5</bdi>",
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">63 : ___ = 9</bdi>",
     "correct": 7,
     "options": [
-      2,
-      3,
+      10,
+      7,
+      9,
+      5
+    ],
+    "hint": "היעזרי בלוח הכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 447</bdi>",
+    "correct": 553,
+    "options": [
+      541,
+      515,
+      517,
+      553
+    ],
+    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 6 חדרים, בכל חדר 9 חיילים. כמה חיילים בסך הכל?",
+    "correct": 54,
+    "options": [
+      51,
+      54,
+      45,
+      58
+    ],
+    "hint": "תרגיל כפל: 6 כפול 9."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">2x100 + 6x10 + 2 = ?</bdi>",
+    "correct": 262,
+    "options": [
+      262,
+      247,
+      282,
+      246
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 7 חדרים, בכל חדר 8 חיילים. כמה חיילים בסך הכל?",
+    "correct": 56,
+    "options": [
+      48,
+      56,
+      49,
+      65
+    ],
+    "hint": "תרגיל כפל: 7 כפול 8."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">15 x 5 = ?</bdi>",
+    "correct": 75,
+    "options": [
+      85,
+      90,
+      75,
+      57
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">21 x 4 = ?</bdi>",
+    "correct": 84,
+    "options": [
+      84,
+      48,
+      79,
+      98
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">17 x 5 = ?</bdi>",
+    "correct": 85,
+    "options": [
+      75,
+      82,
+      85,
+      58
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">20 x 2 = ?</bdi>",
+    "correct": 40,
+    "options": [
       4,
+      40,
+      39,
+      34
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">24 x 3 = ?</bdi>",
+    "correct": 72,
+    "options": [
+      27,
+      67,
+      64,
+      72
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">63 : ___ = 7</bdi>",
+    "correct": 9,
+    "options": [
+      9,
+      4,
+      12,
       7
     ],
     "hint": "היעזרי בלוח הכפל."
   },
   {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 615</bdi>",
-    "correct": 385,
+    "question": "מלך החשבון שואל: בארמון יש 8 חדרים, בכל חדר 8 חיילים. כמה חיילים בסך הכל?",
+    "correct": 64,
     "options": [
-      411,
-      418,
-      385,
-      350
+      64,
+      46,
+      63,
+      61
+    ],
+    "hint": "תרגיל כפל: 8 כפול 8."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 5 חדרים, בכל חדר 6 חיילים. כמה חיילים בסך הכל?",
+    "correct": 30,
+    "options": [
+      30,
+      33,
+      3,
+      27
+    ],
+    "hint": "תרגיל כפל: 5 כפול 6."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 4x10 + 8 = ?</bdi>",
+    "correct": 648,
+    "options": [
+      635,
+      648,
+      656,
+      644
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 548</bdi>",
+    "correct": 452,
+    "options": [
+      429,
+      452,
+      474,
+      470
     ],
     "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
   },
   {
-    "question": "מלך החשבון שואל: בארמון יש 4 חדרים, בכל חדר 9 חיילים. כמה חיילים בסך הכל?",
-    "correct": 36,
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">36 : ___ = 9</bdi>",
+    "correct": 4,
     "options": [
-      35,
-      36,
-      63,
-      38
+      1,
+      5,
+      9,
+      4
     ],
-    "hint": "תרגיל כפל: 4 כפול 9."
+    "hint": "היעזרי בלוח הכפל."
   },
   {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 6x10 + 8 = ?</bdi>",
-    "correct": 768,
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">24 x 3 = ?</bdi>",
+    "correct": 72,
     "options": [
-      773,
-      788,
-      761,
-      768
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון שואל: בארמון יש 4 חדרים, בכל חדר 5 חיילים. כמה חיילים בסך הכל?",
-    "correct": 20,
-    "options": [
-      20,
-      18,
-      2,
-      19
-    ],
-    "hint": "תרגיל כפל: 4 כפול 5."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">24 x 2 = ?</bdi>",
-    "correct": 48,
-    "options": [
-      84,
-      52,
-      38,
-      48
+      59,
+      87,
+      72,
+      27
     ],
     "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
   },
   {
-    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">7x100 + 5x10 + 4 = ?</bdi>",
-    "correct": 754,
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">22 x 3 = ?</bdi>",
+    "correct": 66,
     "options": [
-      754,
-      755,
-      752,
-      771
-    ],
-    "hint": "זהו המבנה העשרוני בכפל."
-  },
-  {
-    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">27 x 2 = ?</bdi>",
-    "correct": 54,
-    "options": [
-      60,
-      45,
-      54,
-      57
+      56,
+      66,
+      55,
+      80
     ],
     "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
   },
@@ -1059,44 +839,264 @@
     "question": "מלך החשבון שואל: בארמון יש 9 חדרים, בכל חדר 7 חיילים. כמה חיילים בסך הכל?",
     "correct": 63,
     "options": [
-      67,
-      61,
       63,
+      59,
+      70,
       36
     ],
     "hint": "תרגיל כפל: 9 כפול 7."
   },
   {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">20 : ___ = 4</bdi>",
-    "correct": 5,
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 9x10 + 3 = ?</bdi>",
+    "correct": 893,
     "options": [
-      4,
-      10,
-      8,
-      5
+      893,
+      896,
+      913,
+      894
     ],
-    "hint": "היעזרי בלוח הכפל."
+    "hint": "זהו המבנה העשרוני בכפל."
   },
   {
-    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">30 : ___ = 6</bdi>",
-    "correct": 5,
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">30 x 4 = ?</bdi>",
+    "correct": 120,
     "options": [
-      8,
-      5,
-      2,
-      6
+      117,
+      128,
+      120,
+      113
     ],
-    "hint": "היעזרי בלוח הכפל."
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
   },
   {
-    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 157</bdi>",
-    "correct": 843,
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 3x10 + 7 = ?</bdi>",
+    "correct": 837,
     "options": [
-      797,
-      843,
-      807,
-      800
+      847,
+      849,
+      846,
+      837
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 312</bdi>",
+    "correct": 688,
+    "options": [
+      702,
+      710,
+      698,
+      688
     ],
     "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">22 x 5 = ?</bdi>",
+    "correct": 110,
+    "options": [
+      110,
+      97,
+      106,
+      122
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">9x100 + 7x10 + 3 = ?</bdi>",
+    "correct": 973,
+    "options": [
+      984,
+      982,
+      968,
+      973
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 306</bdi>",
+    "correct": 694,
+    "options": [
+      694,
+      707,
+      739,
+      647
+    ],
+    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">18 x 2 = ?</bdi>",
+    "correct": 36,
+    "options": [
+      63,
+      43,
+      41,
+      36
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 3 חדרים, בכל חדר 7 חיילים. כמה חיילים בסך הכל?",
+    "correct": 21,
+    "options": [
+      28,
+      21,
+      29,
+      12
+    ],
+    "hint": "תרגיל כפל: 3 כפול 7."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 6 חדרים, בכל חדר 6 חיילים. כמה חיילים בסך הכל?",
+    "correct": 36,
+    "options": [
+      30,
+      38,
+      63,
+      36
+    ],
+    "hint": "תרגיל כפל: 6 כפול 6."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 596</bdi>",
+    "correct": 404,
+    "options": [
+      358,
+      391,
+      404,
+      374
+    ],
+    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 7x10 + 5 = ?</bdi>",
+    "correct": 675,
+    "options": [
+      675,
+      694,
+      678,
+      663
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">36 : ___ = 6</bdi>",
+    "correct": 6,
+    "options": [
+      2,
+      11,
+      6,
+      3
+    ],
+    "hint": "היעזרי בלוח הכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">6x100 + 8x10 + 9 = ?</bdi>",
+    "correct": 689,
+    "options": [
+      672,
+      689,
+      688,
+      681
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון שואל: <bdi dir=\"ltr\" style=\"display:inline-block;\">8x100 + 8x10 + 6 = ?</bdi>",
+    "correct": 886,
+    "options": [
+      886,
+      884,
+      896,
+      874
+    ],
+    "hint": "זהו המבנה העשרוני בכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 852</bdi>",
+    "correct": 148,
+    "options": [
+      148,
+      168,
+      166,
+      139
+    ],
+    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+  },
+  {
+    "question": "מלך החשבון תוקף בכפל: <bdi dir=\"ltr\" style=\"display:inline-block;\">28 x 4 = ?</bdi>",
+    "correct": 112,
+    "options": [
+      112,
+      104,
+      115,
+      117
+    ],
+    "hint": "פתרי בשלבים כמו שלמדנו בכיתה."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 9 חדרים, בכל חדר 6 חיילים. כמה חיילים בסך הכל?",
+    "correct": 54,
+    "options": [
+      45,
+      54,
+      47,
+      48
+    ],
+    "hint": "תרגיל כפל: 9 כפול 6."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 5 חדרים, בכל חדר 3 חיילים. כמה חיילים בסך הכל?",
+    "correct": 15,
+    "options": [
+      14,
+      51,
+      7,
+      15
+    ],
+    "hint": "תרגיל כפל: 5 כפול 3."
+  },
+  {
+    "question": "המלך החביא נעלם! <bdi dir=\"ltr\" style=\"display:inline-block;\">16 : ___ = 4</bdi>",
+    "correct": 4,
+    "options": [
+      8,
+      4,
+      0,
+      7
+    ],
+    "hint": "היעזרי בלוח הכפל."
+  },
+  {
+    "question": "מלך החשבון תוקף: <bdi dir=\"ltr\" style=\"display:inline-block;\">1000 - ___ = 124</bdi>",
+    "correct": 876,
+    "options": [
+      875,
+      876,
+      893,
+      829
+    ],
+    "hint": "השלימי את הנעלם בעזרת חיסור מ-1000."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 5 חדרים, בכל חדר 3 חיילים. כמה חיילים בסך הכל?",
+    "correct": 15,
+    "options": [
+      22,
+      12,
+      51,
+      15
+    ],
+    "hint": "תרגיל כפל: 5 כפול 3."
+  },
+  {
+    "question": "מלך החשבון שואל: בארמון יש 4 חדרים, בכל חדר 6 חיילים. כמה חיילים בסך הכל?",
+    "correct": 24,
+    "options": [
+      24,
+      21,
+      31,
+      42
+    ],
+    "hint": "תרגיל כפל: 4 כפול 6."
   }
 ]

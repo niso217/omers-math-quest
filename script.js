@@ -72,22 +72,22 @@ function renderMap() {
     const container = document.getElementById('nodes-container');
     container.innerHTML = '';
     
-    // Generate nodes
-    const totalLevels = 10;
+    // Generate nodes - 8 topics + 1 boss = 9 levels
+    const totalLevels = 9;
     const positions = [
-        {x: 15, y: 80}, {x: 35, y: 70}, {x: 55, y: 85}, {x: 75, y: 65},
-        {x: 85, y: 45}, {x: 65, y: 30}, {x: 45, y: 40}, {x: 25, y: 25},
-        {x: 50, y: 15}, {x: 80, y: 15}
+        {x: 15, y: 82}, {x: 35, y: 70}, {x: 60, y: 80}, {x: 80, y: 65},
+        {x: 75, y: 42}, {x: 55, y: 30}, {x: 35, y: 38}, {x: 20, y: 20},
+        {x: 55, y: 10}
     ];
 
     positions.forEach((pos, i) => {
         const level = i + 1;
         const node = document.createElement('div');
-        node.className = `map-node ${level === 10 ? 'boss-node' : ''}`;
+        node.className = `map-node ${level === 9 ? 'boss-node' : ''}`;
         node.style.left = `${pos.x}%`;
         node.style.top = `${pos.y}%`;
         
-        if (level === 10) {
+        if (level === 9) {
             node.textContent = '👑';
         } else {
             node.textContent = level;
@@ -95,7 +95,7 @@ function renderMap() {
 
         if (level < gameState.maxUnlockedLevel) {
             node.classList.add('completed');
-            if (level !== 10) node.textContent = '✔️';
+            if (level !== 9) node.textContent = '✔️';
             node.onclick = () => handleLevelClick(level);
         } else if (level === gameState.maxUnlockedLevel) {
             node.classList.add('unlocked');
@@ -189,7 +189,7 @@ function clearSession() {
 
 async function startLevel(level) {
     currentLevel = level;
-    isBossLevel = (level === 10);
+    isBossLevel = (level === 9);
     currentQuestionIndex = 0;
     
     // Reset lifelines for the level
@@ -315,7 +315,7 @@ function handleAnswer(selected, correct, btnElement) {
 
 function levelComplete() {
     createConfetti();
-    if (currentLevel === gameState.maxUnlockedLevel && currentLevel < 10) {
+    if (currentLevel === gameState.maxUnlockedLevel && currentLevel < 9) {
         gameState.maxUnlockedLevel++;
     }
     const bonus = isBossLevel ? 200 : 50;

@@ -13,6 +13,15 @@ let gameState = {
     activeSession: null
 };
 
+// Game Config from config.json
+let gameConfig = {
+    gameTitle: "המסע האפי של עומר",
+    playerName: "עומר",
+    difficulty: "medium",
+    totalLevels: 9,
+    shop: { themeCost: 500, heartCost: 100 }
+};
+
 // Current Level Session
 let currentLevel = 1;
 let currentQuestionIndex = 0;
@@ -22,7 +31,8 @@ let bossHp = 100;
 let omerHp = 100;
 
 // Initialize
-function init() {
+async function init() {
+    await fetchConfig();
     loadState();
     applyTheme(gameState.theme);
     updateGlobalUI();
@@ -46,6 +56,30 @@ function init() {
     document.querySelectorAll('.buy-btn').forEach(btn => {
         btn.addEventListener('click', handlePurchase);
     });
+}
+
+async function fetchConfig() {
+    try {
+        const response = await fetch('config.json');
+        if (response.ok) {
+            gameConfig = await response.json();
+            // Apply config visually
+            document.getElementById('head-title').textContent = gameConfig.gameTitle;
+            document.getElementById('game-title').textContent = gameConfig.gameTitle;
+            
+            // Update shop prices in UI dynamically
+            document.querySelectorAll('[data-type="theme"]').forEach(btn => {
+                btn.setAttribute('data-cost', gameConfig.shop.themeCost);
+                btn.previousElementSibling.textContent = `מחיר: ${gameConfig.shop.themeCost} 🪙`;
+            });
+            document.querySelectorAll('[data-type="heart"]').forEach(btn => {
+                btn.setAttribute('data-cost', gameConfig.shop.heartCost);
+                btn.previousElementSibling.textContent = `מחיר: ${gameConfig.shop.heartCost} 🪙`;
+            });
+        }
+    } catch (e) {
+        console.warn('Could not load config.json, using defaults.');
+    }
 }
 
 function loadState() {
@@ -72,8 +106,8 @@ function renderMap() {
     const container = document.getElementById('nodes-container');
     container.innerHTML = '';
     
-    // Generate nodes - 8 topics + 1 boss = 9 levels
-    const totalLevels = 9;
+    // Generate nodes based on config
+    const totalLevels = gameConfig.totalLevels || 9;
     const positions = [
         {x: 15, y: 82}, {x: 35, y: 70}, {x: 60, y: 80}, {x: 80, y: 65},
         {x: 75, y: 42}, {x: 55, y: 30}, {x: 35, y: 38}, {x: 20, y: 20},
@@ -478,6 +512,41 @@ function showModal(title, desc, reward, btnText) {
 function handleModalAction() {
     document.getElementById('modal').classList.add('hidden');
     showMap();
+}
+
+// Admin Modal Logic
+function openAdminModal() {
+    document.getElementById('admin-coins').value = gameState.coins;
+    document.getElementById('admin-hearts').value = gameState.hearts;
+    document.getElementById('admin-levels').value = gameState.maxUnlockedLevel;
+    document.getElementById('admin-levels').max = gameConfig.totalLevels;
+    document.getElementById('admin-modal').classList.remove('hidden');
+}
+
+function closeAdminModal() {
+    document.getElementById('admin-modal').classList.add('hidden');
+}
+
+function saveAdminSettings() {
+    gameState.coins = parseInt(document.getElementById('admin-coins').value) || 0;
+    gameState.hearts = parseInt(document.getElementById('admin-hearts').value) || 1;
+    gameState.maxUnlockedLevel = parseInt(document.getElementById('admin-levels').value) || 1;
+    
+    if (gameState.maxUnlockedLevel > gameConfig.totalLevels) {
+        gameState.maxUnlockedLevel = gameConfig.totalLevels;
+    }
+    
+    saveState();
+    closeAdminModal();
+    renderMap();
+    alert('הגדרות המשחק נשמרו!');
+}
+
+function resetGameProgress() {
+    if (confirm('האם אתה בטוח שברצונך לאפס את כל התקדמות המשחק? פעולה זו תמחק הכל!')) {
+        localStorage.removeItem(STORAGE_KEY);
+        location.reload();
+    }
 }
 
 // Start Game

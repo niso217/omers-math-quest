@@ -1,8 +1,27 @@
 import json
 import random
+import os
+
+# Load Config
+config = {
+    "playerName": "עומר",
+    "difficulty": "medium",
+    "totalLevels": 9
+}
+
+if os.path.exists("config.json"):
+    with open("config.json", "r", encoding="utf-8") as f:
+        config = json.load(f)
+
+diff_mult = 1.0
+if config["difficulty"] == "easy":
+    diff_mult = 0.7
+elif config["difficulty"] == "hard":
+    diff_mult = 1.5
 
 def rand(min_val, max_val):
-    return random.randint(min_val, max_val)
+    # Apply difficulty multiplier to upper bounds for larger numbers on hard mode
+    return random.randint(min_val, int(max_val * diff_mult) if max_val > 10 else max_val)
 
 def generate_options(correct, variation=10):
     opts = {correct}
@@ -13,7 +32,7 @@ def generate_options(correct, variation=10):
             opts.add(int(s[1] + s[0]))
             
     while len(opts) < 4:
-        wrong = correct + rand(-variation, variation)
+        wrong = correct + random.randint(-variation, variation)
         if wrong != correct and wrong >= 0:
             opts.add(wrong)
             
@@ -25,9 +44,9 @@ def ltr(math_expr):
     """Wraps a math expression in LTR span so Hebrew RTL doesn't mess it up"""
     return f'<bdi dir="ltr" style="display:inline-block;">{math_expr}</bdi>'
 
-# 8 syllabus topics + 1 boss = 9 levels
+name = config["playerName"]
 
-for level in range(1, 10):
+for level in range(1, config["totalLevels"] + 1):
     questions = []
     for _ in range(100):
         q = {}
@@ -119,7 +138,7 @@ for level in range(1, 10):
                 w1 = rand(20, 100)
                 w2 = rand(5, w1 - 5)
                 q = {
-                    "question": f"לעומר היו {w1} מדבקות. היא נתנה לחברה {w2}. כמה נשארו לה?",
+                    "question": f"ל{name} היו {w1} מדבקות. היא נתנה לחברה {w2}. כמה נשארו לה?",
                     "correct": w1 - w2,
                     "options": generate_options(w1 - w2, 10),
                     "hint": f"תרגיל חיסור: {w1} פחות {w2}."
@@ -197,7 +216,7 @@ for level in range(1, 10):
                 price = rand(50, 200)
                 count = rand(2, 5)
                 q = {
-                    "question": f"עומר קנתה {count} מחברות. כל מחברת עולה {price} שקלים. כמה שילמה בסך הכל?",
+                    "question": f"{name} קנתה {count} מחברות. כל מחברת עולה {price} שקלים. כמה שילמה בסך הכל?",
                     "correct": price * count,
                     "options": generate_options(price * count, 20),
                     "hint": f"תרגיל כפל: {count} כפול {price}."
@@ -299,7 +318,7 @@ for level in range(1, 10):
         
         q['options'] = list(set(q['options']))
         while len(q['options']) < 4:
-            nxt = q['correct'] + rand(1, 15)
+            nxt = q['correct'] + random.randint(1, 15)
             if nxt not in q['options']:
                 q['options'].append(nxt)
         random.shuffle(q['options'])
@@ -308,4 +327,4 @@ for level in range(1, 10):
     with open(f"topic{level}.json", "w", encoding="utf-8") as f:
         json.dump(questions, f, ensure_ascii=False, indent=2)
 
-print("Created 9 topic JSON files with LTR formatting.")
+print(f"Created {config['totalLevels']} topic JSON files with '{config['difficulty']}' difficulty for player '{config['playerName']}'.")

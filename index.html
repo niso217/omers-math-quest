@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>המסע האפי של עומר</title>
+    <title id="head-title">המסע האפי של עומר</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts for Epic Look -->
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <!-- MAIN MENU / MAP VIEW -->
     <div id="map-view" class="view active">
         <header class="top-bar">
-            <h1>המסע האפי של עומר</h1>
+            <h1 id="game-title" style="cursor:pointer;" ondblclick="openAdminModal()">המסע האפי של עומר</h1>
             <div class="stats">
                 <div class="stat"><span class="icon">🪙</span> <span id="coin-display">0</span> מטבעות</div>
                 <button id="open-shop-btn" class="btn-small">🛒 חנות</button>
@@ -83,6 +83,8 @@
             </div>
 
             <div class="boss-avatar-container">
+                <!-- Add sound effects later with audio tags -->
+                <!-- <audio id="boss-hit-snd" src="assets/hit.mp3"></audio> -->
                 <div id="boss-avatar" class="boss-avatar">👑👿</div>
             </div>
 
@@ -131,6 +133,26 @@
                 +<span id="modal-coins-earned">0</span> 🪙
             </div>
             <button id="modal-action-btn" class="btn-large">המשך</button>
+        </div>
+    </div>
+
+    <!-- ADMIN MODAL -->
+    <div id="admin-modal" class="modal hidden">
+        <div class="modal-content text-center" style="max-width: 400px; padding: 2rem;">
+            <h2>לוח בקרה אישי</h2>
+            <p>ההגדרות כאן נשמרות בדפדפן הנוכחי בלבד.</p>
+            
+            <div style="margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1rem; text-align: right;">
+                <label>מטבעות: <input type="number" id="admin-coins" class="admin-input" style="width:100px; float:left; padding: 5px;"></label>
+                <label>לבבות: <input type="number" id="admin-hearts" class="admin-input" style="width:100px; float:left; padding: 5px;"></label>
+                <label>שלבים פתוחים: <input type="number" id="admin-levels" class="admin-input" style="width:100px; float:left; padding: 5px;" min="1" max="9"></label>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <button onclick="saveAdminSettings()" class="btn-large" style="background:#2ecc71;">שמור הגדרות</button>
+                <button onclick="resetGameProgress()" class="btn-large" style="background:#e74c3c;">אפס משחק למצב התחלתי</button>
+                <button onclick="closeAdminModal()" class="btn-large" style="background:#95a5a6;">סגור</button>
+            </div>
         </div>
     </div>
 

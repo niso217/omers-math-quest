@@ -225,7 +225,7 @@ async function startLevel(level) {
 
 function loadQuestion() {
     const q = levelQuestions[currentQuestionIndex];
-    document.getElementById('question-text').textContent = q.question;
+    document.getElementById('question-text').innerHTML = q.question;
     document.getElementById('hint-box').classList.add('hidden');
     document.getElementById('hint-box').textContent = '';
     
@@ -235,7 +235,7 @@ function loadQuestion() {
 
 function loadBossQuestion() {
     const q = levelQuestions[currentQuestionIndex];
-    document.getElementById('boss-question-text').textContent = q.question;
+    document.getElementById('boss-question-text').innerHTML = q.question;
     renderOptions(q.options, q.correct, 'boss-options-container');
 }
 

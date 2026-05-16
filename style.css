@@ -215,6 +215,268 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 }
 @keyframes floatUpAndFade { 0% { transform: translateY(0) scale(1); opacity: 1; } 100% { transform: translateY(-100px) scale(1.5); opacity: 0; } }
 
-/* Particles */
 #particle-container { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999; }
 .particle { position: absolute; width: 10px; height: 10px; background: yellow; border-radius: 50%; pointer-events: none; }
+
+/* ==========================================
+   MINI-GAME STYLES (Mobile-First)
+   ========================================== */
+
+/* Arena Container */
+.minigame-arena {
+    flex: 1; display: flex; flex-direction: column;
+    background: var(--card-bg); border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    overflow: hidden; position: relative;
+    max-width: 600px; margin: 0 auto; width: 100%;
+}
+.minigame-header { background: linear-gradient(135deg, #8e44ad, #3498db); color: white; }
+.mg-question-bar {
+    text-align: center; padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, rgba(52,152,219,0.15), rgba(142,68,173,0.15));
+    border-bottom: 3px solid rgba(0,0,0,0.08);
+}
+.mg-question-bar h3 { font-size: 1.4rem; line-height: 1.5; }
+.mg-play-area {
+    flex: 1; position: relative; min-height: 55vh; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    padding: 1rem; -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+/* ---- GAME 1: Balloon Pop 🎈 ---- */
+.balloon {
+    position: absolute; width: 70px; height: 90px;
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 1.3rem; font-weight: 900; color: #fff;
+    cursor: pointer; transition: transform 0.1s;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    box-shadow: inset -8px -8px 20px rgba(0,0,0,0.15), 0 4px 15px rgba(0,0,0,0.2);
+    animation: floatUp var(--float-duration, 6s) linear forwards;
+    z-index: 5;
+}
+.balloon::after {
+    content: ''; position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%);
+    width: 2px; height: 18px; background: rgba(0,0,0,0.3);
+}
+.balloon:active { transform: scale(0.9); }
+.balloon.pop { animation: balloonPop 0.4s forwards !important; pointer-events: none; }
+.balloon.wrong-pop { animation: balloonWrongPop 0.4s forwards !important; pointer-events: none; }
+
+@keyframes floatUp {
+    0% { bottom: -100px; opacity: 1; }
+    85% { opacity: 1; }
+    100% { bottom: 110%; opacity: 0; }
+}
+@keyframes balloonPop {
+    0% { transform: scale(1); opacity: 1; }
+    30% { transform: scale(1.4); }
+    100% { transform: scale(2); opacity: 0; }
+}
+@keyframes balloonWrongPop {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(0.7) rotate(20deg); }
+    100% { transform: scale(0) rotate(90deg); opacity: 0; }
+}
+
+/* ---- GAME 2: Meteor Defense ☄️ ---- */
+.meteor-scene { width: 100%; height: 100%; position: relative; background: linear-gradient(to bottom, #0a0a2e, #1a1a3e); border-radius: 15px; }
+.meteor {
+    position: absolute; top: -80px; left: 50%; transform: translateX(-50%);
+    font-size: 4rem; animation: meteorFall var(--fall-speed, 5s) linear forwards;
+    filter: drop-shadow(0 0 15px rgba(255,100,0,0.8)); z-index: 3;
+}
+@keyframes meteorFall { 0% { top: -80px; } 100% { top: calc(100% - 100px); } }
+.meteor.explode { animation: meteorExplode 0.5s forwards !important; }
+@keyframes meteorExplode { 0% { transform: translateX(-50%) scale(1); opacity: 1; } 100% { transform: translateX(-50%) scale(3); opacity: 0; } }
+
+.cannon-row {
+    position: absolute; bottom: 0; left: 0; width: 100%; display: flex;
+    justify-content: space-around; padding: 0.5rem; z-index: 10;
+}
+.cannon-btn {
+    background: linear-gradient(180deg, #2c3e50, #1a252f); color: #0ff;
+    border: 2px solid #0ff; border-radius: 12px; padding: 1rem 0.8rem;
+    font-size: 1.3rem; font-weight: 900; flex: 1; margin: 0 4px;
+    box-shadow: 0 0 10px rgba(0,255,255,0.3); text-shadow: 0 0 5px #0ff;
+    min-height: 60px;
+}
+.cannon-btn:active:not(:disabled) { background: #0ff; color: #1a252f; transform: scale(0.95); }
+.laser-beam {
+    position: absolute; width: 4px; background: #0ff; z-index: 5;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff; animation: laserShoot 0.4s forwards;
+}
+@keyframes laserShoot { 0% { height: 0; opacity: 1; } 50% { height: 50%; opacity: 1; } 100% { height: 80%; opacity: 0; } }
+
+/* ---- GAME 3: Number Line Slider 🎯 ---- */
+.number-line-game { width: 100%; padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 2rem; }
+.number-line-track {
+    width: 90%; height: 8px; background: #ccc; border-radius: 4px;
+    position: relative; margin: 3rem 0;
+}
+.nl-tick {
+    position: absolute; top: -8px; width: 3px; height: 24px;
+    background: #666; transform: translateX(-50%);
+}
+.nl-label {
+    position: absolute; top: 22px; transform: translateX(-50%);
+    font-size: 0.9rem; font-weight: 700; color: var(--text-main);
+}
+.nl-marker {
+    position: absolute; top: -22px; transform: translateX(-50%);
+    font-size: 2rem; cursor: grab; z-index: 10;
+    transition: left 0.05s;
+}
+.nl-marker:active { cursor: grabbing; }
+.nl-target-zone {
+    position: absolute; top: -6px; height: 20px;
+    background: rgba(46,204,113,0.3); border: 2px dashed #2ecc71;
+    border-radius: 4px; transform: translateX(-50%); pointer-events: none;
+}
+.nl-submit-btn {
+    background: var(--success); color: white; border-radius: 15px;
+    padding: 1rem 3rem; font-size: 1.3rem; font-weight: 900;
+    box-shadow: 0 5px 0 var(--success-hover);
+}
+.nl-submit-btn:active { transform: translateY(5px); box-shadow: none; }
+
+/* ---- GAME 4: Treasure Chests 🏴‍☠️ ---- */
+.treasure-scene { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 1rem; }
+.treasure-chest {
+    width: 120px; height: 120px; display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    font-size: 3rem; cursor: pointer; border-radius: 15px;
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    border: 3px solid #DAA520; box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+.treasure-chest .chest-answer {
+    font-size: 1.3rem; font-weight: 900; color: #DAA520;
+    margin-top: 4px; text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+.treasure-chest:active { transform: scale(0.92); }
+.treasure-chest.open-correct {
+    animation: chestOpenCorrect 0.6s forwards;
+    background: linear-gradient(135deg, #f1c40f, #f39c12); border-color: #fff;
+}
+.treasure-chest.open-wrong {
+    animation: chestOpenWrong 0.5s forwards;
+    background: linear-gradient(135deg, #c0392b, #e74c3c); border-color: #922;
+}
+@keyframes chestOpenCorrect { 0% { transform: scale(1); } 50% { transform: scale(1.2) rotate(-5deg); } 100% { transform: scale(1.1); } }
+@keyframes chestOpenWrong { 0% { transform: scale(1); } 30% { transform: scale(1.1) rotate(10deg); } 60% { transform: scale(1.1) rotate(-10deg); } 100% { transform: scale(0.9); } }
+
+/* ---- GAME 5: Falling Blocks 🧱 ---- */
+.falling-blocks-scene { width: 100%; height: 100%; position: relative; }
+.falling-block {
+    position: absolute; width: 80px; height: 80px;
+    background: linear-gradient(135deg, #e67e22, #d35400); border: 3px solid #f39c12;
+    border-radius: 12px; display: flex; justify-content: center; align-items: center;
+    font-size: 1.5rem; font-weight: 900; color: white; cursor: pointer;
+    animation: blockFall var(--fall-speed, 4s) linear forwards;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+.falling-block:active { transform: scale(0.9); }
+@keyframes blockFall { 0% { top: -90px; } 100% { top: calc(100% + 90px); } }
+.falling-block.caught { animation: blockCaught 0.4s forwards !important; }
+@keyframes blockCaught { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(0) rotate(180deg); opacity: 0; } }
+.catch-zone {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 60px;
+    background: linear-gradient(to top, rgba(46,204,113,0.3), transparent);
+    border-top: 3px dashed #2ecc71; display: flex; align-items: center;
+    justify-content: center; font-size: 1.2rem; font-weight: bold; color: #2ecc71;
+}
+
+/* ---- GAME 6: Rocket Launch 🚀 ---- */
+.rocket-scene { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; position: relative; background: linear-gradient(to bottom, #0a0a2e 0%, #1a1a3e 60%, #2d3436 100%); border-radius: 15px; padding-bottom: 1rem; }
+.rocket-emoji { font-size: 5rem; transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1); position: relative; z-index: 5; }
+.rocket-emoji.launched { transform: translateY(-300px) scale(0.3); }
+.rocket-options {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem;
+    width: 90%; max-width: 400px; z-index: 10; margin-top: 1rem;
+}
+.rocket-fuel-btn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b); color: white;
+    border: 2px solid #ff6b6b; border-radius: 12px; padding: 1rem;
+    font-size: 1.3rem; font-weight: 900;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.rocket-fuel-btn:active:not(:disabled) { transform: scale(0.95); background: #ff6b6b; }
+.rocket-fuel-btn.correct-fuel { background: linear-gradient(135deg, #2ecc71, #27ae60) !important; border-color: #2ecc71 !important; animation: popIn 0.5s; }
+.rocket-fuel-btn.wrong-fuel { opacity: 0.3; animation: shake 0.4s; }
+.rocket-exhaust { position: absolute; bottom: -30px; font-size: 3rem; opacity: 0; transition: opacity 0.3s; }
+.rocket-emoji.launched + .rocket-exhaust, .rocket-exhaust.active { opacity: 1; }
+.star-field .star-dot { position: absolute; width: 2px; height: 2px; background: white; border-radius: 50%; animation: twinkle 2s infinite alternate; }
+@keyframes twinkle { 0% { opacity: 0.3; } 100% { opacity: 1; } }
+
+/* ---- GAME 7: Whack-a-Mole 🔨 ---- */
+.whack-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+    width: 100%; max-width: 350px; padding: 1rem;
+}
+.mole-hole {
+    width: 100%; aspect-ratio: 1; border-radius: 50%;
+    background: linear-gradient(145deg, #6d4c2a, #8B6914);
+    border: 4px solid #5c3d1e; display: flex; justify-content: center;
+    align-items: center; font-size: 2.5rem; cursor: pointer;
+    position: relative; overflow: hidden;
+    box-shadow: inset 0 8px 15px rgba(0,0,0,0.4), 0 4px 10px rgba(0,0,0,0.2);
+}
+.mole-hole .mole-content {
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: translateY(100%); display: flex; flex-direction: column;
+    align-items: center;
+}
+.mole-hole .mole-content.visible { transform: translateY(0); }
+.mole-answer { font-size: 1.2rem; font-weight: 900; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+.mole-hole:active .mole-content.visible { transform: translateY(0) scale(0.8); }
+.mole-hole.whacked-correct { background: #2ecc71 !important; animation: popIn 0.4s; }
+.mole-hole.whacked-wrong { background: #e74c3c !important; animation: shake 0.4s; }
+
+/* ---- GAME 8: Speed Blitz ⚡ ---- */
+.speed-blitz-scene { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 1rem; }
+.blitz-timer {
+    font-size: 3rem; font-weight: 900; color: var(--secondary);
+    text-shadow: 0 0 10px rgba(231,76,60,0.5);
+}
+.blitz-score { font-size: 1.5rem; font-weight: 700; color: var(--success); }
+.blitz-question { font-size: 1.8rem; font-weight: 900; text-align: center; margin: 0.5rem 0; }
+.blitz-options {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem;
+    width: 100%; max-width: 350px;
+}
+.blitz-btn {
+    background: linear-gradient(135deg, #3498db, #2980b9); color: white;
+    border: none; border-radius: 12px; padding: 1.2rem;
+    font-size: 1.5rem; font-weight: 900;
+    box-shadow: 0 4px 0 #1a5276;
+}
+.blitz-btn:active:not(:disabled) { transform: translateY(4px); box-shadow: none; }
+.blitz-btn.blitz-correct { background: #2ecc71 !important; }
+.blitz-btn.blitz-wrong { background: #e74c3c !important; }
+
+/* ---- Bonus Overlay ---- */
+.mg-bonus-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7); z-index: 100;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    animation: fadeIn 0.3s;
+}
+.mg-bonus-text { font-size: 2.5rem; font-weight: 900; color: #f1c40f; text-shadow: 0 0 20px rgba(241,196,15,0.7); animation: popIn 0.5s; }
+.mg-bonus-sub { font-size: 1.3rem; color: white; margin-top: 1rem; }
+
+/* Mobile touch optimization */
+@media (max-width: 600px) {
+    .mg-question-bar h3 { font-size: 1.1rem; }
+    .mg-play-area { min-height: 50vh; }
+    .balloon { width: 60px; height: 78px; font-size: 1.1rem; }
+    .treasure-chest { width: 90px; height: 90px; font-size: 2.5rem; }
+    .treasure-chest .chest-answer { font-size: 1.1rem; }
+    .cannon-btn { font-size: 1.1rem; padding: 0.8rem 0.5rem; }
+    .falling-block { width: 65px; height: 65px; font-size: 1.2rem; }
+    .mole-hole { font-size: 2rem; }
+    .blitz-btn { padding: 1rem; font-size: 1.3rem; }
+    .rocket-emoji { font-size: 4rem; }
+}

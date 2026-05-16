@@ -225,10 +225,16 @@ async function startLevel(level) {
     currentLevel = level;
     isBossLevel = (level === 9);
     currentQuestionIndex = 0;
+    miniGameActive = false;
     
     // Reset lifelines for the level
     gameState.lifelines = { fiftyFifty: 1, hintFairy: 1 };
     updateLifelineUI();
+
+    // Roll which question will be the mini-game (only for non-boss levels)
+    if (!isBossLevel) {
+        rollMiniGameIndex();
+    }
 
     try {
         // Fetch questions dynamically from the JSON topic files
@@ -258,6 +264,12 @@ async function startLevel(level) {
 }
 
 function loadQuestion() {
+    // Check if this question should be the mini-game
+    if (!isBossLevel && currentQuestionIndex === miniGameIndex) {
+        launchMiniGame();
+        return;
+    }
+    
     const q = levelQuestions[currentQuestionIndex];
     document.getElementById('question-text').innerHTML = q.question;
     document.getElementById('hint-box').classList.add('hidden');
@@ -512,6 +524,542 @@ function showModal(title, desc, reward, btnText) {
 function handleModalAction() {
     document.getElementById('modal').classList.add('hidden');
     showMap();
+}
+
+// ==========================================
+//  MINI-GAME ENGINE — 8 unique games
+// ==========================================
+let miniGameIndex = -1; // which question index triggers the mini-game
+let miniGameActive = false;
+let miniGameTimers = []; // track all timers so we can clean up
+
+function clearMiniGameTimers() {
+    miniGameTimers.forEach(t => clearTimeout(t));
+    miniGameTimers.forEach(t => clearInterval(t));
+    miniGameTimers = [];
+}
+
+// Decide the mini-game index when a level starts
+function rollMiniGameIndex() {
+    // Pick a random question between index 2-7 (avoid first, last, and boss)
+    miniGameIndex = Math.floor(Math.random() * 6) + 2;
+}
+
+// Called from loadQuestion when it's mini-game time
+function launchMiniGame() {
+    miniGameActive = true;
+    const q = levelQuestions[currentQuestionIndex];
+    
+    // Update mini-game UI
+    document.getElementById('mg-heart-display').textContent = gameState.hearts;
+    document.getElementById('mg-coin-display').textContent = gameState.coins;
+    document.getElementById('mg-question-text').innerHTML = q.question;
+    
+    // Game names per level
+    const gameNames = {
+        1: '🎈 פיצוץ הבלונים!',
+        2: '☄️ מתקפת המטאורים!',
+        3: '🎯 ישר המספרים!',
+        4: '🏴‍☠️ תיבות האוצר!',
+        5: '🧱 קוביות נופלות!',
+        6: '🚀 שיגור הטיל!',
+        7: '🔨 הכה את החפרפרת!',
+        8: '⚡ בליץ מהירות!'
+    };
+    
+    document.getElementById('minigame-title').textContent = gameNames[currentLevel] || '🎮 שלב בונוס!';
+    switchView('minigame-view');
+    
+    const playArea = document.getElementById('mg-play-area');
+    playArea.innerHTML = '';
+    
+    // Launch the level-specific game
+    switch(currentLevel) {
+        case 1: playBalloonPop(q, playArea); break;
+        case 2: playMeteorDefense(q, playArea); break;
+        case 3: playNumberLine(q, playArea); break;
+        case 4: playTreasureChests(q, playArea); break;
+        case 5: playFallingBlocks(q, playArea); break;
+        case 6: playRocketLaunch(q, playArea); break;
+        case 7: playWhackAMole(q, playArea); break;
+        case 8: playSpeedBlitz(q, playArea); break;
+        default: playBalloonPop(q, playArea); break;
+    }
+}
+
+function miniGameCorrect(playArea) {
+    clearMiniGameTimers();
+    gameState.coins += 50;
+    saveState();
+    createConfetti();
+    
+    const overlay = document.createElement('div');
+    overlay.className = 'mg-bonus-overlay';
+    overlay.innerHTML = `
+        <div class="mg-bonus-text">🎉 מדהים! +50 🪙</div>
+        <div class="mg-bonus-sub">תשובה נכונה!</div>
+    `;
+    playArea.appendChild(overlay);
+    
+    const t = setTimeout(() => {
+        miniGameActive = false;
+        currentQuestionIndex++;
+        if (currentQuestionIndex >= 10) { clearSession(); levelComplete(); }
+        else { saveSession(); switchView('level-view'); loadQuestion(); }
+    }, 2000);
+    miniGameTimers.push(t);
+}
+
+function miniGameWrong(playArea) {
+    gameState.hearts--;
+    document.getElementById('mg-heart-display').textContent = gameState.hearts;
+    saveState();
+    
+    if (gameState.hearts <= 0) {
+        clearMiniGameTimers();
+        miniGameActive = false;
+        clearSession();
+        showModal('אוי לא!', 'נגמרו לך החיים. נסי שוב!', 0, 'חזור למפה');
+        gameState.hearts = 3;
+        saveState();
+    }
+}
+
+// ---- GAME 1: Balloon Pop 🎈 ----
+function playBalloonPop(q, area) {
+    area.style.position = 'relative';
+    const colors = ['#e74c3c', '#3498db', '#2ecc71', '#f1c40f', '#9b59b6', '#e67e22'];
+    const opts = [...q.options].sort(() => Math.random() - 0.5);
+    
+    opts.forEach((opt, i) => {
+        const balloon = document.createElement('div');
+        balloon.className = 'balloon';
+        balloon.textContent = opt;
+        balloon.style.backgroundColor = colors[i % colors.length];
+        balloon.style.left = `${15 + Math.random() * 60}%`;
+        balloon.style.setProperty('--float-duration', `${5 + Math.random() * 3}s`);
+        balloon.style.animationDelay = `${i * 0.8}s`;
+        
+        balloon.addEventListener('click', () => {
+            if (String(opt) === String(q.correct)) {
+                balloon.classList.add('pop');
+                balloon.textContent = '💥';
+                miniGameCorrect(area);
+            } else {
+                balloon.classList.add('wrong-pop');
+                balloon.textContent = '💨';
+                miniGameWrong(area);
+            }
+        });
+        
+        area.appendChild(balloon);
+    });
+}
+
+// ---- GAME 2: Meteor Defense ☄️ ----
+function playMeteorDefense(q, area) {
+    const scene = document.createElement('div');
+    scene.className = 'meteor-scene';
+    
+    // Meteor
+    const meteor = document.createElement('div');
+    meteor.className = 'meteor';
+    meteor.textContent = '☄️';
+    meteor.style.setProperty('--fall-speed', '6s');
+    scene.appendChild(meteor);
+    
+    // Cannon row
+    const cannons = document.createElement('div');
+    cannons.className = 'cannon-row';
+    const opts = [...q.options].sort(() => Math.random() - 0.5);
+    
+    opts.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'cannon-btn';
+        btn.textContent = opt;
+        btn.addEventListener('click', () => {
+            cannons.querySelectorAll('.cannon-btn').forEach(b => b.disabled = true);
+            if (String(opt) === String(q.correct)) {
+                meteor.classList.add('explode');
+                meteor.textContent = '💥';
+                miniGameCorrect(area);
+            } else {
+                btn.style.opacity = '0.3';
+                btn.disabled = true;
+                // Re-enable others
+                cannons.querySelectorAll('.cannon-btn:not([disabled])').forEach(b => b.disabled = false);
+                miniGameWrong(area);
+            }
+        });
+        cannons.appendChild(btn);
+    });
+    scene.appendChild(cannons);
+    
+    // If meteor reaches bottom
+    const t = setTimeout(() => {
+        if (!miniGameActive) return;
+        miniGameWrong(area);
+        miniGameCorrect(area); // force advance
+    }, 6500);
+    miniGameTimers.push(t);
+    
+    area.appendChild(scene);
+}
+
+// ---- GAME 3: Number Line Slider 🎯 ----
+function playNumberLine(q, area) {
+    const game = document.createElement('div');
+    game.className = 'number-line-game';
+    
+    const correct = q.correct;
+    const rangeMin = Math.max(0, correct - 50);
+    const rangeMax = correct + 50;
+    
+    const track = document.createElement('div');
+    track.className = 'number-line-track';
+    
+    // Ticks every 10
+    for (let v = rangeMin; v <= rangeMax; v += 10) {
+        const pct = ((v - rangeMin) / (rangeMax - rangeMin)) * 100;
+        const tick = document.createElement('div');
+        tick.className = 'nl-tick';
+        tick.style.left = `${pct}%`;
+        track.appendChild(tick);
+        
+        const label = document.createElement('div');
+        label.className = 'nl-label';
+        label.style.left = `${pct}%`;
+        label.textContent = v;
+        track.appendChild(label);
+    }
+    
+    // Draggable marker
+    const marker = document.createElement('div');
+    marker.className = 'nl-marker';
+    marker.textContent = '📍';
+    marker.style.left = '50%';
+    let markerValue = rangeMin + (rangeMax - rangeMin) / 2;
+    track.appendChild(marker);
+    
+    // Touch/drag
+    function updateMarkerPos(clientX) {
+        const rect = track.getBoundingClientRect();
+        let pct = ((clientX - rect.left) / rect.width) * 100;
+        pct = Math.max(0, Math.min(100, pct));
+        marker.style.left = `${pct}%`;
+        markerValue = Math.round(rangeMin + (pct / 100) * (rangeMax - rangeMin));
+    }
+    
+    track.addEventListener('touchmove', e => { e.preventDefault(); updateMarkerPos(e.touches[0].clientX); }, { passive: false });
+    track.addEventListener('mousemove', e => { if (e.buttons) updateMarkerPos(e.clientX); });
+    track.addEventListener('click', e => updateMarkerPos(e.clientX));
+    
+    game.appendChild(track);
+    
+    // Submit button
+    const submitBtn = document.createElement('button');
+    submitBtn.className = 'nl-submit-btn';
+    submitBtn.textContent = '✅ זה המספר!';
+    submitBtn.addEventListener('click', () => {
+        if (Math.abs(markerValue - correct) <= 3) {
+            miniGameCorrect(area);
+        } else {
+            miniGameWrong(area);
+            // Shake marker
+            marker.style.transition = 'none';
+            marker.classList.add('shake-severe');
+            setTimeout(() => marker.classList.remove('shake-severe'), 500);
+        }
+    });
+    game.appendChild(submitBtn);
+    
+    area.appendChild(game);
+}
+
+// ---- GAME 4: Treasure Chests 🏴‍☠️ ----
+function playTreasureChests(q, area) {
+    const scene = document.createElement('div');
+    scene.className = 'treasure-scene';
+    const opts = [...q.options].sort(() => Math.random() - 0.5);
+    
+    opts.forEach(opt => {
+        const chest = document.createElement('div');
+        chest.className = 'treasure-chest';
+        chest.innerHTML = `<span>🎁</span><span class="chest-answer">${opt}</span>`;
+        
+        chest.addEventListener('click', () => {
+            scene.querySelectorAll('.treasure-chest').forEach(c => c.style.pointerEvents = 'none');
+            if (String(opt) === String(q.correct)) {
+                chest.classList.add('open-correct');
+                chest.querySelector('span').textContent = '💎';
+                miniGameCorrect(area);
+            } else {
+                chest.classList.add('open-wrong');
+                chest.querySelector('span').textContent = '👻';
+                // Re-enable others after a short delay
+                const t = setTimeout(() => {
+                    scene.querySelectorAll('.treasure-chest:not(.open-wrong)').forEach(c => c.style.pointerEvents = 'auto');
+                }, 800);
+                miniGameTimers.push(t);
+                miniGameWrong(area);
+            }
+        });
+        
+        scene.appendChild(chest);
+    });
+    
+    area.appendChild(scene);
+}
+
+// ---- GAME 5: Falling Blocks 🧱 ----
+function playFallingBlocks(q, area) {
+    const scene = document.createElement('div');
+    scene.className = 'falling-blocks-scene';
+    scene.style.position = 'relative';
+    scene.style.width = '100%';
+    scene.style.height = '100%';
+    scene.style.minHeight = '300px';
+    
+    const opts = [...q.options].sort(() => Math.random() - 0.5);
+    
+    opts.forEach((opt, i) => {
+        const block = document.createElement('div');
+        block.className = 'falling-block';
+        block.textContent = opt;
+        block.style.left = `${10 + Math.random() * 60}%`;
+        block.style.setProperty('--fall-speed', `${3.5 + Math.random() * 2}s`);
+        block.style.animationDelay = `${i * 1.2}s`;
+        
+        // Different colors per block
+        const blockColors = ['#e74c3c', '#3498db', '#9b59b6', '#1abc9c'];
+        block.style.background = `linear-gradient(135deg, ${blockColors[i % 4]}, ${blockColors[(i+1) % 4]})`;
+        
+        block.addEventListener('click', () => {
+            if (String(opt) === String(q.correct)) {
+                block.classList.add('caught');
+                block.textContent = '⭐';
+                miniGameCorrect(area);
+            } else {
+                block.classList.add('caught');
+                block.textContent = '❌';
+                miniGameWrong(area);
+            }
+        });
+        
+        scene.appendChild(block);
+    });
+    
+    area.appendChild(scene);
+}
+
+// ---- GAME 6: Rocket Launch 🚀 ----
+function playRocketLaunch(q, area) {
+    const scene = document.createElement('div');
+    scene.className = 'rocket-scene';
+    scene.style.minHeight = '350px';
+    
+    // Star field
+    for (let i = 0; i < 30; i++) {
+        const star = document.createElement('div');
+        star.className = 'star-dot';
+        star.style.cssText = `position:absolute;width:2px;height:2px;background:white;border-radius:50%;left:${Math.random()*100}%;top:${Math.random()*70}%;opacity:${0.3+Math.random()*0.7};animation:twinkle ${1+Math.random()*2}s infinite alternate;`;
+        scene.appendChild(star);
+    }
+    
+    const rocket = document.createElement('div');
+    rocket.className = 'rocket-emoji';
+    rocket.textContent = '🚀';
+    scene.appendChild(rocket);
+    
+    const exhaust = document.createElement('div');
+    exhaust.className = 'rocket-exhaust';
+    exhaust.textContent = '🔥';
+    scene.appendChild(exhaust);
+    
+    const optionsGrid = document.createElement('div');
+    optionsGrid.className = 'rocket-options';
+    const opts = [...q.options].sort(() => Math.random() - 0.5);
+    
+    opts.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'rocket-fuel-btn';
+        btn.textContent = opt;
+        btn.addEventListener('click', () => {
+            optionsGrid.querySelectorAll('.rocket-fuel-btn').forEach(b => b.disabled = true);
+            if (String(opt) === String(q.correct)) {
+                btn.classList.add('correct-fuel');
+                exhaust.classList.add('active');
+                const t = setTimeout(() => {
+                    rocket.classList.add('launched');
+                    miniGameCorrect(area);
+                }, 400);
+                miniGameTimers.push(t);
+            } else {
+                btn.classList.add('wrong-fuel');
+                // Re-enable others
+                const t = setTimeout(() => {
+                    optionsGrid.querySelectorAll('.rocket-fuel-btn:not(.wrong-fuel)').forEach(b => b.disabled = false);
+                }, 600);
+                miniGameTimers.push(t);
+                miniGameWrong(area);
+            }
+        });
+        optionsGrid.appendChild(btn);
+    });
+    scene.appendChild(optionsGrid);
+    
+    area.appendChild(scene);
+}
+
+// ---- GAME 7: Whack-a-Mole 🔨 ----
+function playWhackAMole(q, area) {
+    const grid = document.createElement('div');
+    grid.className = 'whack-grid';
+    const opts = [...q.options].sort(() => Math.random() - 0.5);
+    
+    const holes = [];
+    opts.forEach(opt => {
+        const hole = document.createElement('div');
+        hole.className = 'mole-hole';
+        const content = document.createElement('div');
+        content.className = 'mole-content';
+        content.innerHTML = `<span>🐹</span><span class="mole-answer">${opt}</span>`;
+        hole.appendChild(content);
+        
+        hole.addEventListener('click', () => {
+            if (!content.classList.contains('visible')) return;
+            grid.querySelectorAll('.mole-hole').forEach(h => h.style.pointerEvents = 'none');
+            
+            if (String(opt) === String(q.correct)) {
+                hole.classList.add('whacked-correct');
+                content.querySelector('span').textContent = '⭐';
+                miniGameCorrect(area);
+            } else {
+                hole.classList.add('whacked-wrong');
+                content.querySelector('span').textContent = '💀';
+                miniGameWrong(area);
+                // Reset and continue
+                const t = setTimeout(() => {
+                    hole.classList.remove('whacked-wrong');
+                    content.querySelector('span').textContent = '🐹';
+                    grid.querySelectorAll('.mole-hole').forEach(h => h.style.pointerEvents = 'auto');
+                }, 800);
+                miniGameTimers.push(t);
+            }
+        });
+        
+        grid.appendChild(hole);
+        holes.push(content);
+    });
+    
+    // Mole pop-up cycle
+    function cycleMoles() {
+        holes.forEach(h => h.classList.remove('visible'));
+        // Show 2-3 random moles
+        const count = 2 + Math.floor(Math.random() * 2);
+        const shuffled = [...holes].sort(() => Math.random() - 0.5);
+        shuffled.slice(0, count).forEach(h => h.classList.add('visible'));
+    }
+    
+    cycleMoles();
+    const interval = setInterval(cycleMoles, 2000);
+    miniGameTimers.push(interval);
+    
+    area.appendChild(grid);
+}
+
+// ---- GAME 8: Speed Blitz ⚡ ----
+function playSpeedBlitz(q, area) {
+    const scene = document.createElement('div');
+    scene.className = 'speed-blitz-scene';
+    
+    let timeLeft = 15;
+    let blitzScore = 0;
+    let blitzQuestionIdx = currentQuestionIndex;
+    
+    const timerEl = document.createElement('div');
+    timerEl.className = 'blitz-timer';
+    timerEl.textContent = `⏰ ${timeLeft}`;
+    scene.appendChild(timerEl);
+    
+    const scoreEl = document.createElement('div');
+    scoreEl.className = 'blitz-score';
+    scoreEl.textContent = `ניקוד: ${blitzScore}`;
+    scene.appendChild(scoreEl);
+    
+    const questionEl = document.createElement('div');
+    questionEl.className = 'blitz-question';
+    scene.appendChild(questionEl);
+    
+    const optionsEl = document.createElement('div');
+    optionsEl.className = 'blitz-options';
+    scene.appendChild(optionsEl);
+    
+    function loadBlitzQuestion() {
+        const bq = levelQuestions[blitzQuestionIdx % levelQuestions.length];
+        questionEl.innerHTML = bq.question;
+        optionsEl.innerHTML = '';
+        const opts = [...bq.options].sort(() => Math.random() - 0.5);
+        
+        opts.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'blitz-btn';
+            btn.textContent = opt;
+            btn.addEventListener('click', () => {
+                if (String(opt) === String(bq.correct)) {
+                    btn.classList.add('blitz-correct');
+                    blitzScore++;
+                    scoreEl.textContent = `ניקוד: ${blitzScore}`;
+                    blitzQuestionIdx++;
+                    const t = setTimeout(loadBlitzQuestion, 300);
+                    miniGameTimers.push(t);
+                } else {
+                    btn.classList.add('blitz-wrong');
+                    miniGameWrong(area);
+                    blitzQuestionIdx++;
+                    const t = setTimeout(loadBlitzQuestion, 600);
+                    miniGameTimers.push(t);
+                }
+            });
+            optionsEl.appendChild(btn);
+        });
+    }
+    
+    loadBlitzQuestion();
+    
+    const interval = setInterval(() => {
+        timeLeft--;
+        timerEl.textContent = `⏰ ${timeLeft}`;
+        if (timeLeft <= 5) timerEl.style.color = '#e74c3c';
+        
+        if (timeLeft <= 0) {
+            clearInterval(interval);
+            // Blitz over — if scored at least 3, it's a win
+            if (blitzScore >= 3) {
+                miniGameCorrect(area);
+            } else {
+                miniGameWrong(area);
+                // Show results and advance
+                const overlay = document.createElement('div');
+                overlay.className = 'mg-bonus-overlay';
+                overlay.innerHTML = `
+                    <div class="mg-bonus-text" style="color:#e74c3c;">⏰ נגמר הזמן!</div>
+                    <div class="mg-bonus-sub">ענית נכון ${blitzScore} פעמים. צריך לפחות 3!</div>
+                `;
+                area.appendChild(overlay);
+                const t = setTimeout(() => {
+                    miniGameActive = false;
+                    currentQuestionIndex++;
+                    if (currentQuestionIndex >= 10) { clearSession(); levelComplete(); }
+                    else { saveSession(); switchView('level-view'); loadQuestion(); }
+                }, 2500);
+                miniGameTimers.push(t);
+            }
+        }
+    }, 1000);
+    miniGameTimers.push(interval);
+    
+    area.appendChild(scene);
 }
 
 // Admin Modal Logic

@@ -1,1101 +1,1101 @@
 [
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">147 + 338</bdi>",
-    "correct": 485,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">45 x 3</bdi>",
+    "correct": 135,
     "options": [
-      480,
-      485,
-      491,
-      501
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">29 x 7</bdi>",
-    "correct": 203,
-    "options": [
-      212,
-      203,
-      223,
-      183
-    ],
-    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">24 x 4</bdi>",
-    "correct": 96,
-    "options": [
-      110,
-      69,
-      96,
-      93
-    ],
-    "hint": "כפלי קודם 4 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">366 + 391</bdi>",
-    "correct": 757,
-    "options": [
-      757,
-      740,
-      739,
-      776
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">43 x 3</bdi>",
-    "correct": 129,
-    "options": [
-      145,
-      147,
+      116,
       133,
-      129
+      135,
+      136
     ],
     "hint": "כפלי קודם 3 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">12 x 9</bdi>",
-    "correct": 108,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">757 - 117</bdi>",
+    "correct": 640,
     "options": [
-      94,
-      119,
-      106,
-      108
+      660,
+      640,
+      639,
+      655
     ],
-    "hint": "כפלי קודם 9 ביחידות, ואז בעשרות."
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">15 x 4</bdi>",
-    "correct": 60,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">27 x 7</bdi>",
+    "correct": 189,
     "options": [
-      63,
-      6,
-      60,
-      42
-    ],
-    "hint": "כפלי קודם 4 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">30 x 7</bdi>",
-    "correct": 210,
-    "options": [
-      212,
-      217,
-      202,
-      210
+      189,
+      186,
+      179,
+      175
     ],
     "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">111 + 118</bdi>",
-    "correct": 229,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">282 + 105</bdi>",
+    "correct": 387,
     "options": [
-      213,
-      230,
-      229,
-      231
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">39 x 8</bdi>",
-    "correct": 312,
-    "options": [
-      301,
-      324,
-      325,
-      312
-    ],
-    "hint": "כפלי קודם 8 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">486 + 259</bdi>",
-    "correct": 745,
-    "options": [
-      745,
-      729,
-      740,
-      741
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">847 - 654</bdi>",
-    "correct": 193,
-    "options": [
-      206,
-      174,
-      210,
-      193
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">678 - 431</bdi>",
-    "correct": 247,
-    "options": [
-      263,
-      247,
-      253,
-      254
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">957 - 407</bdi>",
-    "correct": 550,
-    "options": [
-      555,
-      550,
-      552,
-      558
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">385 + 146</bdi>",
-    "correct": 531,
-    "options": [
-      521,
-      531,
-      515,
-      535
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">913 - 545</bdi>",
-    "correct": 368,
-    "options": [
-      354,
-      368,
       387,
-      350
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">15 x 8</bdi>",
-    "correct": 120,
-    "options": [
-      102,
-      120,
-      111,
-      132
-    ],
-    "hint": "כפלי קודם 8 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">24 x 9</bdi>",
-    "correct": 216,
-    "options": [
-      216,
-      208,
-      213,
-      219
-    ],
-    "hint": "כפלי קודם 9 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">34 x 3</bdi>",
-    "correct": 102,
-    "options": [
-      119,
-      108,
-      113,
-      102
-    ],
-    "hint": "כפלי קודם 3 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">20 x 3</bdi>",
-    "correct": 60,
-    "options": [
-      60,
-      6,
-      54,
-      67
-    ],
-    "hint": "כפלי קודם 3 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">443 + 126</bdi>",
-    "correct": 569,
-    "options": [
-      566,
-      583,
-      560,
-      569
+      378,
+      405,
+      400
     ],
     "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">15 x 6</bdi>",
-    "correct": 90,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">356 + 454</bdi>",
+    "correct": 810,
     "options": [
-      90,
-      109,
-      9,
-      89
-    ],
-    "hint": "כפלי קודם 6 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">478 + 347</bdi>",
-    "correct": 825,
-    "options": [
-      813,
-      841,
-      806,
-      825
+      830,
+      810,
+      814,
+      792
     ],
     "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">785 - 208</bdi>",
-    "correct": 577,
-    "options": [
-      577,
-      575,
-      582,
-      584
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">427 + 358</bdi>",
-    "correct": 785,
-    "options": [
-      779,
-      798,
-      768,
-      785
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">694 - 374</bdi>",
-    "correct": 320,
-    "options": [
-      326,
-      317,
-      338,
-      320
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">229 + 333</bdi>",
-    "correct": 562,
-    "options": [
-      572,
-      560,
-      552,
-      562
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">514 - 133</bdi>",
-    "correct": 381,
-    "options": [
-      372,
-      381,
-      395,
-      373
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">48 x 7</bdi>",
-    "correct": 336,
-    "options": [
-      326,
-      348,
-      336,
-      331
-    ],
-    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">673 - 411</bdi>",
-    "correct": 262,
-    "options": [
-      262,
-      263,
-      268,
-      249
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">46 x 8</bdi>",
-    "correct": 368,
-    "options": [
-      383,
-      366,
-      368,
-      379
-    ],
-    "hint": "כפלי קודם 8 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">555 - 391</bdi>",
-    "correct": 164,
-    "options": [
-      156,
-      157,
-      170,
-      164
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">967 - 274</bdi>",
-    "correct": 693,
-    "options": [
-      709,
-      701,
-      693,
-      686
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">562 - 403</bdi>",
-    "correct": 159,
-    "options": [
-      166,
-      159,
-      165,
-      164
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">330 + 164</bdi>",
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">751 - 257</bdi>",
     "correct": 494,
     "options": [
       494,
-      498,
-      489,
+      509,
+      496,
       505
     ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">414 + 153</bdi>",
-    "correct": 567,
-    "options": [
-      552,
-      567,
-      581,
-      564
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">639 - 230</bdi>",
-    "correct": 409,
-    "options": [
-      424,
-      429,
-      415,
-      409
-    ],
     "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">608 - 358</bdi>",
-    "correct": 250,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">239 + 245</bdi>",
+    "correct": 484,
     "options": [
-      265,
-      247,
-      232,
-      250
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">288 + 445</bdi>",
-    "correct": 733,
-    "options": [
-      732,
-      749,
-      733,
-      727
+      472,
+      484,
+      469,
+      467
     ],
     "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">460 + 274</bdi>",
-    "correct": 734,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">408 + 255</bdi>",
+    "correct": 663,
     "options": [
-      743,
-      734,
-      742,
-      738
+      663,
+      681,
+      671,
+      668
     ],
     "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">784 - 135</bdi>",
-    "correct": 649,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">410 + 216</bdi>",
+    "correct": 626,
     "options": [
-      633,
-      667,
-      649,
-      648
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">775 - 228</bdi>",
-    "correct": 547,
-    "options": [
-      547,
-      530,
-      545,
-      550
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">20 x 9</bdi>",
-    "correct": 180,
-    "options": [
-      174,
-      184,
-      163,
-      180
-    ],
-    "hint": "כפלי קודם 9 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">721 - 603</bdi>",
-    "correct": 118,
-    "options": [
-      132,
-      118,
-      109,
-      108
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">128 + 314</bdi>",
-    "correct": 442,
-    "options": [
-      433,
-      442,
-      443,
-      441
+      609,
+      626,
+      611,
+      633
     ],
     "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">740 - 302</bdi>",
-    "correct": 438,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">718 - 366</bdi>",
+    "correct": 352,
     "options": [
-      437,
-      457,
-      427,
-      438
+      334,
+      335,
+      359,
+      352
     ],
     "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">662 - 293</bdi>",
-    "correct": 369,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">341 + 373</bdi>",
+    "correct": 714,
     "options": [
-      356,
-      382,
-      381,
-      369
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">30 x 5</bdi>",
-    "correct": 150,
-    "options": [
-      163,
-      150,
-      137,
-      142
-    ],
-    "hint": "כפלי קודם 5 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">303 + 288</bdi>",
-    "correct": 591,
-    "options": [
-      580,
-      607,
-      591,
-      605
+      695,
+      707,
+      727,
+      714
     ],
     "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">30 x 8</bdi>",
-    "correct": 240,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">734 - 206</bdi>",
+    "correct": 528,
     "options": [
-      247,
-      225,
-      245,
-      240
+      546,
+      528,
+      512,
+      515
     ],
-    "hint": "כפלי קודם 8 ביחידות, ואז בעשרות."
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">36 x 7</bdi>",
-    "correct": 252,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">31 x 2</bdi>",
+    "correct": 62,
     "options": [
-      256,
-      241,
-      252,
-      272
-    ],
-    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">36 x 2</bdi>",
-    "correct": 72,
-    "options": [
-      72,
-      88,
-      27,
-      91
+      53,
+      74,
+      62,
+      26
     ],
     "hint": "כפלי קודם 2 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">293 + 180</bdi>",
-    "correct": 473,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">43 x 4</bdi>",
+    "correct": 172,
     "options": [
-      473,
-      453,
+      174,
+      187,
+      172,
+      182
+    ],
+    "hint": "כפלי קודם 4 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">681 - 481</bdi>",
+    "correct": 200,
+    "options": [
+      193,
+      212,
+      200,
+      205
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">12 x 3</bdi>",
+    "correct": 36,
+    "options": [
+      36,
+      24,
+      39,
+      63
+    ],
+    "hint": "כפלי קודם 3 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">801 - 455</bdi>",
+    "correct": 346,
+    "options": [
+      344,
+      346,
+      353,
+      360
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">625 - 120</bdi>",
+    "correct": 505,
+    "options": [
+      487,
+      507,
+      502,
+      505
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">244 + 224</bdi>",
+    "correct": 468,
+    "options": [
+      488,
       480,
-      489
+      468,
+      464
     ],
     "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">827 - 258</bdi>",
-    "correct": 569,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">284 + 406</bdi>",
+    "correct": 690,
     "options": [
-      585,
-      569,
-      559,
-      566
+      705,
+      699,
+      685,
+      690
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">172 + 256</bdi>",
+    "correct": 428,
+    "options": [
+      428,
+      427,
+      434,
+      417
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">689 - 354</bdi>",
+    "correct": 335,
+    "options": [
+      341,
+      320,
+      322,
+      335
     ],
     "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">922 - 466</bdi>",
-    "correct": 456,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">805 - 705</bdi>",
+    "correct": 100,
     "options": [
-      444,
-      456,
-      436,
-      460
+      84,
+      96,
+      93,
+      100
     ],
     "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">35 x 6</bdi>",
-    "correct": 210,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">474 + 399</bdi>",
+    "correct": 873,
     "options": [
-      205,
-      198,
-      210,
-      211
+      876,
+      891,
+      873,
+      883
     ],
-    "hint": "כפלי קודם 6 ביחידות, ואז בעשרות."
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">715 - 354</bdi>",
+    "correct": 361,
+    "options": [
+      371,
+      348,
+      341,
+      361
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
   },
   {
     "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">20 x 2</bdi>",
     "correct": 40,
     "options": [
-      40,
-      43,
       4,
-      35
+      40,
+      50,
+      27
     ],
     "hint": "כפלי קודם 2 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">25 x 6</bdi>",
-    "correct": 150,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">42 x 5</bdi>",
+    "correct": 210,
     "options": [
-      152,
-      139,
-      150,
-      160
+      210,
+      196,
+      220,
+      191
     ],
-    "hint": "כפלי קודם 6 ביחידות, ואז בעשרות."
+    "hint": "כפלי קודם 5 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">16 x 8</bdi>",
-    "correct": 128,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">408 + 496</bdi>",
+    "correct": 904,
     "options": [
-      135,
-      124,
-      140,
-      128
+      904,
+      910,
+      914,
+      919
     ],
-    "hint": "כפלי קודם 8 ביחידות, ואז בעשרות."
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">30 x 3</bdi>",
-    "correct": 90,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">17 x 3</bdi>",
+    "correct": 51,
     "options": [
-      9,
-      106,
-      90,
-      75
+      15,
+      52,
+      51,
+      70
     ],
     "hint": "כפלי קודם 3 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">225 + 215</bdi>",
-    "correct": 440,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">430 + 221</bdi>",
+    "correct": 651,
     "options": [
-      439,
-      428,
-      434,
-      440
+      665,
+      651,
+      631,
+      645
     ],
     "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">342 + 424</bdi>",
-    "correct": 766,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">39 x 7</bdi>",
+    "correct": 273,
     "options": [
-      767,
-      780,
-      766,
-      781
+      259,
+      267,
+      273,
+      269
     ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">14 x 5</bdi>",
-    "correct": 70,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">16 x 6</bdi>",
+    "correct": 96,
     "options": [
-      86,
-      70,
-      62,
-      7
-    ],
-    "hint": "כפלי קודם 5 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">22 x 6</bdi>",
-    "correct": 132,
-    "options": [
-      116,
-      138,
-      114,
-      132
+      69,
+      89,
+      88,
+      96
     ],
     "hint": "כפלי קודם 6 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">969 - 811</bdi>",
-    "correct": 158,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">16 x 9</bdi>",
+    "correct": 144,
     "options": [
-      158,
-      162,
-      176,
-      139
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">182 + 444</bdi>",
-    "correct": 626,
-    "options": [
-      613,
-      639,
-      609,
-      626
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">689 - 420</bdi>",
-    "correct": 269,
-    "options": [
-      269,
-      264,
-      249,
-      282
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">910 - 541</bdi>",
-    "correct": 369,
-    "options": [
-      363,
-      356,
-      369,
-      385
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">417 + 258</bdi>",
-    "correct": 675,
-    "options": [
-      675,
-      685,
-      686,
-      659
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">233 + 320</bdi>",
-    "correct": 553,
-    "options": [
-      553,
-      565,
-      538,
-      547
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">497 + 119</bdi>",
-    "correct": 616,
-    "options": [
-      606,
-      601,
-      617,
-      616
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">557 - 208</bdi>",
-    "correct": 349,
-    "options": [
-      359,
-      349,
-      333,
-      362
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">377 + 291</bdi>",
-    "correct": 668,
-    "options": [
-      678,
-      666,
-      668,
-      654
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">799 - 499</bdi>",
-    "correct": 300,
-    "options": [
-      300,
-      294,
-      315,
-      296
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">247 + 261</bdi>",
-    "correct": 508,
-    "options": [
-      508,
-      525,
-      503,
-      515
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">280 + 408</bdi>",
-    "correct": 688,
-    "options": [
-      688,
-      702,
-      703,
-      680
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">459 + 214</bdi>",
-    "correct": 673,
-    "options": [
-      687,
-      669,
-      673,
-      658
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">22 x 9</bdi>",
-    "correct": 198,
-    "options": [
-      205,
-      204,
-      191,
-      198
+      135,
+      160,
+      144,
+      125
     ],
     "hint": "כפלי קודם 9 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">868 - 295</bdi>",
-    "correct": 573,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">34 x 4</bdi>",
+    "correct": 136,
     "options": [
-      574,
-      572,
-      593,
-      573
+      136,
+      126,
+      143,
+      122
     ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+    "hint": "כפלי קודם 4 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">43 x 9</bdi>",
-    "correct": 387,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">47 x 2</bdi>",
+    "correct": 94,
     "options": [
-      384,
-      388,
-      387,
-      382
-    ],
-    "hint": "כפלי קודם 9 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">253 + 210</bdi>",
-    "correct": 463,
-    "options": [
-      452,
-      463,
-      460,
-      454
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">611 - 209</bdi>",
-    "correct": 402,
-    "options": [
-      411,
-      402,
-      401,
-      418
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">481 + 452</bdi>",
-    "correct": 933,
-    "options": [
-      944,
-      942,
-      933,
-      931
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">725 - 323</bdi>",
-    "correct": 402,
-    "options": [
-      382,
-      403,
-      402,
-      410
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">969 - 728</bdi>",
-    "correct": 241,
-    "options": [
-      225,
-      244,
-      241,
-      221
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">408 + 490</bdi>",
-    "correct": 898,
-    "options": [
-      891,
-      895,
-      898,
-      896
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">33 x 7</bdi>",
-    "correct": 231,
-    "options": [
-      219,
-      237,
-      231,
-      238
-    ],
-    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">859 - 643</bdi>",
-    "correct": 216,
-    "options": [
-      214,
-      210,
-      223,
-      216
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">159 + 395</bdi>",
-    "correct": 554,
-    "options": [
-      559,
-      550,
-      554,
-      564
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">176 + 236</bdi>",
-    "correct": 412,
-    "options": [
-      403,
-      414,
-      412,
-      393
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">41 x 7</bdi>",
-    "correct": 287,
-    "options": [
-      304,
-      279,
-      287,
-      267
-    ],
-    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">244 + 116</bdi>",
-    "correct": 360,
-    "options": [
-      357,
-      360,
-      372,
-      379
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">14 x 5</bdi>",
-    "correct": 70,
-    "options": [
-      7,
-      60,
-      69,
-      70
-    ],
-    "hint": "כפלי קודם 5 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">932 - 750</bdi>",
-    "correct": 182,
-    "options": [
-      165,
-      177,
-      182,
-      186
-    ],
-    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">14 x 2</bdi>",
-    "correct": 28,
-    "options": [
-      28,
-      13,
-      82,
-      20
+      92,
+      94,
+      83,
+      49
     ],
     "hint": "כפלי קודם 2 ביחידות, ואז בעשרות."
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">471 + 119</bdi>",
-    "correct": 590,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">951 - 363</bdi>",
+    "correct": 588,
     "options": [
-      590,
-      610,
       591,
-      589
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">18 x 7</bdi>",
-    "correct": 126,
-    "options": [
-      118,
-      116,
-      126,
-      110
-    ],
-    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">193 + 171</bdi>",
-    "correct": 364,
-    "options": [
-      366,
-      376,
-      356,
-      364
-    ],
-    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
-  },
-  {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">702 - 514</bdi>",
-    "correct": 188,
-    "options": [
-      175,
-      171,
-      188,
-      189
+      588,
+      580,
+      587
     ],
     "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
   },
   {
-    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">746 - 550</bdi>",
-    "correct": 196,
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">405 + 378</bdi>",
+    "correct": 783,
     "options": [
-      190,
-      196,
-      183,
-      199
+      783,
+      788,
+      791,
+      784
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">829 - 269</bdi>",
+    "correct": 560,
+    "options": [
+      560,
+      543,
+      563,
+      564
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">217 + 229</bdi>",
+    "correct": 446,
+    "options": [
+      457,
+      426,
+      433,
+      446
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">990 - 746</bdi>",
+    "correct": 244,
+    "options": [
+      237,
+      252,
+      248,
+      244
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">411 + 212</bdi>",
+    "correct": 623,
+    "options": [
+      623,
+      639,
+      630,
+      611
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">37 x 2</bdi>",
+    "correct": 74,
+    "options": [
+      89,
+      74,
+      47,
+      78
+    ],
+    "hint": "כפלי קודם 2 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">372 + 242</bdi>",
+    "correct": 614,
+    "options": [
+      618,
+      614,
+      634,
+      621
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">17 x 9</bdi>",
+    "correct": 153,
+    "options": [
+      157,
+      168,
+      153,
+      141
+    ],
+    "hint": "כפלי קודם 9 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">24 x 7</bdi>",
+    "correct": 168,
+    "options": [
+      161,
+      158,
+      168,
+      188
+    ],
+    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">21 x 7</bdi>",
+    "correct": 147,
+    "options": [
+      147,
+      135,
+      165,
+      141
+    ],
+    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">233 + 302</bdi>",
+    "correct": 535,
+    "options": [
+      521,
+      518,
+      542,
+      535
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">21 x 2</bdi>",
+    "correct": 42,
+    "options": [
+      60,
+      42,
+      24,
+      52
+    ],
+    "hint": "כפלי קודם 2 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">173 + 486</bdi>",
+    "correct": 659,
+    "options": [
+      659,
+      664,
+      674,
+      641
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">25 x 8</bdi>",
+    "correct": 200,
+    "options": [
+      186,
+      189,
+      197,
+      200
+    ],
+    "hint": "כפלי קודם 8 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">272 + 361</bdi>",
+    "correct": 633,
+    "options": [
+      630,
+      633,
+      646,
+      635
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">20 x 3</bdi>",
+    "correct": 60,
+    "options": [
+      49,
+      6,
+      51,
+      60
+    ],
+    "hint": "כפלי קודם 3 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">438 + 362</bdi>",
+    "correct": 800,
+    "options": [
+      795,
+      800,
+      792,
+      786
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">860 - 568</bdi>",
+    "correct": 292,
+    "options": [
+      288,
+      275,
+      292,
+      278
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">949 - 393</bdi>",
+    "correct": 556,
+    "options": [
+      556,
+      568,
+      572,
+      564
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">623 - 374</bdi>",
+    "correct": 249,
+    "options": [
+      249,
+      230,
+      256,
+      242
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">505 - 179</bdi>",
+    "correct": 326,
+    "options": [
+      321,
+      326,
+      314,
+      338
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">935 - 494</bdi>",
+    "correct": 441,
+    "options": [
+      441,
+      457,
+      421,
+      445
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">484 + 392</bdi>",
+    "correct": 876,
+    "options": [
+      893,
+      863,
+      881,
+      876
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">40 x 7</bdi>",
+    "correct": 280,
+    "options": [
+      280,
+      283,
+      282,
+      273
+    ],
+    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">16 x 3</bdi>",
+    "correct": 48,
+    "options": [
+      84,
+      33,
+      51,
+      48
+    ],
+    "hint": "כפלי קודם 3 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">761 - 189</bdi>",
+    "correct": 572,
+    "options": [
+      590,
+      582,
+      572,
+      575
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">259 + 321</bdi>",
+    "correct": 580,
+    "options": [
+      590,
+      580,
+      577,
+      594
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">14 x 8</bdi>",
+    "correct": 112,
+    "options": [
+      132,
+      112,
+      94,
+      93
+    ],
+    "hint": "כפלי קודם 8 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">405 + 414</bdi>",
+    "correct": 819,
+    "options": [
+      815,
+      819,
+      837,
+      812
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">32 x 8</bdi>",
+    "correct": 256,
+    "options": [
+      236,
+      262,
+      247,
+      256
+    ],
+    "hint": "כפלי קודם 8 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">25 x 7</bdi>",
+    "correct": 175,
+    "options": [
+      169,
+      175,
+      172,
+      158
+    ],
+    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">516 - 409</bdi>",
+    "correct": 107,
+    "options": [
+      102,
+      107,
+      112,
+      111
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">797 - 518</bdi>",
+    "correct": 279,
+    "options": [
+      261,
+      279,
+      260,
+      281
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">465 + 258</bdi>",
+    "correct": 723,
+    "options": [
+      725,
+      716,
+      723,
+      735
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">20 x 7</bdi>",
+    "correct": 140,
+    "options": [
+      145,
+      156,
+      140,
+      132
+    ],
+    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">478 + 437</bdi>",
+    "correct": 915,
+    "options": [
+      911,
+      915,
+      910,
+      901
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">43 x 7</bdi>",
+    "correct": 301,
+    "options": [
+      313,
+      301,
+      296,
+      292
+    ],
+    "hint": "כפלי קודם 7 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">323 + 143</bdi>",
+    "correct": 466,
+    "options": [
+      466,
+      484,
+      461,
+      486
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">769 - 533</bdi>",
+    "correct": 236,
+    "options": [
+      229,
+      236,
+      256,
+      248
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">821 - 321</bdi>",
+    "correct": 500,
+    "options": [
+      490,
+      500,
+      503,
+      502
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">23 x 8</bdi>",
+    "correct": 184,
+    "options": [
+      187,
+      189,
+      192,
+      184
+    ],
+    "hint": "כפלי קודם 8 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">189 + 255</bdi>",
+    "correct": 444,
+    "options": [
+      445,
+      449,
+      444,
+      456
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">885 - 408</bdi>",
+    "correct": 477,
+    "options": [
+      473,
+      460,
+      477,
+      496
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">11 x 6</bdi>",
+    "correct": 66,
+    "options": [
+      66,
+      81,
+      80,
+      56
+    ],
+    "hint": "כפלי קודם 6 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">584 - 332</bdi>",
+    "correct": 252,
+    "options": [
+      255,
+      235,
+      252,
+      233
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">643 - 348</bdi>",
+    "correct": 295,
+    "options": [
+      306,
+      289,
+      295,
+      312
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">994 - 318</bdi>",
+    "correct": 676,
+    "options": [
+      690,
+      685,
+      676,
+      659
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">25 x 4</bdi>",
+    "correct": 100,
+    "options": [
+      112,
+      109,
+      100,
+      104
+    ],
+    "hint": "כפלי קודם 4 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">615 - 394</bdi>",
+    "correct": 221,
+    "options": [
+      204,
+      221,
+      236,
+      212
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">443 + 404</bdi>",
+    "correct": 847,
+    "options": [
+      861,
+      843,
+      853,
+      847
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">717 - 325</bdi>",
+    "correct": 392,
+    "options": [
+      402,
+      392,
+      399,
+      383
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">557 - 134</bdi>",
+    "correct": 423,
+    "options": [
+      428,
+      419,
+      423,
+      404
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">965 - 708</bdi>",
+    "correct": 257,
+    "options": [
+      258,
+      239,
+      257,
+      252
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">310 + 449</bdi>",
+    "correct": 759,
+    "options": [
+      764,
+      774,
+      759,
+      747
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">855 - 538</bdi>",
+    "correct": 317,
+    "options": [
+      314,
+      313,
+      317,
+      303
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">534 - 250</bdi>",
+    "correct": 284,
+    "options": [
+      284,
+      266,
+      272,
+      283
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">757 - 632</bdi>",
+    "correct": 125,
+    "options": [
+      140,
+      125,
+      107,
+      128
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">16 x 4</bdi>",
+    "correct": 64,
+    "options": [
+      64,
+      46,
+      59,
+      45
+    ],
+    "hint": "כפלי קודם 4 ביחידות, ואז בעשרות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">816 - 699</bdi>",
+    "correct": 117,
+    "options": [
+      133,
+      110,
+      117,
+      109
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">115 + 251</bdi>",
+    "correct": 366,
+    "options": [
+      364,
+      366,
+      357,
+      360
+    ],
+    "hint": "רשמי את המספרים אחד מתחת לשני וחברי קודם את היחידות."
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">696 - 281</bdi>",
+    "correct": 415,
+    "options": [
+      415,
+      400,
+      416,
+      406
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">981 - 172</bdi>",
+    "correct": 809,
+    "options": [
+      796,
+      820,
+      809,
+      798
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">974 - 386</bdi>",
+    "correct": 588,
+    "options": [
+      599,
+      588,
+      605,
+      583
+    ],
+    "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
+  },
+  {
+    "question": "פתרי במאונך: <bdi dir=\"ltr\" style=\"display:inline-block;\">616 - 418</bdi>",
+    "correct": 198,
+    "options": [
+      209,
+      203,
+      195,
+      198
     ],
     "hint": "אם חסר, זכרי להלוות מהספרה השמאלית הבאה!"
   }

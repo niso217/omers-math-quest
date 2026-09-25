@@ -1,1101 +1,219 @@
-// Game State Management
-const STORAGE_KEY = 'omerMathQuestState';
-let gameState = {
-    maxUnlockedLevel: 1,
-    coins: 0,
-    hearts: 3,
-    theme: 'default',
-    purchasedThemes: ['default'],
-    lifelines: {
-        fiftyFifty: 1,
-        hintFairy: 1
-    },
-    activeSession: null
+import {CHAPTERS,CLOAKS,SKILL_NAMES} from './quest-content.js';
+import {STORAGE_KEY,LEGACY_KEY,OBJECTS,TASK_OBJECTS,freshState,normalizeState,migrateLegacy,chapterProgress,recordAnswer,completeObjective,finishChapter,purchaseCloak,makeQuestion,bankQuestion,parseAnswer} from './game-core.js';
+import {QuestWorld,drawHero,drawCompanion} from './world.js';
+import {QuestAudio} from './sound.js';
+
+const $=id=>document.getElementById(id);
+const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const PATHS={
+  compass:'<circle cx="12" cy="12" r="9"/><path d="m16 8-3 5-5 3 3-5z"/>',
+  scroll:'<path d="M6 4h12v15l-3-2-3 2-3-2-3 2zM9 8h6M9 11h6"/>',
+  footprints:'<ellipse cx="8" cy="8" rx="3" ry="5" transform="rotate(-20 8 8)"/><ellipse cx="16" cy="15" rx="3" ry="5" transform="rotate(20 16 15)"/>',
+  bag:'<path d="M8 7V5a4 4 0 0 1 8 0v2M7 7h10a3 3 0 0 1 3 3v10H4V10a3 3 0 0 1 3-3ZM8 12h8v5H8z"/>',
+  shop:'<path d="m4 3-2 6h20l-2-6ZM4 10v11h16V10M9 21v-7h6v7M2 9c0 4 5 4 5 0 0 4 5 4 5 0 0 4 5 4 5 0 0 4 5 4 5 0"/>',
+  settings:'<circle cx="12" cy="12" r="3"/><path d="m9 3 1-1h4l1 3 3 1 3 3-2 3 1 3-3 3-3-1-3 3-3-2-1-3-3-1V9l3-1z"/>',
+  mouse:'<rect x="6" y="2" width="12" height="20" rx="6"/><path d="M12 2v6"/>',
+  arrow:'<path d="M19 12H5m6-6-6 6 6 6"/>',
+  'sound-off':'<path d="M11 4 6 8H3v8h3l5 4zM16 9l5 6m0-6-5 6"/>',
+  sound:'<path d="M11 4 6 8H3v8h3l5 4zM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',
+  hint:'<path d="M9 18h6m-5 3h4M8 14a6 6 0 1 1 8 0l-1 2H9z"/>',
+  check:'<path d="m5 12 4 4L19 6"/>'
 };
-
-// Game Config from config.json
-let gameConfig = {
-    gameTitle: "המסע האפי של עומר",
-    playerName: "עומר",
-    difficulty: "medium",
-    totalLevels: 9,
-    shop: { themeCost: 500, heartCost: 100 }
-};
-
-// Current Level Session
-let currentLevel = 1;
-let currentQuestionIndex = 0;
-let levelQuestions = [];
-let isBossLevel = false;
-let bossHp = 100;
-let omerHp = 100;
-
-// Initialize
-async function init() {
-    await fetchConfig();
-    loadState();
-    applyTheme(gameState.theme);
-    updateGlobalUI();
-    renderMap();
-    
-    if (gameState.activeSession) {
-        resumeLevel();
-    }
-    
-    // Event Listeners
-    document.getElementById('back-to-map-btn').addEventListener('click', showMap);
-    document.getElementById('open-shop-btn').addEventListener('click', openShop);
-    document.getElementById('close-shop-btn').addEventListener('click', closeShop);
-    document.getElementById('modal-action-btn').addEventListener('click', handleModalAction);
-    
-    // Lifeline listeners
-    document.getElementById('btn-5050').addEventListener('click', useFiftyFifty);
-    document.getElementById('btn-hint').addEventListener('click', useHint);
-    
-    // Shop Listeners
-    document.querySelectorAll('.buy-btn').forEach(btn => {
-        btn.addEventListener('click', handlePurchase);
-    });
+function icon(name){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(PATHS[name]||PATHS.compass)+'</svg>';}
+function icons(){document.querySelectorAll('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon));}
+let storageAvailable=true,recoveryNotice=false;
+function loadState(){
+  try{
+    const saved=localStorage.getItem(STORAGE_KEY);
+    if(saved){try{return normalizeState(JSON.parse(saved));}catch{localStorage.setItem(STORAGE_KEY+'.recovery',saved);recoveryNotice=true;}}
+    const old=localStorage.getItem(LEGACY_KEY);if(old){try{return migrateLegacy(JSON.parse(old));}catch{return freshState();}}
+  }catch{storageAvailable=false;}return freshState();
 }
-
-async function fetchConfig() {
-    try {
-        const response = await fetch('config.json');
-        if (response.ok) {
-            gameConfig = await response.json();
-            // Apply config visually
-            document.getElementById('head-title').textContent = gameConfig.gameTitle;
-            document.getElementById('game-title').textContent = gameConfig.gameTitle;
-            
-            // Update shop prices in UI dynamically
-            document.querySelectorAll('[data-type="theme"]').forEach(btn => {
-                btn.setAttribute('data-cost', gameConfig.shop.themeCost);
-                btn.previousElementSibling.textContent = `מחיר: ${gameConfig.shop.themeCost} 🪙`;
-            });
-            document.querySelectorAll('[data-type="heart"]').forEach(btn => {
-                btn.setAttribute('data-cost', gameConfig.shop.heartCost);
-                btn.previousElementSibling.textContent = `מחיר: ${gameConfig.shop.heartCost} 🪙`;
-            });
-        }
-    } catch (e) {
-        console.warn('Could not load config.json, using defaults.');
-    }
+let state=loadState(),config={playerName:'עומר',difficulty:'medium',gameTitle:'המסע של עומר'},world=null,currentDialog='',loadingToken=0,toastTimer=null,inputValue='',digits=[],crystals=new Set(),groupCount=0;
+const audio=new QuestAudio(),banks=new Map(),dialog=$('game-dialog');
+const chapter=()=>CHAPTERS[state.chapter-1];
+const progress=()=>chapterProgress(state);
+function save(){
+  if(storageAvailable){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch{storageAvailable=false;}}
+  $('save-status').innerHTML=storageAvailable?'<span class="save-dot"></span> המסע נשמר אוטומטית':'המסע נשמר בזיכרון זמני בלבד';
 }
-
-function loadState() {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-        gameState = { ...gameState, ...JSON.parse(saved) };
-    }
+function toast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,4000);}
+function drawPortrait(id,type='fox'){const canvas=$(id);if(!canvas)return;const ctx=canvas.getContext('2d');ctx.clearRect(0,0,canvas.width,canvas.height);drawCompanion(ctx,canvas.width/2,canvas.height*.78,type,canvas.width/57);}
+function activeObject(){const p=progress();return !p.accepted?'guide':p.solved.length<3?TASK_OBJECTS[p.solved.length]:'portal';}
+function render(){
+  const ch=chapter(),p=progress(),collected=Object.values(state.chapters).filter(c=>c.completed).length;
+  $('coin-display').textContent=state.coins.toLocaleString('he-IL');$('brand-name').textContent='המסע של '+config.playerName;$('welcome-title').textContent='העולם מחכה לך, '+config.playerName+'.';
+  $('rank-name').textContent=state.xp>=900?'שומרת המנגינה':state.xp>=400?'מגינת הממלכה':state.xp>=100?'חברת היער':'מגלת שבילים';
+  $('chapter-name').textContent=ch.name;$('chapter-description').textContent=ch.subtitle;$('quest-count').textContent=p.solved.length+' / 3';
+  $('guide-name').textContent=ch.guide+(ch.creature==='fox'?' השועל':' הינשוף');$('guide-message').textContent=!p.accepted?'יש לי סוד לספר לך. בואי נפגש ליד השביל!':p.solved.length<3?'אני איתך! התחנה הבאה: '+ch.objects[p.solved.length]+'.':'המנגינה מתעוררת! התו שלך מחכה ליד השער.';
+  drawPortrait('guide-portrait',ch.creature);
+  $('quest-checklist').innerHTML=ch.tasks.map((task,i)=>'<li class="'+(p.solved.includes(i)?'done':p.accepted&&p.solved.length===i?'current':'')+'"><span class="quest-step-icon">'+(p.solved.includes(i)?'✓':i+1)+'</span><span>'+escapeHTML(task)+'</span></li>').join('');
+  $('quest-go-label').textContent=state.active?'להמשיך את החידה':!p.accepted?'לפגוש את '+ch.guide:p.solved.length<3?'אל '+ch.objects[p.solved.length]:p.completed?'אל השער הבא':'לאסוף את '+ch.relic;
+  $('relic-name').textContent=ch.relic;$('world-chapter').textContent='פרק '+String(ch.id).padStart(2,'0')+' / 09';$('world-name').textContent=ch.name;$('world-region').textContent=ch.region;
+  $('world-context-text').textContent=!p.accepted?ch.guide+' מחכה לך ליד השביל':p.solved.length<3?ch.tasks[p.solved.length]:p.completed?'הדרך פתוחה. ההרפתקה ממשיכה.':'כל החידות נפתרו. התו מחכה ליד השער!';
+  $('relic-track').innerHTML=CHAPTERS.map(c=>'<span class="relic-mini '+(state.chapters[c.id]?.completed?'collected':'')+'" title="'+escapeHTML(c.relic)+'" aria-label="'+escapeHTML(c.relic)+(state.chapters[c.id]?.completed?' נאסף':' עדיין לא נאסף')+'">♪</span>').join('');
+  $('journey-caption').textContent=collected?collected+' מתוך 9 תווים חזרו לממלכה.': 'כל תו שתחזירי יאיר חלק נוסף בעולם.';
+  $('discovery-title').textContent=p.completed?'עוד חלק בעולם חזר לשיר.':state.chapter===1?'מישהו העלים את המוזיקה מהממלכה...':ch.subtitle;
+  $('discovery-copy').textContent=p.completed?ch.outro:'תשעה תווים התפזרו ברחבי העולם. ורק הרפתקנית אחת יכולה לחבר אותם מחדש.';
+  $('sound-button').innerHTML=icon(audio.enabled?'sound':'sound-off');$('sound-button').setAttribute('aria-pressed',String(audio.enabled));$('sound-button').setAttribute('aria-label',audio.enabled?'כיבוי צלילים':'הפעלת צלילים');
+  world?.setScene(ch,p,CLOAKS.find(c=>c.id===state.cloak).color);icons();
 }
-
-function saveState() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(gameState));
-    updateGlobalUI();
+function showDialog(html,kind){currentDialog=kind;$('dialog-content').innerHTML=html;world?.pause(true);if(!dialog.open)dialog.showModal();dialog.scrollTop=0;}
+function closeDialog(){loadingToken++;world?.pause(false);dialog.close();}
+dialog.addEventListener('close',()=>{currentDialog='';world?.pause(false);$('world').focus({preventScroll:true});});
+dialog.addEventListener('cancel',()=>{loadingToken++;});
+$('dialog-close').addEventListener('click',closeDialog);
+dialog.addEventListener('click',event=>{if(event.target===dialog){const b=dialog.getBoundingClientRect();if(event.clientX<b.left||event.clientX>b.right||event.clientY<b.top||event.clientY>b.bottom)closeDialog();}});
+function showStory(){
+  showDialog('<div class="dialog-story"><div class="chapter-medallion">♪</div><div class="dialog-kicker">המסע של '+escapeHTML(config.playerName)+'</div><h2 class="dialog-title" id="dialog-title">המנגינה האבודה</h2><p class="dialog-description">פעם, כל פינה בממלכה ידעה לשיר. עד שצל השקט פיזר את תשעת תווי המנגינה בין יערות, אגמים וטירות. עכשיו החברים מחכים לך: ללכת, לגלות, לפתור — ולהחזיר לעולם את הקצב.</p><p class="dialog-description">לחצי על מקום בעולם כדי ללכת אליו. ליד דמות או חפץ, לחצי על כפתור הפעולה. אפשר גם ללכת ישר למשימה דרך יומן המסע.</p><div class="dialog-actions"><button type="button" class="primary-button" data-action="start-story">ההרפתקה מתחילה!</button></div></div>','story');
 }
-
-function updateGlobalUI() {
-    document.getElementById('coin-display').textContent = gameState.coins;
-    document.getElementById('level-coin-display').textContent = gameState.coins;
-    document.getElementById('heart-display').textContent = gameState.hearts;
-    document.getElementById('shop-coins').textContent = gameState.coins;
+function showGuide(){
+  const ch=chapter(),p=progress();const message=!p.accepted?ch.intro:p.solved.length===3?'כל המקומות שוב מוארים! עכשיו בואי אל השער ואספי את '+ch.relic+'.':'כבר התקדמנו! עכשיו צריך '+ch.tasks[p.solved.length]+'. תוכלי למצוא את המקום על השביל, או ללחוץ על המשימה ביומן.';
+  showDialog('<div class="dialog-story"><canvas class="story-portrait" id="dialog-portrait" width="230" height="230" aria-hidden="true"></canvas><div class="dialog-kicker">חברה חדשה למסע</div><h2 class="dialog-title" id="dialog-title">'+escapeHTML(ch.guide)+' מחכה לך</h2><p class="dialog-description">'+escapeHTML(message)+'</p><div class="dialog-actions"><button type="button" class="primary-button" data-action="accept-quest">'+(!p.accepted?'אני מוכנה לעזור!':'ממשיכים במסע')+'</button></div></div>','guide');drawPortrait('dialog-portrait',ch.creature);
 }
-
-// Map Rendering
-function renderMap() {
-    const container = document.getElementById('nodes-container');
-    container.innerHTML = '';
-    
-    // Generate nodes based on config
-    const totalLevels = gameConfig.totalLevels || 9;
-    const positions = [
-        {x: 15, y: 82}, {x: 35, y: 70}, {x: 60, y: 80}, {x: 80, y: 65},
-        {x: 75, y: 42}, {x: 55, y: 30}, {x: 35, y: 38}, {x: 20, y: 20},
-        {x: 55, y: 10}
-    ];
-
-    positions.forEach((pos, i) => {
-        const level = i + 1;
-        const node = document.createElement('div');
-        node.className = `map-node ${level === 9 ? 'boss-node' : ''}`;
-        node.style.left = `${pos.x}%`;
-        node.style.top = `${pos.y}%`;
-        
-        if (level === 9) {
-            node.textContent = '👑';
-        } else {
-            node.textContent = level;
-        }
-
-        if (level < gameState.maxUnlockedLevel) {
-            node.classList.add('completed');
-            if (level !== 9) node.textContent = '✔️';
-            node.onclick = () => handleLevelClick(level);
-        } else if (level === gameState.maxUnlockedLevel) {
-            node.classList.add('unlocked');
-            node.onclick = () => handleLevelClick(level);
-        }
-
-        container.appendChild(node);
-    });
-
-    drawPaths(positions);
+function interact(object){
+  if(dialog.open)return;
+  if(object==='guide'){showGuide();return;}
+  const p=progress();
+  if(object==='portal'){if(p.solved.length<3){toast('עוד '+(3-p.solved.length)+' מקומות צריכים את העזרה שלך לפני שהשער ייפתח.');return;}showChapterComplete();return;}
+  if(object==='chest'){if(p.chest){toast('כבר מצאת את האוצר הזה. תיבות נוספות מחכות בפרקים הבאים!');return;}startChallenge('chest');return;}
+  if(!p.accepted){toast('קודם נפגוש את '+chapter().guide+' ונגלה מה קרה כאן.');world.goTo('guide');return;}
+  const index=TASK_OBJECTS.indexOf(object);
+  if(p.solved.includes(index)){toast('כבר החזרת אור למקום הזה. ממשיכות אל התחנה הבאה!');return;}
+  if(index!==p.solved.length){toast('הדרך תיפתח אחרי '+chapter().tasks[p.solved.length]+'.');return;}
+  startChallenge(object);
 }
-
-function drawPaths(positions) {
-    const svg = document.getElementById('map-paths');
-    svg.innerHTML = '';
-    for(let i=0; i < positions.length - 1; i++) {
-        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line.setAttribute('x1', `${positions[i].x}%`);
-        line.setAttribute('y1', `${positions[i].y}%`);
-        line.setAttribute('x2', `${positions[i+1].x}%`);
-        line.setAttribute('y2', `${positions[i+1].y}%`);
-        line.setAttribute('stroke', '#ddd');
-        line.setAttribute('stroke-width', '4');
-        line.setAttribute('stroke-dasharray', '10,10');
-        svg.appendChild(line);
-    }
+async function getBank(id){
+  if(banks.has(id))return banks.get(id);
+  const promise=fetch('topic'+id+'.json',{signal:AbortSignal.timeout(5000)}).then(r=>{if(!r.ok)throw new Error('Question bank unavailable');return r.json();}).then(rows=>Array.isArray(rows)?rows.map((q,i)=>bankQuestion(q,id+'-'+i)).filter(Boolean):[]).catch(()=>[]);
+  banks.set(id,promise);return promise;
 }
-
-// Navigation
-function switchView(viewId) {
-    document.querySelectorAll('.view').forEach(v => v.classList.add('hidden'));
-    document.getElementById(viewId).classList.remove('hidden');
+function difficulty(skill){const stats=state.skills[skill];return config.difficulty==='easy'?'easy':config.difficulty==='hard'||stats&&stats.independent>=8&&stats.independent/Math.max(1,stats.correct)>.8?'hard':'medium';}
+async function startChallenge(object,practiceSkill=null){
+  if(state.active){showChallenge();return;}
+  const token=++loadingToken;
+  showDialog('<div class="dialog-kicker">רגע של גילוי</div><h2 class="dialog-title" id="dialog-title">מפענחות את הרמז...</h2><p class="dialog-description">החידה כבר בדרך.</p>','loading');
+  const bank=await getBank(state.chapter);if(token!==loadingToken||!dialog.open)return;
+  const skill=practiceSkill||chapter().types[Math.max(0,TASK_OBJECTS.indexOf(object))];
+  let questions=[makeQuestion(skill,state.chapter,0,Math.random,difficulty(skill)),makeQuestion(skill,state.chapter,1,Math.random,difficulty(skill))];
+  if(object==='chest')questions=bank.length?shuffle(bank).slice(0,2):questions;
+  else if(object==='practice')questions=[0,1,2].map(i=>makeQuestion(skill,state.chapter,i,Math.random,difficulty(skill)));
+  else questions.push(bank.length?bank[Math.floor(Math.random()*bank.length)]:makeQuestion(skill,state.chapter,2,Math.random,difficulty(skill)));
+  state.active={chapter:state.chapter,object,questions,index:0,attempts:0,hinted:false,answered:false,results:[]};save();showChallenge();
 }
-
-function showMap() {
-    saveState();
-    renderMap();
-    switchView('map-view');
+function shuffle(values){const result=[...values];for(let i=result.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[result[i],result[j]]=[result[j],result[i]];}return result;}
+function showChallenge(){
+  const a=state.active;if(!a)return;if(a.index>=a.questions.length){finishChallenge();return;}
+  const q=a.questions[a.index],draft=a.draft||{};digits=Array.from({length:q.digits||3},(_,i)=>draft.digits?.[i]||0);crystals=new Set(draft.crystals||[]);groupCount=draft.groupCount||0;inputValue=draft.inputValue||'';
+  const index=TASK_OBJECTS.indexOf(a.object),title=a.object==='chest'?'הסוד שבתיבה':a.object==='practice'?'קרחת התרגול':chapter().objects[index];
+  let visual='';
+  if(q.kind==='place')visual='<div class="dial-lock">'+digits.map((d,i)=>'<div class="number-dial"><button type="button" data-dial="'+i+'" data-delta="1" aria-label="להגדיל '+['יחידות','עשרות','מאות','אלפים'][digits.length-i-1]+'">+</button><output id="dial-'+i+'">0</output><button type="button" data-dial="'+i+'" data-delta="-1" aria-label="להקטין '+['יחידות','עשרות','מאות','אלפים'][digits.length-i-1]+'">−</button><small>'+['יחידות','עשרות','מאות','אלפים'][digits.length-i-1]+'</small></div>').join('')+'</div>';
+  if(q.kind==='fraction')visual='<div class="crystal-grid">'+Array.from({length:q.visual.total},(_,i)=>'<button type="button" class="crystal" data-crystal="'+i+'" aria-pressed="false" aria-label="גביש '+(i+1)+'">◆</button>').join('')+'</div><p class="puzzle-selection" id="selection-count">0 מתוך '+q.visual.total+' גבישים מוארים</p>';
+  if(q.kind==='sequence')visual='<div class="sequence-river" aria-label="סדרת אבני הגשר">'+q.visual.values.map((v,i)=>'<span class="stepping-stone '+(i===q.visual.gap?'missing':'')+'">'+(i===q.visual.gap?'?':v)+'</span>').join('')+'</div>';
+  if(q.kind==='groups')visual='<div class="group-lanterns" id="group-lanterns">'+Array.from({length:q.visual.rows},()=>'<div class="lantern"></div>').join('')+'</div><div class="group-stepper"><button type="button" data-group="-1" aria-label="פחות גחלילית בכל פנס">−</button><output id="group-count">0</output><button type="button" data-group="1" aria-label="עוד גחלילית בכל פנס">+</button></div><p class="puzzle-selection" id="selection-count">0 גחליליות בכל פנס · 0 מתוך '+q.visual.total+' בסך הכול</p>';
+  if(q.kind==='geometry')visual='<div class="geometry-wrapper"><span>'+q.visual.w+' מטרים</span><div class="geometry-grid" style="grid-template-columns:repeat('+q.visual.w+',1fr)">'+Array.from({length:q.visual.w*q.visual.h},()=>'<span class="geometry-cell"></span>').join('')+'</div><small>'+q.visual.h+' מטרים</small></div>';
+  const direct=['place','fraction','groups'].includes(q.kind);
+  const answer=q.kind==='choice'?'<div class="answer-options">'+shuffle(q.options).map(v=>'<button type="button" class="answer-choice" data-answer="'+v+'">'+v+'</button>').join('')+'</div>':'<form id="answer-form" class="answer-form">'+(!direct?'<label class="answer-label" for="answer-input">התשובה שלך</label>':'')+'<div class="answer-row">'+(!direct?'<input class="answer-input" id="answer-input" inputmode="numeric" autocomplete="off" aria-label="התשובה שלך" placeholder="?">':'')+'<button class="primary-button '+(direct?'full-width':'')+'" type="submit" id="check-answer">לבדוק את הפתרון '+icon('check')+'</button></div></form>';
+  showDialog('<div class="dialog-kicker">'+(state.chapter===9?'מול צל השקט · ':'')+'חידה '+(a.index+1)+' מתוך '+a.questions.length+' · '+escapeHTML(SKILL_NAMES[q.skill])+'</div><h2 class="dialog-title" id="dialog-title">'+escapeHTML(title)+'</h2><div class="challenge-progress" aria-label="התקדמות בחידות">'+a.questions.map((_,i)=>'<span class="'+(i<a.index?'filled':i===a.index?'current':'')+'"></span>').join('')+'</div><p class="puzzle-prompt">'+escapeHTML(q.prompt)+'</p>'+(q.expression?'<div class="puzzle-expression">'+escapeHTML(q.expression)+'</div>':'')+visual+answer+'<div class="puzzle-footer"><button type="button" class="hint-button" data-action="hint">'+icon('hint')+' רמז מ'+escapeHTML(chapter().guide)+'</button><span class="eyebrow">אין לחץ. יש לך זמן לחשוב.</span></div><div class="hint-box" id="hint-box" hidden></div><div class="answer-feedback" id="answer-feedback" role="status" aria-live="polite" hidden></div>','challenge');
+  if(a.hinted){$('hint-box').hidden=false;$('hint-box').textContent=q.hint;}
+  if(q.kind==='place')digits.forEach((d,i)=>$('dial-'+i).textContent=d);
+  if(q.kind==='fraction'){document.querySelectorAll('[data-crystal]').forEach(b=>b.setAttribute('aria-pressed',String(crystals.has(Number(b.dataset.crystal)))));$('selection-count').textContent=crystals.size+' מתוך '+q.visual.total+' גבישים מוארים';}
+  if(q.kind==='groups'){$('group-count').textContent=groupCount;document.querySelectorAll('.lantern').forEach(l=>l.innerHTML='<span></span>'.repeat(groupCount));$('selection-count').textContent=groupCount+' גחליליות בכל פנס · '+groupCount*q.visual.rows+' מתוך '+q.visual.total+' בסך הכול';}
+  if($('answer-input'))$('answer-input').value=inputValue;
+  if(a.answered)showAnswerSuccess(q);
 }
-
-// Level Logic
-function handleLevelClick(level) {
-    if (gameState.activeSession && gameState.activeSession.level === level) {
-        resumeLevel();
-    } else {
-        startLevel(level);
-    }
+function saveDraft(){if(!state.active||state.active.answered)return;state.active.draft={digits:[...digits],crystals:[...crystals],groupCount,inputValue:$('answer-input')?.value??inputValue};save();}
+function answerValue(){const q=state.active.questions[state.active.index];if(q.kind==='place')return Number(digits.join(''));if(q.kind==='fraction')return crystals.size;if(q.kind==='groups')return groupCount;return $('answer-input')?.value??inputValue;}
+function submitAnswer(value,button=null){
+  const a=state.active;if(!a||a.answered)return;const q=a.questions[a.index];
+  if(parseAnswer(value)===null){feedback('כתבי מספר כדי שנוכל לבדוק יחד.',true);return;}
+  const assisted=a.hinted||a.attempts>0;const correct=recordAnswer(state,q,value,assisted);
+  if(correct){a.answered=true;a.results.push(!assisted);save();audio.success();showAnswerSuccess(q);}
+  else{a.attempts++;if(button)button.classList.add('wrong-choice');save();feedback(q.kind==='fraction'?'האור עדיין לא התחבר. ספרי כמה גבישים יש בקבוצה אחת, ואז כמה קבוצות צריך.':q.kind==='groups'?'נבדוק יחד: '+groupCount+' בכל פנס נותן '+(groupCount*q.visual.rows)+' גחליליות. אנחנו צריכות '+q.visual.total+'.':'עוד לא בדיוק. נסי דרך אחרת, או בקשי רמז.',true);if(a.attempts>=2){a.hinted=true;$('hint-box').hidden=false;$('hint-box').textContent=q.hint+' '+(a.attempts>=3?q.explanation:'');save();}}
 }
-
-function resumeLevel() {
-    const session = gameState.activeSession;
-    currentLevel = session.level;
-    isBossLevel = session.isBossLevel;
-    currentQuestionIndex = session.currentIndex;
-    levelQuestions = session.questions;
-    bossHp = session.bossHp;
-    omerHp = session.omerHp;
-    gameState.lifelines = session.lifelines;
-    
-    updateLifelineUI();
-    
-    if (isBossLevel) {
-        updateBossHp();
-        switchView('boss-view');
-        loadBossQuestion();
-    } else {
-        document.getElementById('level-title').textContent = `שלב ${currentLevel}`;
-        document.getElementById('progress-bar').style.width = `${(currentQuestionIndex / 10) * 100}%`;
-        switchView('level-view');
-        loadQuestion();
-    }
+function feedback(message,wrong=false){const el=$('answer-feedback');el.hidden=false;el.className='answer-feedback'+(wrong?' wrong':'');el.textContent=message;}
+function showAnswerSuccess(q){
+  document.querySelectorAll('#dialog-content input,#dialog-content .answer-choice,#dialog-content [data-dial],#dialog-content [data-crystal],#dialog-content [data-group],#check-answer').forEach(el=>el.disabled=true);
+  const a=state.active,last=a.index===a.questions.length-1;
+  $('answer-feedback').hidden=false;$('answer-feedback').className='answer-feedback';$('answer-feedback').innerHTML='<strong>האור מתחבר! פתרת את זה.</strong><span class="explanation">'+escapeHTML(q.explanation)+'</span><button type="button" class="primary-button full-width" data-action="next-question">'+(last?'לגלות מה השתנה בעולם':'אל הרמז הבא')+' '+icon('arrow')+'</button>';
 }
-
-function saveSession() {
-    gameState.activeSession = {
-        level: currentLevel,
-        isBossLevel: isBossLevel,
-        currentIndex: currentQuestionIndex,
-        questions: levelQuestions,
-        bossHp: bossHp,
-        omerHp: omerHp,
-        lifelines: { ...gameState.lifelines }
-    };
-    saveState();
+function finishChallenge(){
+  const a=state.active;if(!a)return;const object=a.object,independent=a.results.filter(Boolean).length,count=a.questions.length,reward=completeObjective(state,object);state.active=null;save();render();audio.reward();
+  const index=TASK_OBJECTS.indexOf(object),title=object==='chest'?'מצאת תיבת סודות!':object==='practice'?'עוד צעד של ביטחון':index===0?'החותם נפתח!':index===1?'הגשר חזר לחיים!':'המנגינה מתעוררת!';
+  const description=object==='chest'?'בין העלים חיכתה מתנה קטנה להרפתקנית סקרנית. המטבעות כבר בתרמיל שלך.':object==='practice'?'סיימת '+count+' חידות. '+independent+' מהן נפתרו בלי רמז או ניסיון נוסף.':index===0?'השורשים זזו, והכתובת העתיקה התחילה לזהור. החברים מצאו רמז שמוביל אל הגשר.':index===1?'האבנים מצאו את מקומן. עכשיו אפשר לחצות את הנחל ולגלות מה מחכה בצד השני.':'שלושת המקומות שוב מוארים. השער העתיק התעורר — והתו שלך מחכה לידו.';
+  showDialog('<div class="dialog-story"><div class="chapter-medallion">'+(object==='chest'?'✧':'✦')+'</div><div class="dialog-kicker">עוד משהו טוב קרה בזכותך</div><h2 class="dialog-title" id="dialog-title">'+title+'</h2><p class="dialog-description">'+description+'</p>'+(reward.coins?'<div class="rewards-row"><span class="reward-pill gold">+'+reward.coins+' מטבעות</span><span class="reward-pill">+'+reward.xp+' נקודות מסע</span></div>':'')+'<div class="dialog-actions"><button type="button" class="primary-button" data-action="back-world">בחזרה להרפתקה</button></div></div>','reward');
 }
-
-function clearSession() {
-    gameState.activeSession = null;
-    saveState();
+function showChapterComplete(){
+  const ch=chapter();const newlyFinished=finishChapter(state);save();render();if(newlyFinished)audio.reward();
+  const final=state.chapter===9;
+  showDialog('<div class="dialog-story"><div class="chapter-medallion">♪</div><div class="dialog-kicker">'+(final?'הסיפור שלך הפך למנגינה':'תו חדש מצטרף למסע')+'</div><h2 class="dialog-title" id="dialog-title">'+(final?'הממלכה שוב שרה!':escapeHTML(ch.relic)+' שלך!')+'</h2><p class="dialog-description">'+escapeHTML(ch.outro)+'</p><div class="celebration-notes" aria-hidden="true">♪ ✧ ♫ ✧ ♪</div>'+(newlyFinished?'<div class="rewards-row"><span class="reward-pill gold">+60 מטבעות</span><span class="reward-pill">+50 נקודות מסע</span></div>':'')+'<div class="dialog-actions"><button type="button" class="primary-button" data-action="'+(final?'open-map':'next-chapter')+'">'+(final?'לבקר שוב בממלכה':'ממשיכות אל '+escapeHTML(CHAPTERS[state.chapter].name))+'</button><button type="button" class="secondary-button" data-action="back-world">להישאר ולחקור</button></div></div>','chapter-complete');
 }
-
-async function startLevel(level) {
-    currentLevel = level;
-    isBossLevel = (level === 9);
-    currentQuestionIndex = 0;
-    miniGameActive = false;
-    
-    // Reset lifelines for the level
-    gameState.lifelines = { fiftyFifty: 1, hintFairy: 1 };
-    updateLifelineUI();
-
-    // Roll which question will be the mini-game (only for non-boss levels)
-    if (!isBossLevel) {
-        rollMiniGameIndex();
-    }
-
-    try {
-        // Fetch questions dynamically from the JSON topic files
-        const response = await fetch(`topic${level}.json`);
-        const allQuestions = await response.json();
-        // Shuffle the 100 questions and pick exactly 10
-        levelQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 10);
-    } catch (e) {
-        alert('שגיאה בטעינת השאלות! וודאי שהמשחק רץ על שרת אינטרנט כמו GitHub Pages.');
-        return;
-    }
-    
-    if (isBossLevel) {
-        bossHp = 100;
-        omerHp = gameState.hearts * 33.3; // Convert hearts to HP percentage
-        updateBossHp();
-        saveSession();
-        switchView('boss-view');
-        loadBossQuestion();
-    } else {
-        document.getElementById('level-title').textContent = `שלב ${level}`;
-        document.getElementById('progress-bar').style.width = '0%';
-        saveSession();
-        switchView('level-view');
-        loadQuestion();
-    }
+function changeChapter(id){
+  if(id<1||id>state.unlocked)return;
+  if(state.active&&id!==state.chapter){toast('החידה הפתוחה נשמרה. נסיים אותה לפני שנעבור לפרק אחר.');showChallenge();return;}
+  state.chapter=id;state.position={x:236,y:508};save();render();world.setPosition(state.position);closeDialog();toast('ברוכה הבאה אל '+chapter().name);
 }
-
-function loadQuestion() {
-    // Check if this question should be the mini-game
-    if (!isBossLevel && currentQuestionIndex === miniGameIndex) {
-        launchMiniGame();
-        return;
-    }
-    
-    const q = levelQuestions[currentQuestionIndex];
-    document.getElementById('question-text').innerHTML = q.question;
-    document.getElementById('hint-box').classList.add('hidden');
-    document.getElementById('hint-box').textContent = '';
-    
-    renderOptions(q.options, q.correct, 'options-container');
-    document.getElementById('progress-bar').style.width = `${(currentQuestionIndex / 10) * 100}%`;
+function showMap(){
+  showDialog('<div class="dialog-kicker">הממלכה מחכה לך</div><h2 class="dialog-title" id="dialog-title">מפת המסע</h2><p class="dialog-description">כל פרק מחזיר לעולם תו אחד. אפשר לחזור לכל מקום שכבר גילית.</p><div class="chapter-map">'+CHAPTERS.map(ch=>'<button type="button" class="chapter-map-button '+(state.chapter===ch.id?'current':'')+'" data-chapter="'+ch.id+'" '+(ch.id>state.unlocked?'disabled':'')+'><span>'+String(ch.id).padStart(2,'0')+'</span><span><strong>'+escapeHTML(ch.name)+'</strong><small>'+escapeHTML(ch.skill)+'</small></span><span class="map-status">'+(state.chapters[ch.id]?.completed?'♪ התו חזר':ch.id>state.unlocked?'טרם התגלה':state.chapter===ch.id?'את כאן':'פתוח')+'</span></button>').join('')+'</div>','map');
 }
-
-function loadBossQuestion() {
-    const q = levelQuestions[currentQuestionIndex];
-    document.getElementById('boss-question-text').innerHTML = q.question;
-    renderOptions(q.options, q.correct, 'boss-options-container');
+function showInventory(){
+  showDialog('<div class="dialog-kicker">אוצרות מהדרך</div><h2 class="dialog-title" id="dialog-title">התרמיל שלי</h2><p class="dialog-description">כל תו כאן הוא סיפור קטן על מקום שעזרת לו לחזור לשיר.</p><div class="inventory-grid">'+CHAPTERS.map(ch=>'<div class="inventory-item '+(state.chapters[ch.id]?.completed?'unlocked':'')+'"><span>'+ (state.chapters[ch.id]?.completed?'♪':'·')+'</span><strong>'+escapeHTML(ch.relic)+'</strong><small>'+escapeHTML(ch.name)+'</small></div>').join('')+'</div><div class="dialog-actions"><button class="secondary-button" type="button" data-action="open-shop">לבחור גלימה למסע</button></div>','inventory');
 }
-
-function renderOptions(optionsArr, correctOption, containerId) {
-    const container = document.getElementById(containerId);
-    container.innerHTML = '';
-    
-    // Shuffle options
-    const shuffled = [...optionsArr].sort(() => Math.random() - 0.5);
-    
-    shuffled.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.className = 'option-btn';
-        btn.textContent = opt;
-        btn.onclick = (e) => handleAnswer(opt, correctOption, e.target);
-        container.appendChild(btn);
-    });
+function showShop(){
+  showDialog('<div class="dialog-kicker">קצת צבע למסע שלך</div><h2 class="dialog-title" id="dialog-title">החנות של פיפה</h2><p class="dialog-description">יש לך '+state.coins+' מטבעות. איזו גלימה מתאימה להרפתקה הבאה?</p><div class="shop-grid">'+CLOAKS.map(item=>'<article class="shop-item"><canvas id="cloak-'+item.id+'" width="176" height="176" aria-hidden="true"></canvas><h3>'+escapeHTML(item.name)+'</h3><p>'+escapeHTML(item.description)+'</p><button type="button" class="'+(state.cloak===item.id?'secondary-button':'primary-button')+'" data-cloak="'+item.id+'" '+(state.cloak===item.id?'disabled':'')+'>'+(state.cloak===item.id?'לובשת עכשיו':state.ownedCloaks.includes(item.id)?'ללבוש':item.price+' מטבעות')+'</button></article>').join('')+'</div>','shop');
+  for(const item of CLOAKS){const canvas=$('cloak-'+item.id);drawHero(canvas.getContext('2d'),88,148,{cloak:item.color,scale:2.2});}
 }
-
-function handleAnswer(selected, correct, btnElement) {
-    const isCorrect = (String(selected) === String(correct));
-    const containerId = isBossLevel ? 'boss-options-container' : 'options-container';
-    const allBtns = document.querySelectorAll(`#${containerId} .option-btn`);
-    
-    // Disable all buttons to prevent double clicking
-    allBtns.forEach(b => b.disabled = true);
-
-    if (isCorrect) {
-        btnElement.classList.add('correct');
-        // Earn coin
-        gameState.coins += 10;
-        createFloatingText('+10 🪙', btnElement);
-        
-        if (isBossLevel) {
-            bossHp -= 10;
-            updateBossHp();
-            shakeScreen('boss-avatar');
-        }
-
-    } else {
-        btnElement.classList.add('wrong');
-        if (!isBossLevel) {
-            gameState.hearts--;
-        } else {
-            omerHp -= 33.3;
-            gameState.hearts--;
-            updateBossHp();
-            shakeScreen('omer-hp');
-            document.querySelector('.boss-arena').classList.add('shake-severe');
-            setTimeout(() => document.querySelector('.boss-arena').classList.remove('shake-severe'), 500);
-        }
-    }
-
-    saveSession();
-
-    // Check Win/Loss conditions
-    setTimeout(() => {
-        if (gameState.hearts <= 0) {
-            clearSession();
-            showModal('אוי לא!', 'נגמרו לך החיים. נסי שוב מחר!', 0, 'חזור למפה');
-            gameState.hearts = 3; // Reset hearts for next time
-            saveState();
-            return;
-        }
-
-        currentQuestionIndex++;
-        if (currentQuestionIndex >= 10 || bossHp <= 0) {
-            clearSession();
-            levelComplete();
-        } else {
-            saveSession();
-            if (isBossLevel) loadBossQuestion();
-            else loadQuestion();
-        }
-    }, 1500);
+function showParent(){
+  const entries=Object.entries(state.skills),correct=entries.reduce((s,[,v])=>s+v.correct,0),independent=entries.reduce((s,[,v])=>s+v.independent,0),completed=Object.values(state.chapters).filter(c=>c.completed).length;
+  showDialog('<div class="dialog-kicker">מבט קטן מאחורי ההרפתקה</div><h2 class="dialog-title" id="dialog-title">ההתקדמות של '+escapeHTML(config.playerName)+'</h2><div class="parent-stats"><div class="parent-stat"><strong>'+completed+'</strong><span>פרקים הושלמו</span></div><div class="parent-stat"><strong>'+correct+'</strong><span>חידות נפתרו</span></div><div class="parent-stat"><strong>'+independent+'</strong><span>ללא רמז או טעות</span></div></div><div style="margin-top:18px">'+(entries.length?entries.map(([skill,v])=>'<div class="skill-row"><span>'+escapeHTML(SKILL_NAMES[skill]||skill)+'</span><span>'+v.independent+' מתוך '+v.correct+' עצמאית</span></div>').join(''):'<p class="parent-note">התרגול הראשון עוד לפניה. כאן יופיעו הנושאים שפגשה במסע.</p>')+'</div><p class="parent-note">תשובה עצמאית היא תשובה נכונה בניסיון הראשון, ללא רמז. מטבעות ותווים מציגים התקדמות במשחק; הם אינם מדד לשליטה בחומר. ההתקדמות נשמרת בדפדפן הזה בלבד.</p><div class="practice-row">'+Object.entries(SKILL_NAMES).filter(([key])=>key!=='legacy').map(([key,label])=>'<button type="button" class="secondary-button" data-practice="'+key+'">'+escapeHTML(label)+'</button>').join('')+'</div><div class="dialog-actions"><button type="button" class="secondary-button" data-action="export-save">שמירת גיבוי של המסע</button></div>','parent');
 }
-
-function levelComplete() {
-    createConfetti();
-    if (currentLevel === gameState.maxUnlockedLevel && currentLevel < 9) {
-        gameState.maxUnlockedLevel++;
-    }
-    const bonus = isBossLevel ? 200 : 50;
-    gameState.coins += bonus;
-    saveState();
-    
-    showModal('כל הכבוד עומר!', isBossLevel ? 'הבסת את מלך החשבון!' : `סיימת את שלב ${currentLevel} בהצלחה!`, bonus, 'המשך');
+function exportSave(){
+  const blob=new Blob([JSON.stringify({game:'omers-math-quest',exportedAt:new Date().toISOString(),state},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='omers-math-quest-save.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('קובץ הגיבוי מוכן.');
 }
-
-// Boss specific
-function updateBossHp() {
-    document.getElementById('boss-hp').style.width = `${Math.max(0, bossHp)}%`;
-    document.getElementById('omer-hp').style.width = `${Math.max(0, omerHp)}%`;
+$('dialog-content').addEventListener('submit',event=>{if(event.target.id==='answer-form'){event.preventDefault();submitAnswer(answerValue());}});
+$('dialog-content').addEventListener('input',event=>{if(event.target.id==='answer-input')saveDraft();});
+$('dialog-content').addEventListener('click',event=>{
+  const button=event.target.closest('button');if(!button||button.disabled)return;
+  if(button.dataset.answer!==undefined){submitAnswer(button.dataset.answer,button);return;}
+  if(button.dataset.dial!==undefined){const i=Number(button.dataset.dial);digits[i]=(digits[i]+Number(button.dataset.delta)+10)%10;$('dial-'+i).textContent=digits[i];saveDraft();return;}
+  if(button.dataset.crystal!==undefined){const i=Number(button.dataset.crystal);crystals.has(i)?crystals.delete(i):crystals.add(i);button.setAttribute('aria-pressed',String(crystals.has(i)));$('selection-count').textContent=crystals.size+' מתוך '+state.active.questions[state.active.index].visual.total+' גבישים מוארים';saveDraft();return;}
+  if(button.dataset.group!==undefined){groupCount=Math.max(0,Math.min(20,groupCount+Number(button.dataset.group)));const v=state.active.questions[state.active.index].visual;$('group-count').textContent=groupCount;document.querySelectorAll('.lantern').forEach(l=>l.innerHTML='<span></span>'.repeat(groupCount));$('selection-count').textContent=groupCount+' גחליליות בכל פנס · '+(groupCount*v.rows)+' מתוך '+v.total+' בסך הכול';saveDraft();return;}
+  if(button.dataset.chapter){changeChapter(Number(button.dataset.chapter));return;}
+  if(button.dataset.cloak){const item=CLOAKS.find(c=>c.id===button.dataset.cloak);if(!purchaseCloak(state,item)){toast('עוד '+(item.price-state.coins)+' מטבעות — ותוכלי לבחור את הגלימה הזאת.');return;}save();render();showShop();audio.success();return;}
+  if(button.dataset.practice){startChallenge('practice',button.dataset.practice);return;}
+  switch(button.dataset.action){
+    case 'start-story':state.seenIntro=true;save();closeDialog();world.goTo('guide');break;
+    case 'accept-quest':{const p=progress();p.accepted=true;state.chapters[state.chapter]=p;state.seenIntro=true;save();render();closeDialog();world.goTo(activeObject());break;}
+    case 'hint':{const a=state.active;if(!a||a.answered)return;a.hinted=true;save();$('hint-box').hidden=false;$('hint-box').textContent=a.questions[a.index].hint;break;}
+    case 'next-question':{const a=state.active;if(!a?.answered)return;a.index++;a.attempts=0;a.hinted=false;a.answered=false;delete a.draft;save();showChallenge();break;}
+    case 'next-chapter':changeChapter(state.chapter+1);break;
+    case 'back-world':closeDialog();break;
+    case 'open-map':showMap();break;
+    case 'open-shop':showShop();break;
+    case 'export-save':exportSave();break;
+  }
+});
+$('quest-go').addEventListener('click',()=>{if(state.active){showChallenge();return;}world.goTo(activeObject());$('world-frame').scrollIntoView({block:'nearest',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+$('map-button').addEventListener('click',showMap);$('bag-button').addEventListener('click',showInventory);$('shop-button').addEventListener('click',showShop);$('parent-button').addEventListener('click',showParent);$('story-button').addEventListener('click',showStory);
+$('interact-button').addEventListener('click',()=>{if(world.near)interact(world.near.id);});
+$('sound-button').addEventListener('click',async()=>{if(audio.enabled){audio.disable();state.sound=false;}else{state.sound=await audio.enable();if(!state.sound)toast('לא הצלחנו להפעיל צלילים בדפדפן הזה. אפשר להמשיך לשחק.');}save();render();});
+document.querySelectorAll('[data-direction]').forEach(button=>{
+  button.addEventListener('pointerdown',event=>{if(world.paused)return;event.preventDefault();button.setPointerCapture(event.pointerId);world.path=[];world.target=null;world.keys.add(button.dataset.direction);});
+  for(const name of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(name,()=>world.keys.delete(button.dataset.direction));
+});
+window.addEventListener('pagehide',()=>{if(world)state.position={...world.position};save();});
+async function init(){
+  try{const response=await fetch('config.json',{signal:AbortSignal.timeout(3000)});if(response.ok){const data=await response.json();config={...config,playerName:typeof data.playerName==='string'?data.playerName:config.playerName,difficulty:['easy','medium','hard'].includes(data.difficulty)?data.difficulty:config.difficulty,gameTitle:typeof data.gameTitle==='string'?data.gameTitle:config.gameTitle};}}catch{}
+  document.title=config.gameTitle+' · המנגינה האבודה';
+  world=new QuestWorld($('world'),$('world-pins'),{
+    onInteract:interact,
+    onPosition:position=>{state.position=position;save();},
+    onNear:object=>{if(object?.blocked){toast('הגשר עוד לא מוכן. בואי נחזיר את אבני המעבר למקומן.');return;}$('interact-button').hidden=!object;$('interact-label').textContent=object?.id==='guide'?'לדבר עם '+chapter().guide:object?.id==='chest'?'לפתוח את התיבה':object?.id==='portal'?'אל השער':'לבדוק את הרמז';}
+  });
+  render();world.setPosition(state.position);save();
+  if(state.sound)document.addEventListener('pointerdown',async()=>{if(state.sound&&!audio.enabled){await audio.enable();render();}},{once:true});
+  if(state.active)toast('ברוכה השבה! החידה שלך נשמרה. לחצי על ״להמשיך את החידה״.');
+  else if(state.legacyImported&&!state.seenIntro)toast('המטבעות והשלבים שלך מהמשחק הקודם מחכים גם בהרפתקה הזאת.');
+  else if(recoveryNotice)toast('שמירה פגומה הועתקה לגיבוי. התחלנו מסע חדש בבטחה.');
 }
-
-function shakeScreen(elementId) {
-    const el = document.getElementById(elementId);
-    el.classList.add('shake-severe');
-    setTimeout(() => el.classList.remove('shake-severe'), 500);
-}
-
-// Lifelines
-function updateLifelineUI() {
-    const btn50 = document.getElementById('btn-5050');
-    const btnHint = document.getElementById('btn-hint');
-    btn50.textContent = `50/50 (${gameState.lifelines.fiftyFifty})`;
-    btnHint.textContent = `🧚‍♀️ גלגל הצלה (${gameState.lifelines.hintFairy})`;
-    btn50.disabled = gameState.lifelines.fiftyFifty <= 0;
-    btnHint.disabled = gameState.lifelines.hintFairy <= 0;
-}
-
-function useFiftyFifty() {
-    if (gameState.lifelines.fiftyFifty <= 0) return;
-    gameState.lifelines.fiftyFifty--;
-    updateLifelineUI();
-
-    const q = levelQuestions[currentQuestionIndex];
-    const containerId = isBossLevel ? 'boss-options-container' : 'options-container';
-    const btns = Array.from(document.querySelectorAll(`#${containerId} .option-btn`));
-    
-    let wrongBtns = btns.filter(b => String(b.textContent) !== String(q.correct));
-    // Remove 2 wrong options randomly
-    for(let i=0; i<2; i++) {
-        if(wrongBtns.length > 0) {
-            const idx = Math.floor(Math.random() * wrongBtns.length);
-            wrongBtns[idx].style.opacity = '0';
-            wrongBtns[idx].disabled = true;
-            wrongBtns.splice(idx, 1);
-        }
-    }
-    saveSession();
-}
-
-function useHint() {
-    if (gameState.lifelines.hintFairy <= 0) return;
-    gameState.lifelines.hintFairy--;
-    updateLifelineUI();
-
-    const q = levelQuestions[currentQuestionIndex];
-    const hintBox = document.getElementById('hint-box');
-    hintBox.textContent = `💡 רמז מעומר: ${q.hint}`;
-    hintBox.classList.remove('hidden');
-    saveSession();
-}
-
-// Visual Effects
-function createFloatingText(text, parentElement) {
-    const el = document.createElement('div');
-    el.className = 'floating-text';
-    el.textContent = text;
-    const rect = parentElement.getBoundingClientRect();
-    el.style.left = `${rect.left + rect.width/2}px`;
-    el.style.top = `${rect.top}px`;
-    document.body.appendChild(el);
-    setTimeout(() => el.remove(), 1500);
-}
-
-function createConfetti() {
-    const container = document.getElementById('particle-container');
-    const colors = ['#f1c40f', '#e74c3c', '#3498db', '#2ecc71', '#9b59b6'];
-    for(let i=0; i<100; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'particle';
-        particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        particle.style.left = `${Math.random() * 100}vw`;
-        particle.style.top = `-10px`;
-        const duration = Math.random() * 3 + 2;
-        particle.style.transition = `top ${duration}s ease-in, transform ${duration}s linear`;
-        container.appendChild(particle);
-        
-        setTimeout(() => {
-            particle.style.top = '100vh';
-            particle.style.transform = `rotate(${Math.random() * 720}deg) translateX(${Math.random() * 100 - 50}px)`;
-        }, 10);
-        
-        setTimeout(() => particle.remove(), duration * 1000);
-    }
-}
-
-// Shop & Themes
-function openShop() {
-    document.getElementById('shop-modal').classList.remove('hidden');
-    document.getElementById('shop-coins').textContent = gameState.coins;
-}
-
-function closeShop() {
-    document.getElementById('shop-modal').classList.add('hidden');
-}
-
-function handlePurchase(e) {
-    const type = e.target.getAttribute('data-type');
-    const cost = parseInt(e.target.getAttribute('data-cost'));
-    
-    if (gameState.coins >= cost) {
-        if (type === 'theme') {
-            const theme = e.target.getAttribute('data-theme');
-            if (gameState.purchasedThemes.includes(theme)) {
-                applyTheme(theme);
-                alert('הנושא הוחל!');
-                return;
-            }
-            gameState.coins -= cost;
-            gameState.purchasedThemes.push(theme);
-            applyTheme(theme);
-            e.target.textContent = 'בשימוש';
-        } else if (type === 'heart') {
-            gameState.coins -= cost;
-            gameState.hearts++;
-        }
-        saveState();
-        document.getElementById('shop-coins').textContent = gameState.coins;
-    } else {
-        alert('אין לך מספיק מטבעות!');
-    }
-}
-
-function applyTheme(themeName) {
-    gameState.theme = themeName;
-    document.body.className = `theme-${themeName}`;
-    saveState();
-}
-
-// Modals
-function showModal(title, desc, reward, btnText) {
-    document.getElementById('modal-title').textContent = title;
-    document.getElementById('modal-desc').textContent = desc;
-    document.getElementById('modal-action-btn').textContent = btnText;
-    
-    const rewardBox = document.getElementById('modal-reward-box');
-    if (reward > 0) {
-        rewardBox.classList.remove('hidden');
-        document.getElementById('modal-coins-earned').textContent = reward;
-    } else {
-        rewardBox.classList.add('hidden');
-    }
-    
-    document.getElementById('modal').classList.remove('hidden');
-}
-
-function handleModalAction() {
-    document.getElementById('modal').classList.add('hidden');
-    showMap();
-}
-
-// ==========================================
-//  MINI-GAME ENGINE — 8 unique games
-// ==========================================
-let miniGameIndex = -1; // which question index triggers the mini-game
-let miniGameActive = false;
-let miniGameTimers = []; // track all timers so we can clean up
-
-function clearMiniGameTimers() {
-    miniGameTimers.forEach(t => clearTimeout(t));
-    miniGameTimers.forEach(t => clearInterval(t));
-    miniGameTimers = [];
-}
-
-// Decide the mini-game index when a level starts
-function rollMiniGameIndex() {
-    // Pick a random question between index 2-7 (avoid first, last, and boss)
-    miniGameIndex = Math.floor(Math.random() * 6) + 2;
-}
-
-// Called from loadQuestion when it's mini-game time
-function launchMiniGame() {
-    miniGameActive = true;
-    const q = levelQuestions[currentQuestionIndex];
-    
-    // Update mini-game UI
-    document.getElementById('mg-heart-display').textContent = gameState.hearts;
-    document.getElementById('mg-coin-display').textContent = gameState.coins;
-    document.getElementById('mg-question-text').innerHTML = q.question;
-    
-    // Game names per level
-    const gameNames = {
-        1: '🎈 פיצוץ הבלונים!',
-        2: '☄️ מתקפת המטאורים!',
-        3: '🎯 ישר המספרים!',
-        4: '🏴‍☠️ תיבות האוצר!',
-        5: '🧱 קוביות נופלות!',
-        6: '🚀 שיגור הטיל!',
-        7: '🔨 הכה את החפרפרת!',
-        8: '⚡ בליץ מהירות!'
-    };
-    
-    document.getElementById('minigame-title').textContent = gameNames[currentLevel] || '🎮 שלב בונוס!';
-    switchView('minigame-view');
-    
-    const playArea = document.getElementById('mg-play-area');
-    playArea.innerHTML = '';
-    
-    // Launch the level-specific game
-    switch(currentLevel) {
-        case 1: playBalloonPop(q, playArea); break;
-        case 2: playMeteorDefense(q, playArea); break;
-        case 3: playNumberLine(q, playArea); break;
-        case 4: playTreasureChests(q, playArea); break;
-        case 5: playFallingBlocks(q, playArea); break;
-        case 6: playRocketLaunch(q, playArea); break;
-        case 7: playWhackAMole(q, playArea); break;
-        case 8: playSpeedBlitz(q, playArea); break;
-        default: playBalloonPop(q, playArea); break;
-    }
-}
-
-function miniGameCorrect(playArea) {
-    clearMiniGameTimers();
-    gameState.coins += 50;
-    saveState();
-    createConfetti();
-    
-    const overlay = document.createElement('div');
-    overlay.className = 'mg-bonus-overlay';
-    overlay.innerHTML = `
-        <div class="mg-bonus-text">🎉 מדהים! +50 🪙</div>
-        <div class="mg-bonus-sub">תשובה נכונה!</div>
-    `;
-    playArea.appendChild(overlay);
-    
-    const t = setTimeout(() => {
-        miniGameActive = false;
-        currentQuestionIndex++;
-        if (currentQuestionIndex >= 10) { clearSession(); levelComplete(); }
-        else { saveSession(); switchView('level-view'); loadQuestion(); }
-    }, 2000);
-    miniGameTimers.push(t);
-}
-
-function miniGameWrong(playArea) {
-    gameState.hearts--;
-    document.getElementById('mg-heart-display').textContent = gameState.hearts;
-    saveState();
-    
-    if (gameState.hearts <= 0) {
-        clearMiniGameTimers();
-        miniGameActive = false;
-        clearSession();
-        showModal('אוי לא!', 'נגמרו לך החיים. נסי שוב!', 0, 'חזור למפה');
-        gameState.hearts = 3;
-        saveState();
-    }
-}
-
-// ---- GAME 1: Balloon Pop 🎈 ----
-function playBalloonPop(q, area) {
-    area.style.position = 'relative';
-    const colors = ['#e74c3c', '#3498db', '#2ecc71', '#f1c40f', '#9b59b6', '#e67e22'];
-    const opts = [...q.options].sort(() => Math.random() - 0.5);
-    
-    opts.forEach((opt, i) => {
-        const balloon = document.createElement('div');
-        balloon.className = 'balloon';
-        balloon.textContent = opt;
-        balloon.style.backgroundColor = colors[i % colors.length];
-        balloon.style.left = `${15 + Math.random() * 60}%`;
-        balloon.style.setProperty('--float-duration', `${5 + Math.random() * 3}s`);
-        balloon.style.animationDelay = `${i * 0.8}s`;
-        
-        balloon.addEventListener('click', () => {
-            if (String(opt) === String(q.correct)) {
-                balloon.classList.add('pop');
-                balloon.textContent = '💥';
-                miniGameCorrect(area);
-            } else {
-                balloon.classList.add('wrong-pop');
-                balloon.textContent = '💨';
-                miniGameWrong(area);
-            }
-        });
-        
-        area.appendChild(balloon);
-    });
-}
-
-// ---- GAME 2: Meteor Defense ☄️ ----
-function playMeteorDefense(q, area) {
-    const scene = document.createElement('div');
-    scene.className = 'meteor-scene';
-    
-    // Meteor
-    const meteor = document.createElement('div');
-    meteor.className = 'meteor';
-    meteor.textContent = '☄️';
-    meteor.style.setProperty('--fall-speed', '6s');
-    scene.appendChild(meteor);
-    
-    // Cannon row
-    const cannons = document.createElement('div');
-    cannons.className = 'cannon-row';
-    const opts = [...q.options].sort(() => Math.random() - 0.5);
-    
-    opts.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.className = 'cannon-btn';
-        btn.textContent = opt;
-        btn.addEventListener('click', () => {
-            cannons.querySelectorAll('.cannon-btn').forEach(b => b.disabled = true);
-            if (String(opt) === String(q.correct)) {
-                meteor.classList.add('explode');
-                meteor.textContent = '💥';
-                miniGameCorrect(area);
-            } else {
-                btn.style.opacity = '0.3';
-                btn.disabled = true;
-                // Re-enable others
-                cannons.querySelectorAll('.cannon-btn:not([disabled])').forEach(b => b.disabled = false);
-                miniGameWrong(area);
-            }
-        });
-        cannons.appendChild(btn);
-    });
-    scene.appendChild(cannons);
-    
-    // If meteor reaches bottom
-    const t = setTimeout(() => {
-        if (!miniGameActive) return;
-        miniGameWrong(area);
-        miniGameCorrect(area); // force advance
-    }, 6500);
-    miniGameTimers.push(t);
-    
-    area.appendChild(scene);
-}
-
-// ---- GAME 3: Number Line Slider 🎯 ----
-function playNumberLine(q, area) {
-    const game = document.createElement('div');
-    game.className = 'number-line-game';
-    
-    const correct = q.correct;
-    const rangeMin = Math.max(0, correct - 50);
-    const rangeMax = correct + 50;
-    
-    const track = document.createElement('div');
-    track.className = 'number-line-track';
-    
-    // Ticks every 10
-    for (let v = rangeMin; v <= rangeMax; v += 10) {
-        const pct = ((v - rangeMin) / (rangeMax - rangeMin)) * 100;
-        const tick = document.createElement('div');
-        tick.className = 'nl-tick';
-        tick.style.left = `${pct}%`;
-        track.appendChild(tick);
-        
-        const label = document.createElement('div');
-        label.className = 'nl-label';
-        label.style.left = `${pct}%`;
-        label.textContent = v;
-        track.appendChild(label);
-    }
-    
-    // Draggable marker
-    const marker = document.createElement('div');
-    marker.className = 'nl-marker';
-    marker.textContent = '📍';
-    marker.style.left = '50%';
-    let markerValue = rangeMin + (rangeMax - rangeMin) / 2;
-    track.appendChild(marker);
-    
-    // Touch/drag
-    function updateMarkerPos(clientX) {
-        const rect = track.getBoundingClientRect();
-        let pct = ((clientX - rect.left) / rect.width) * 100;
-        pct = Math.max(0, Math.min(100, pct));
-        marker.style.left = `${pct}%`;
-        markerValue = Math.round(rangeMin + (pct / 100) * (rangeMax - rangeMin));
-    }
-    
-    track.addEventListener('touchmove', e => { e.preventDefault(); updateMarkerPos(e.touches[0].clientX); }, { passive: false });
-    track.addEventListener('mousemove', e => { if (e.buttons) updateMarkerPos(e.clientX); });
-    track.addEventListener('click', e => updateMarkerPos(e.clientX));
-    
-    game.appendChild(track);
-    
-    // Submit button
-    const submitBtn = document.createElement('button');
-    submitBtn.className = 'nl-submit-btn';
-    submitBtn.textContent = '✅ זה המספר!';
-    submitBtn.addEventListener('click', () => {
-        if (Math.abs(markerValue - correct) <= 3) {
-            miniGameCorrect(area);
-        } else {
-            miniGameWrong(area);
-            // Shake marker
-            marker.style.transition = 'none';
-            marker.classList.add('shake-severe');
-            setTimeout(() => marker.classList.remove('shake-severe'), 500);
-        }
-    });
-    game.appendChild(submitBtn);
-    
-    area.appendChild(game);
-}
-
-// ---- GAME 4: Treasure Chests 🏴‍☠️ ----
-function playTreasureChests(q, area) {
-    const scene = document.createElement('div');
-    scene.className = 'treasure-scene';
-    const opts = [...q.options].sort(() => Math.random() - 0.5);
-    
-    opts.forEach(opt => {
-        const chest = document.createElement('div');
-        chest.className = 'treasure-chest';
-        chest.innerHTML = `<span>🎁</span><span class="chest-answer">${opt}</span>`;
-        
-        chest.addEventListener('click', () => {
-            scene.querySelectorAll('.treasure-chest').forEach(c => c.style.pointerEvents = 'none');
-            if (String(opt) === String(q.correct)) {
-                chest.classList.add('open-correct');
-                chest.querySelector('span').textContent = '💎';
-                miniGameCorrect(area);
-            } else {
-                chest.classList.add('open-wrong');
-                chest.querySelector('span').textContent = '👻';
-                // Re-enable others after a short delay
-                const t = setTimeout(() => {
-                    scene.querySelectorAll('.treasure-chest:not(.open-wrong)').forEach(c => c.style.pointerEvents = 'auto');
-                }, 800);
-                miniGameTimers.push(t);
-                miniGameWrong(area);
-            }
-        });
-        
-        scene.appendChild(chest);
-    });
-    
-    area.appendChild(scene);
-}
-
-// ---- GAME 5: Falling Blocks 🧱 ----
-function playFallingBlocks(q, area) {
-    const scene = document.createElement('div');
-    scene.className = 'falling-blocks-scene';
-    scene.style.position = 'relative';
-    scene.style.width = '100%';
-    scene.style.height = '100%';
-    scene.style.minHeight = '300px';
-    
-    const opts = [...q.options].sort(() => Math.random() - 0.5);
-    
-    opts.forEach((opt, i) => {
-        const block = document.createElement('div');
-        block.className = 'falling-block';
-        block.textContent = opt;
-        block.style.left = `${10 + Math.random() * 60}%`;
-        block.style.setProperty('--fall-speed', `${3.5 + Math.random() * 2}s`);
-        block.style.animationDelay = `${i * 1.2}s`;
-        
-        // Different colors per block
-        const blockColors = ['#e74c3c', '#3498db', '#9b59b6', '#1abc9c'];
-        block.style.background = `linear-gradient(135deg, ${blockColors[i % 4]}, ${blockColors[(i+1) % 4]})`;
-        
-        block.addEventListener('click', () => {
-            if (String(opt) === String(q.correct)) {
-                block.classList.add('caught');
-                block.textContent = '⭐';
-                miniGameCorrect(area);
-            } else {
-                block.classList.add('caught');
-                block.textContent = '❌';
-                miniGameWrong(area);
-            }
-        });
-        
-        scene.appendChild(block);
-    });
-    
-    area.appendChild(scene);
-}
-
-// ---- GAME 6: Rocket Launch 🚀 ----
-function playRocketLaunch(q, area) {
-    const scene = document.createElement('div');
-    scene.className = 'rocket-scene';
-    scene.style.minHeight = '350px';
-    
-    // Star field
-    for (let i = 0; i < 30; i++) {
-        const star = document.createElement('div');
-        star.className = 'star-dot';
-        star.style.cssText = `position:absolute;width:2px;height:2px;background:white;border-radius:50%;left:${Math.random()*100}%;top:${Math.random()*70}%;opacity:${0.3+Math.random()*0.7};animation:twinkle ${1+Math.random()*2}s infinite alternate;`;
-        scene.appendChild(star);
-    }
-    
-    const rocket = document.createElement('div');
-    rocket.className = 'rocket-emoji';
-    rocket.textContent = '🚀';
-    scene.appendChild(rocket);
-    
-    const exhaust = document.createElement('div');
-    exhaust.className = 'rocket-exhaust';
-    exhaust.textContent = '🔥';
-    scene.appendChild(exhaust);
-    
-    const optionsGrid = document.createElement('div');
-    optionsGrid.className = 'rocket-options';
-    const opts = [...q.options].sort(() => Math.random() - 0.5);
-    
-    opts.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.className = 'rocket-fuel-btn';
-        btn.textContent = opt;
-        btn.addEventListener('click', () => {
-            optionsGrid.querySelectorAll('.rocket-fuel-btn').forEach(b => b.disabled = true);
-            if (String(opt) === String(q.correct)) {
-                btn.classList.add('correct-fuel');
-                exhaust.classList.add('active');
-                const t = setTimeout(() => {
-                    rocket.classList.add('launched');
-                    miniGameCorrect(area);
-                }, 400);
-                miniGameTimers.push(t);
-            } else {
-                btn.classList.add('wrong-fuel');
-                // Re-enable others
-                const t = setTimeout(() => {
-                    optionsGrid.querySelectorAll('.rocket-fuel-btn:not(.wrong-fuel)').forEach(b => b.disabled = false);
-                }, 600);
-                miniGameTimers.push(t);
-                miniGameWrong(area);
-            }
-        });
-        optionsGrid.appendChild(btn);
-    });
-    scene.appendChild(optionsGrid);
-    
-    area.appendChild(scene);
-}
-
-// ---- GAME 7: Whack-a-Mole 🔨 ----
-function playWhackAMole(q, area) {
-    const grid = document.createElement('div');
-    grid.className = 'whack-grid';
-    const opts = [...q.options].sort(() => Math.random() - 0.5);
-    
-    const holes = [];
-    opts.forEach(opt => {
-        const hole = document.createElement('div');
-        hole.className = 'mole-hole';
-        const content = document.createElement('div');
-        content.className = 'mole-content';
-        content.innerHTML = `<span>🐹</span><span class="mole-answer">${opt}</span>`;
-        hole.appendChild(content);
-        
-        hole.addEventListener('click', () => {
-            if (!content.classList.contains('visible')) return;
-            grid.querySelectorAll('.mole-hole').forEach(h => h.style.pointerEvents = 'none');
-            
-            if (String(opt) === String(q.correct)) {
-                hole.classList.add('whacked-correct');
-                content.querySelector('span').textContent = '⭐';
-                miniGameCorrect(area);
-            } else {
-                hole.classList.add('whacked-wrong');
-                content.querySelector('span').textContent = '💀';
-                miniGameWrong(area);
-                // Reset and continue
-                const t = setTimeout(() => {
-                    hole.classList.remove('whacked-wrong');
-                    content.querySelector('span').textContent = '🐹';
-                    grid.querySelectorAll('.mole-hole').forEach(h => h.style.pointerEvents = 'auto');
-                }, 800);
-                miniGameTimers.push(t);
-            }
-        });
-        
-        grid.appendChild(hole);
-        holes.push(content);
-    });
-    
-    // Mole pop-up cycle
-    function cycleMoles() {
-        holes.forEach(h => h.classList.remove('visible'));
-        // Show 2-3 random moles
-        const count = 2 + Math.floor(Math.random() * 2);
-        const shuffled = [...holes].sort(() => Math.random() - 0.5);
-        shuffled.slice(0, count).forEach(h => h.classList.add('visible'));
-    }
-    
-    cycleMoles();
-    const interval = setInterval(cycleMoles, 2000);
-    miniGameTimers.push(interval);
-    
-    area.appendChild(grid);
-}
-
-// ---- GAME 8: Speed Blitz ⚡ ----
-function playSpeedBlitz(q, area) {
-    const scene = document.createElement('div');
-    scene.className = 'speed-blitz-scene';
-    
-    let timeLeft = 15;
-    let blitzScore = 0;
-    let blitzQuestionIdx = currentQuestionIndex;
-    
-    const timerEl = document.createElement('div');
-    timerEl.className = 'blitz-timer';
-    timerEl.textContent = `⏰ ${timeLeft}`;
-    scene.appendChild(timerEl);
-    
-    const scoreEl = document.createElement('div');
-    scoreEl.className = 'blitz-score';
-    scoreEl.textContent = `ניקוד: ${blitzScore}`;
-    scene.appendChild(scoreEl);
-    
-    const questionEl = document.createElement('div');
-    questionEl.className = 'blitz-question';
-    scene.appendChild(questionEl);
-    
-    const optionsEl = document.createElement('div');
-    optionsEl.className = 'blitz-options';
-    scene.appendChild(optionsEl);
-    
-    function loadBlitzQuestion() {
-        const bq = levelQuestions[blitzQuestionIdx % levelQuestions.length];
-        questionEl.innerHTML = bq.question;
-        optionsEl.innerHTML = '';
-        const opts = [...bq.options].sort(() => Math.random() - 0.5);
-        
-        opts.forEach(opt => {
-            const btn = document.createElement('button');
-            btn.className = 'blitz-btn';
-            btn.textContent = opt;
-            btn.addEventListener('click', () => {
-                if (String(opt) === String(bq.correct)) {
-                    btn.classList.add('blitz-correct');
-                    blitzScore++;
-                    scoreEl.textContent = `ניקוד: ${blitzScore}`;
-                    blitzQuestionIdx++;
-                    const t = setTimeout(loadBlitzQuestion, 300);
-                    miniGameTimers.push(t);
-                } else {
-                    btn.classList.add('blitz-wrong');
-                    miniGameWrong(area);
-                    blitzQuestionIdx++;
-                    const t = setTimeout(loadBlitzQuestion, 600);
-                    miniGameTimers.push(t);
-                }
-            });
-            optionsEl.appendChild(btn);
-        });
-    }
-    
-    loadBlitzQuestion();
-    
-    const interval = setInterval(() => {
-        timeLeft--;
-        timerEl.textContent = `⏰ ${timeLeft}`;
-        if (timeLeft <= 5) timerEl.style.color = '#e74c3c';
-        
-        if (timeLeft <= 0) {
-            clearInterval(interval);
-            // Blitz over — if scored at least 3, it's a win
-            if (blitzScore >= 3) {
-                miniGameCorrect(area);
-            } else {
-                miniGameWrong(area);
-                // Show results and advance
-                const overlay = document.createElement('div');
-                overlay.className = 'mg-bonus-overlay';
-                overlay.innerHTML = `
-                    <div class="mg-bonus-text" style="color:#e74c3c;">⏰ נגמר הזמן!</div>
-                    <div class="mg-bonus-sub">ענית נכון ${blitzScore} פעמים. צריך לפחות 3!</div>
-                `;
-                area.appendChild(overlay);
-                const t = setTimeout(() => {
-                    miniGameActive = false;
-                    currentQuestionIndex++;
-                    if (currentQuestionIndex >= 10) { clearSession(); levelComplete(); }
-                    else { saveSession(); switchView('level-view'); loadQuestion(); }
-                }, 2500);
-                miniGameTimers.push(t);
-            }
-        }
-    }, 1000);
-    miniGameTimers.push(interval);
-    
-    area.appendChild(scene);
-}
-
-// Admin Modal Logic
-function openAdminModal() {
-    document.getElementById('admin-coins').value = gameState.coins;
-    document.getElementById('admin-hearts').value = gameState.hearts;
-    document.getElementById('admin-levels').value = gameState.maxUnlockedLevel;
-    document.getElementById('admin-levels').max = gameConfig.totalLevels;
-    document.getElementById('admin-modal').classList.remove('hidden');
-}
-
-function closeAdminModal() {
-    document.getElementById('admin-modal').classList.add('hidden');
-}
-
-function saveAdminSettings() {
-    gameState.coins = parseInt(document.getElementById('admin-coins').value) || 0;
-    gameState.hearts = parseInt(document.getElementById('admin-hearts').value) || 1;
-    gameState.maxUnlockedLevel = parseInt(document.getElementById('admin-levels').value) || 1;
-    
-    if (gameState.maxUnlockedLevel > gameConfig.totalLevels) {
-        gameState.maxUnlockedLevel = gameConfig.totalLevels;
-    }
-    
-    saveState();
-    closeAdminModal();
-    renderMap();
-    alert('הגדרות המשחק נשמרו!');
-}
-
-function resetGameProgress() {
-    if (confirm('האם אתה בטוח שברצונך לאפס את כל התקדמות המשחק? פעולה זו תמחק הכל!')) {
-        localStorage.removeItem(STORAGE_KEY);
-        location.reload();
-    }
-}
-
-// Start Game
-window.onload = init;
+init();

@@ -1,124 +1,59 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="head-title">המסע האפי של עומר</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f0e8">
+  <meta name="description" content="המסע של עומר: הרפתקת חשבון בעולם של יערות קסומים, חברים ומנגינות אבודות.">
+  <title>המסע של עומר · המנגינה האבודה</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
 </head>
-<body class="theme-default">
-    <div id="particle-container"></div>
-    <div id="toast-container"></div>
-
-    <!-- MAIN MENU / MAP VIEW -->
-    <div id="map-view" class="view active">
-        <header class="top-bar">
-            <h1 id="game-title" style="cursor:pointer;" ondblclick="openAdminModal()">המסע האפי של עומר</h1>
-            <div class="stats">
-                <div class="stat"><span class="icon">🪙</span> <span id="coin-display">0</span> מטבעות</div>
-                <button id="open-shop-btn" class="btn-small">🛒 חנות</button>
-            </div>
-        </header>
-        <div class="map-container">
-            <svg id="map-paths" class="map-paths"></svg>
-            <div id="nodes-container" class="nodes-container"></div>
-        </div>
-    </div>
-
-    <!-- LEVEL VIEW -->
-    <div id="level-view" class="view hidden">
-        <header class="top-bar game-header">
-            <button id="back-to-map-btn" class="btn-small">🔙 מפה</button>
-            <h2 id="level-title">שלב X</h2>
-            <div class="stats">
-                <div class="stat"><span class="icon">❤️</span> <span id="heart-display">3</span></div>
-                <div class="stat"><span class="icon">🪙</span> <span id="level-coin-display">0</span></div>
-            </div>
-        </header>
-        <div class="lifeline-container">
-            <button id="btn-5050" class="btn-lifeline">50/50 (1)</button>
-            <button id="btn-hint" class="btn-lifeline">🧚‍♀️ גלגל הצלה (1)</button>
-        </div>
-        <div class="game-board">
-            <div class="progress-bar-container"><div id="progress-bar" class="progress-bar"></div></div>
-            <div class="question-container"><h3 id="question-text">טוען שאלה...</h3></div>
-            <div id="hint-box" class="hint-box hidden"></div>
-            <div id="options-container" class="options-grid"></div>
-        </div>
-    </div>
-
-    <!-- BOSS VIEW -->
-    <div id="boss-view" class="view hidden boss-theme">
-        <header class="top-bar boss-header"><h2>מלך החשבון - הקרב הגדול!</h2></header>
-        <div class="boss-arena">
-            <div class="health-bars">
-                <div class="health-bar-wrapper"><span class="name-tag">עומר</span><div class="health-bar bg-green"><div id="omer-hp" class="health-fill" style="width: 100%"></div></div></div>
-                <div class="health-bar-wrapper"><span class="name-tag">מלך החשבון</span><div class="health-bar bg-red"><div id="boss-hp" class="health-fill" style="width: 100%"></div></div></div>
-            </div>
-            <div class="boss-avatar-container"><div id="boss-avatar" class="boss-avatar">👑👿</div></div>
-            <div class="question-container boss-question"><h3 id="boss-question-text">טוען שאלה...</h3></div>
-            <div id="boss-options-container" class="options-grid"></div>
-        </div>
-    </div>
-
-    <!-- MINI-GAME VIEW -->
-    <div id="minigame-view" class="view hidden">
-        <header class="top-bar minigame-header">
-            <h2 id="minigame-title">🎮 שלב בונוס!</h2>
-            <div class="stats">
-                <div class="stat"><span class="icon">❤️</span> <span id="mg-heart-display">3</span></div>
-                <div class="stat"><span class="icon">🪙</span> <span id="mg-coin-display">0</span></div>
-            </div>
-        </header>
-        <div id="minigame-arena" class="minigame-arena">
-            <div id="mg-question-bar" class="mg-question-bar"><h3 id="mg-question-text"></h3></div>
-            <div id="mg-play-area" class="mg-play-area"></div>
-        </div>
-    </div>
-
-    <!-- SHOP MODAL -->
-    <div id="shop-modal" class="modal hidden">
-        <div class="modal-content">
-            <h2>חנות הקסמים</h2>
-            <p>יש לך: <span id="shop-coins">0</span> 🪙</p>
-            <div class="shop-items">
-                <div class="shop-item"><h3>חיים נוספים ❤️</h3><p>מחיר: 50 🪙</p><button class="buy-btn" data-type="heart" data-cost="50">קנה</button></div>
-                <div class="shop-item"><h3>נושא אופל 🌙</h3><p>מחיר: 200 🪙</p><button class="buy-btn" data-type="theme" data-cost="200" data-theme="dark">קנה</button></div>
-                <div class="shop-item"><h3>נושא זהב ✨</h3><p>מחיר: 500 🪙</p><button class="buy-btn" data-type="theme" data-cost="500" data-theme="gold">קנה</button></div>
-            </div>
-            <button id="close-shop-btn" class="btn-close">סגור</button>
-        </div>
-    </div>
-
-    <!-- MODAL -->
-    <div id="modal" class="modal hidden">
-        <div class="modal-content text-center">
-            <h2 id="modal-title">כל הכבוד עומר!</h2>
-            <p id="modal-desc">סיימת את השלב בהצלחה.</p>
-            <div id="modal-reward-box" class="reward-box hidden">+<span id="modal-coins-earned">0</span> 🪙</div>
-            <button id="modal-action-btn" class="btn-large">המשך</button>
-        </div>
-    </div>
-
-    <!-- ADMIN MODAL -->
-    <div id="admin-modal" class="modal hidden">
-        <div class="modal-content text-center" style="max-width: 400px; padding: 2rem;">
-            <h2>לוח בקרה אישי</h2>
-            <p>ההגדרות כאן נשמרות בדפדפן הנוכחי בלבד.</p>
-            <div style="margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1rem; text-align: right;">
-                <label>מטבעות: <input type="number" id="admin-coins" class="admin-input" style="width:100px; float:left; padding: 5px;"></label>
-                <label>לבבות: <input type="number" id="admin-hearts" class="admin-input" style="width:100px; float:left; padding: 5px;"></label>
-                <label>שלבים פתוחים: <input type="number" id="admin-levels" class="admin-input" style="width:100px; float:left; padding: 5px;" min="1" max="9"></label>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                <button onclick="saveAdminSettings()" class="btn-large" style="background:#2ecc71;">שמור הגדרות</button>
-                <button onclick="resetGameProgress()" class="btn-large" style="background:#e74c3c;">אפס משחק למצב התחלתי</button>
-                <button onclick="closeAdminModal()" class="btn-large" style="background:#95a5a6;">סגור</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <a class="brand" href="./" aria-label="המסע של עומר — ראשי"><span class="brand-mark" aria-hidden="true">✦</span><span><strong id="brand-name">המסע של עומר</strong><small>המנגינה האבודה</small></span></a>
+      <nav class="header-actions" aria-label="כלים למסע">
+        <span class="coin-badge"><span class="coin-symbol" aria-hidden="true">✧</span><b id="coin-display">0</b><span class="coin-label">מטבעות</span></span>
+        <button class="icon-button" id="sound-button" type="button" aria-label="הפעלת צלילים" aria-pressed="false" title="צלילים"><span data-icon="sound-off"></span></button>
+        <button class="icon-button" id="parent-button" type="button" aria-label="אזור הורים" title="אזור הורים"><span data-icon="settings"></span></button>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome-row"><div><p class="eyebrow"><span class="tiny-star">✦</span> הרפתקה קטנה. גילויים גדולים.</p><h1 id="welcome-title">העולם מחכה לך, עומר.</h1><p class="welcome-description">עקבי אחרי השביל. עזרי לחברים. החזירי לעולם את המנגינה.</p></div><div class="adventurer-badge"><span data-icon="compass"></span><div><small>ההרפתקה שלך</small><strong id="rank-name">מגלת שבילים</strong></div></div></section>
+      <div class="game-layout">
+        <aside class="quest-sidebar" aria-label="יומן המסע">
+          <section class="quest-card">
+            <div class="card-eyebrow"><span data-icon="scroll"></span> המשימה שלך <span id="quest-count">0 / 3</span></div>
+            <h2 id="chapter-name">יער הלחישות</h2><p class="chapter-description" id="chapter-description">כל מסע גדול מתחיל בצעד קטן</p>
+            <div class="guide-message"><canvas width="100" height="100" id="guide-portrait" aria-hidden="true"></canvas><div><strong id="guide-name">ניצוץ השועל</strong><p id="guide-message">יש לי סוד לספר לך. בואי נפגש ליד השביל!</p></div></div>
+            <ol class="quest-checklist" id="quest-checklist"></ol>
+            <button class="primary-button full-width" id="quest-go" type="button"><span data-icon="footprints"></span><span id="quest-go-label">לפגוש את ניצוץ</span></button>
+            <div class="quest-reward"><span>מחכה לך בסוף הפרק</span><strong><span class="note-icon">♪</span><span id="relic-name">תו האומץ</span></strong></div>
+          </section>
+          <section class="journey-card"><div class="section-label"><h2>תשעה תווים. מסע אחד.</h2><button class="text-button" type="button" id="map-button">מפת הממלכה <span aria-hidden="true">↗</span></button></div><div class="relic-track" id="relic-track"></div><p id="journey-caption">כל תו שתחזירי יאיר חלק נוסף בעולם.</p></section>
+          <div class="sidebar-buttons"><button type="button" id="bag-button" class="secondary-button"><span data-icon="bag"></span> התרמיל שלי</button><button type="button" id="shop-button" class="secondary-button"><span data-icon="shop"></span> החנות של פיפה</button></div>
+        </aside>
+        <section class="world-section" aria-label="עולם המשחק">
+          <div class="world-frame" id="world-frame">
+            <canvas id="world" tabindex="0" aria-label="עולם הרפתקה. לחצי על השביל כדי ללכת, או השתמשי בחצים. לחצי E או רווח ליד דמות או חפץ. אפשר גם לבחור משימה מיומן המסע."></canvas>
+            <div class="world-pins" id="world-pins"></div>
+            <div class="world-heading"><span class="world-chapter" id="world-chapter">פרק 01</span><h2 id="world-name">יער הלחישות</h2><span class="world-region" id="world-region">היער הקסום</span></div>
+            <div class="world-compass" aria-hidden="true"><span>צ</span><span data-icon="compass"></span></div>
+            <div class="world-context" id="world-context"><span class="context-spark">✦</span><span id="world-context-text">ניצוץ מחכה לך ליד השביל</span></div>
+            <button class="interaction-button" type="button" id="interact-button" hidden><span class="key-cap">E</span><span id="interact-label">לדבר</span></button>
+            <div class="touch-controls" aria-label="כפתורי תנועה"><button type="button" data-direction="arrowup" aria-label="ללכת למעלה">↑</button><div><button type="button" data-direction="arrowleft" aria-label="ללכת שמאלה">←</button><button type="button" data-direction="arrowdown" aria-label="ללכת למטה">↓</button><button type="button" data-direction="arrowright" aria-label="ללכת ימינה">→</button></div></div>
+            <div class="world-vignette" aria-hidden="true"></div>
+          </div>
+          <div class="world-controls"><span><span data-icon="mouse"></span> לחצי על השביל או על מקום כדי ללכת אליו</span><span class="keyboard-help"><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd> תנועה <kbd>E</kbd> פעולה</span><span id="save-status"><span class="save-dot"></span> המסע נשמר אוטומטית</span></div>
+          <section class="next-discovery"><div class="discovery-art" aria-hidden="true"><span>♪</span><span>✧</span><span>♫</span></div><div><span class="eyebrow">הסיפור שאת כותבת בדרך</span><h2 id="discovery-title">מישהו העלים את המוזיקה מהממלכה...</h2><p id="discovery-copy">תשעה תווים התפזרו ברחבי העולם. ורק הרפתקנית אחת יכולה לחבר אותם מחדש.</p></div><button class="round-button" id="story-button" type="button" aria-label="לקרוא את הסיפור"><span data-icon="arrow"></span></button></section>
+        </section>
+      </div>
+    </main>
+    <footer class="app-footer"><span>נוצר באהבה, בשביל עומר <span aria-hidden="true">♡</span></span><span>אפשר לטעות. אפשר לחשוב. אפשר לנסות שוב.</span></footer>
+  </div>
+  <dialog id="game-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close icon-button" type="button" id="dialog-close" aria-label="לסגור ולחזור למסע">×</button><div id="dialog-content"></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="noscript-message">כדי לשחק, צריך להפעיל JavaScript בדפדפן.</p></noscript>
 </body>
 </html>
